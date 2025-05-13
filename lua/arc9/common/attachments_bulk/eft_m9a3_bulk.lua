@@ -96,7 +96,7 @@ ARC9.LoadAttachment(ATT, "eft_m9a3_black")
 ATT = {}
 
 ATT.PrintName = "M9A3 9x19 17-round magazine"
-ATT.CompactName = "M9A3"
+ATT.CompactName = "M9A3 17"
 ATT.Icon = Material("entities/eft_m9a3_attachments/m.png", "mips smooth")
 ATT.Description = [[A standard 17-round 9x19 magazine for the Beretta M9A3 pistol.]]
 
@@ -117,6 +117,34 @@ ATT.ActivateElements = {"magdef"}
 ATT.Category = {"eft_m9a3_mag"}
 
 ARC9.LoadAttachment(ATT, "eft_mag_m9a3_std")
+
+///////////////////////////////////////      eft_mag_m9a3_ext
+
+
+ATT = {}
+
+ATT.PrintName = "M9A3 9x19 CX4 30-round magazine"
+ATT.CompactName = "CX4 30"
+ATT.Icon = Material("entities/eft_m9a3_attachments/cx4.png", "mips smooth")
+ATT.Description = [[A 30-round 9x19 magazine for the Beretta M9A3 pistol]]
+
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.EFTErgoAdd = -3
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
+ATT.CustomCons = { Ergonomics = "-3" }
+ATT.MalfunctionMeanShotsToFailMult = 0.95
+
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m9a3_ext.mdl"
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+ATT.DropMagazineAmount = 1
+ATT.SuppressEmptySuffix = false 
+ATT.ActivateElements = {"magext"}
+
+ATT.Category = {"eft_m9a3_mag"}
+
+ARC9.LoadAttachment(ATT, "eft_mag_m9a3_ext")
 
 ///////////////////////////////////////      eft_muzzle_m9a3_std
 

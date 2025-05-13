@@ -440,6 +440,22 @@ SWEP.Animations = {
         EventTable = rst_empty
     },
 
+    ["reload1"] = {
+        Source = "reload_1",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_def
+    },
+
+    ["reload_empty1"] = {
+        Source = {"reload_empty0_1", "reload_empty1_1", "reload_empty2_1"}, 
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_empty
+    },
+
     ["toggle"] = {
         Source = "mod_switch",
         EventTable = {{ s = {"arc9_eft_shared/weapon_light_switcher1.ogg", "arc9_eft_shared/weapon_light_switcher2.ogg", "arc9_eft_shared/weapon_light_switcher3.ogg"}, t = 0 },}
@@ -564,6 +580,14 @@ SWEP.Animations = {
         Source = "magcheck_empty",
         EventTable = rst_magcheck,
     },
+    ["inspect_mag_1"] = {
+        Source = "magcheck_1",
+        EventTable = rst_magcheck,
+    },
+    ["inspect_empty_mag_1"] = {
+        Source = "magcheck_empty_1",
+        EventTable = rst_magcheck,
+    },
 
     ["inspect0"] = {
         Source = "checkchamber",
@@ -589,6 +613,7 @@ SWEP.AttachmentElements = {
     ["eft_rs_m9a3_mount"]    = { Bodygroups = { {5, 2} } },
     ["eft_fs_m9a3_std"]    = { Bodygroups = { {6, 1} } },
     ["eft_mag_m9a3_std"]    = { Bodygroups = { {7, 1} } },
+    ["eft_mag_m9a3_ext"]    = { Bodygroups = { {7, 2} } },
 
     ["eft_mount_p226_bridge"]    = { Bodygroups = { {8, 1} } },
 
