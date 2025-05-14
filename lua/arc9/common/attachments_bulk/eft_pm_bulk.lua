@@ -261,7 +261,7 @@ ATT.SortOrder = -90
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_custom_pm"}
-ATT.CustomizePos = Vector(24, 21, 4.0)
+ATT.CustomizePos = Vector(24, 40, 4)
 
 ATT.ExcludeElements = {"eft_pb"}
 
@@ -326,7 +326,7 @@ ATT.EFTErgoAdd = -21
 ATT.CustomCons = { Ergonomics = "-21" }
 
 ATT.Silencer = true 
-ATT.CustomizePos = Vector(24, 21, 4.0)
+ATT.CustomizePos = Vector(24, 40, 4)
 
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.MuzzleEffectQCA = 5

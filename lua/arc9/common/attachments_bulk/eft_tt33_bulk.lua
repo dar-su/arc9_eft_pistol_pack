@@ -94,7 +94,7 @@ ATT.EFTErgoAdd = -12
 ATT.CustomCons = { Ergonomics = "-12" }
 
 ATT.Silencer = true 
-ATT.CustomizePos = Vector(25, 21, 4.25)
+ATT.CustomizePos = Vector(25, 45, 4)
 
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.MuzzleEffectQCA = 5

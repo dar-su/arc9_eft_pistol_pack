@@ -77,7 +77,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.HeatCapacityMult = 0.88
 -- ATT.SpreadMult = 0.99
 
-ATT.CustomizePos = Vector(25.5, 25, 4.5)
+ATT.CustomizePos = Vector(25.5, 50, 4)
 
 ATT.Silencer = true 
 ATT.BarrelLengthAdd = 5
