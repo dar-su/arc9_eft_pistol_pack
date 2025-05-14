@@ -44,10 +44,10 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -3.1, -.45)
-SWEP.CustomizePos = Vector(21, 22, 2.7)
-SWEP.CustomizeSnapshotFOV = 60
-SWEP.CustomizeRotateAnchor = Vector(22, -4.34, -4)
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
+SWEP.CustomizePos = Vector(21, 30, 2.8)
+SWEP.CustomizeSnapshotFOV = 40
+SWEP.CustomizeRotateAnchor = Vector(21, -4.28, -5.23)
+SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
 
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 

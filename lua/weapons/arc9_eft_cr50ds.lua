@@ -25,7 +25,8 @@ SWEP.IronSights = {
 }
 
 
-SWEP.CustomizePos = Vector(22.2, 22, 2.7)
+SWEP.CustomizePos = Vector(22.25, 30, 2.8)
+SWEP.CustomizeRotateAnchor = Vector(22.25, -4.28, -5.23)
 
 SWEP.Spread = 5.16 * ARC9.MOAToAcc
 SWEP.EFTErgo = 80
