@@ -367,7 +367,6 @@ local rst_magcheckfab = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        Time = 111, -- REMOVE WHEN DONEEEE
     },
     ["idle_empty"] = {
         Source = "idle_empty",

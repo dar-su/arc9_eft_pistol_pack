@@ -397,7 +397,6 @@ local slidelockgrab = {"arc9_eft_shared/pistol_jam_slidelock_grab1.ogg", "arc9_e
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 1000, -- reset when done soundstables!!!!!!!!
     },
 
     ["ready"] = {
