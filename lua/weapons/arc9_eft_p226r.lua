@@ -400,6 +400,9 @@ SWEP.Animations = {
         RareSource = {"too_idle1","too_idle2","too_idle3"},
         RareSourceChance = 0.0015,
     },
+    ["idle_sights"] = {
+        Source = "idle",
+    },
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},
