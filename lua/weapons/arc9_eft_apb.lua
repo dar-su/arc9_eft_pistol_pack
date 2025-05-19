@@ -12,7 +12,7 @@ SWEP.Slot = 1
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_apb")
 
-SWEP.Description = "eft_weapon_apb_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_apb_desc")
 
 SWEP.DefaultElements = {"eft_apb"} 
 

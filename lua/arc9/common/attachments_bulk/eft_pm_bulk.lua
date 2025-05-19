@@ -22,7 +22,7 @@ ATT.Category = {"eft_pm_rec"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_pm_rs",
         Pos = Vector(2.25, 0, -0.5),
         Ang = Angle(0, -90, 0),
@@ -132,7 +132,7 @@ ATT.Category = {"eft_pm_pg"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical_xc1", "eft_um3"},
         Pos = Vector(-5, 0.1, -1.55),
         Ang = Angle(0, 0, 180),
@@ -169,7 +169,7 @@ ATT.Category = {"eft_pm_pg"}
  ATT.ToggleOnF = true
  ATT.ToggleStats = {
      {
-         PrintName = "Red Laser",
+         PrintName = "eft_toggle_laser_red",
          Laser = true,
          LaserStrength = 1.3,
          LaserFlareMat = Material("effects/arc9_eft/laserdot"),
@@ -179,7 +179,7 @@ ATT.Category = {"eft_pm_pg"}
          EFTHipFireSpreadBonus = true,
      },   
      {
-         PrintName = "None",
+         PrintName = "eft_toggle_off",
      }
  }
 
@@ -269,7 +269,7 @@ ATT.Max = 1
 
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_pm", "eft_custom_slot"},

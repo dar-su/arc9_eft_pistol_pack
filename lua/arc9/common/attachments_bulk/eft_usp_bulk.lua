@@ -139,7 +139,7 @@ ATT.ExcludeElements = { "eft_slide_usp_elite", "eft_slide_usp_expert" }
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_usp_muzzle"},
         Pos = Vector(0, 3.8, 0.03),
         Ang = Angle(0, -90, 0),
@@ -235,13 +235,13 @@ ATT.Category = {"eft_usp_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_usp_fs",
         Pos = Vector(0, 3.13, -0.74),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_usp_rs",
         Pos = Vector(0, -3.41, -0.74),
         Ang = Angle(0, -90, 0),
@@ -276,13 +276,13 @@ ATT.ExcludeElements = { "eft_barrel_usp_std", "eft_barrel_usp_expert", "eft_barr
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_usp_fs",
         Pos = Vector(0, 4.76, -0.74),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_usp_rs",
         Pos = Vector(0, -3.41, -0.66),
         Ang = Angle(0, -90, 0),
@@ -317,13 +317,13 @@ ATT.ExcludeElements = { "eft_barrel_usp_std", "eft_barrel_usp_tac" }
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_usp_fs",
         Pos = Vector(0, 3.866, -0.74),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_usp_rs",
         Pos = Vector(0, -3.395, -0.66),
         Ang = Angle(0, -90, 0),
@@ -354,13 +354,13 @@ ATT.Category = {"eft_usp_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_usp_fs",
         Pos = Vector(0, 3.13, -0.74),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_usp_rs",
         Pos = Vector(0, -3.41, -0.74),
         Ang = Angle(0, -90, 0),
@@ -391,13 +391,13 @@ ATT.Category = {"eft_usp_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_usp_fs",
         Pos = Vector(0, 3.13, -0.74),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_usp_rs",
         Pos = Vector(0, -3.41, -0.74),
         Ang = Angle(0, -90, 0),
@@ -499,7 +499,7 @@ ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_ff3",
         Pos = Vector(-0.375, 0, -0.115),
         Ang = Angle(0, 0, 0),
@@ -607,7 +607,7 @@ ATT.Category = {"eft_usp_tac"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical_pistol"},
         Pos = Vector(-0.7, 0, -0.33),
         Ang = Angle(0, 0, 0),
@@ -663,7 +663,7 @@ ATT.ExcludeElements = { "eft_slide_usp_elite", "eft_slide_usp_expert", "eft_barr
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical_pistol"},
         Pos = Vector(-0.55, 0, -0.76),
         Ang = Angle(0, 0, 0),
@@ -694,7 +694,7 @@ ATT.Category = {"eft_usp_muzzle", "eft_1911_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "Suppressor",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_omega_silencer",
         Pos = Vector(-0.36, 0, 0),
         Ang = Angle(0, 0, 0),

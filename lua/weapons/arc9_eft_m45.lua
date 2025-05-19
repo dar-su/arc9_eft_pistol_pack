@@ -7,8 +7,8 @@ SWEP.Base = "arc9_eft_m1911"
 SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
-SWEP.PrintName = ARC9:GetPhrase("eft_weapon_m45a1") or "Colt M45A1"
-SWEP.Description = "eft_weapon_m45a1_desc"
+SWEP.PrintName = ARC9:GetPhrase("eft_weapon_m45a1")
+SWEP.Description = ARC9:GetPhrase("eft_weapon_m45a1_desc")
 
 SWEP.DefaultBodygroups = "10000000000000"
 
@@ -41,7 +41,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_1911_tac",
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical_pistol", "eft_um3"},
         Pos = Vector(0, 1.9, 0.38),
         Ang = Angle(0, -90, 180),

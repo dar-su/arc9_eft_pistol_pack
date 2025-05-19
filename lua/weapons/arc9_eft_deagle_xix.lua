@@ -19,7 +19,7 @@ SWEP.Trivia = {
 }
 
 
-SWEP.Description = "eft_weapon_deaglexix_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_deaglexix_desc")
 
 SWEP.DefaultElements = {"eft_xix"} -- owo
 

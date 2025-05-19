@@ -50,7 +50,7 @@ ATT.Category = {"eft_pl15_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_9mm_muzzle", "eft_pl15_muzzle"},
         Pos = Vector(0, 3.4, 0),
         Ang = Angle(0, -90, 0),
@@ -148,14 +148,14 @@ ATT.Category = {"eft_pl15_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_pl15_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_pl15_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),

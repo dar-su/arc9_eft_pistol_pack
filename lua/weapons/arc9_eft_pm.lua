@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_pm")
-SWEP.Description = "eft_weapon_pm_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_pm_desc")
 
-SWEP.Class = "eft_class_weapon_pist"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
@@ -878,7 +878,7 @@ SWEP.DefaultElements = {"pmmallowed"}
 
 SWEP.Attachments = {
     {
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Bone = "mod_reciever",
         Category = {"eft_pm_rec"},
         Pos = Vector(0, 0, 0),
@@ -892,7 +892,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Bone = "mod_pistolgrip",
         Category = {"eft_pm_pg"},
         Pos = Vector(0, 0, 0),
@@ -901,7 +901,7 @@ SWEP.Attachments = {
         Installed = "eft_pm_pg_std"
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_pm_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -910,7 +910,7 @@ SWEP.Attachments = {
         Installed = "eft_pm_mag_8"
     },   
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Bone = "mod_pistolgrip",
         Category = {"eft_9mm_muzzle"},
         RequireElements = {"eft_pm_thread"},
@@ -919,7 +919,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_9x18",
         Integral = "eft_ammo_9x18_pst",
         Installed = "eft_ammo_9x18_pst",
@@ -929,7 +929,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, -2.5),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_pm"},
         Bone = "weapon",
         Pos = Vector(0, 16, -1),

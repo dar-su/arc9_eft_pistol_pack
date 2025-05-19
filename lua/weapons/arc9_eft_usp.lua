@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_usp45")
-SWEP.Description = "eft_weapon_usp45_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_usp45_desc")
 
-SWEP.Class = "eft_class_weapon_pist"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
@@ -803,7 +803,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_usp_barrel",
         Bone = "mod_barrel",
         Pos = Vector(0, 0, 0.5),
@@ -811,7 +811,7 @@ SWEP.Attachments = {
         Installed = "eft_barrel_usp_std",
     },
     {
-        PrintName = "Reciever",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_usp_slide",
         Bone = "mod_reciever",
         Pos = Vector(0, 1, 0),
@@ -828,7 +828,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_45acp",
         Bone = "mod_magazine",
         Integral = true,
@@ -838,7 +838,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-0.85, 0, -3),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_usp_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -847,7 +847,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_usp_std"
     },    
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Bone = "weapon",
         Category = {"eft_usp_tac"},
         Pos = Vector(0, 23.3, -0.3),
@@ -855,7 +855,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Slide Lock",
+        PrintName = ARC9:GetPhrase("eft_cat_catch"),
         Category = "eft_usp_slock",
         Bone = "mod_catch",
         Pos = Vector(0, 0, 0),
@@ -863,7 +863,7 @@ SWEP.Attachments = {
         Installed = "eft_usp_slock_std",
     },
     {
-        PrintName = "Hammer",
+        PrintName = ARC9:GetPhrase("eft_cat_hammer"),
         Category = "eft_usp_hammer",
         Bone = "mod_hammer",
         Pos = Vector(0, 0, 0),
@@ -871,7 +871,7 @@ SWEP.Attachments = {
         Installed = "eft_usp_hammer_std",
     },
     {
-        PrintName = "Trigger",
+        PrintName = ARC9:GetPhrase("eft_cat_trigger"),
         Category = "eft_usp_trigger",
         Bone = "mod_trigger",
         Pos = Vector(0, 0, 0),
@@ -879,7 +879,7 @@ SWEP.Attachments = {
         Installed = "eft_usp_trigger_std",
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_usp"},
         Bone = "weapon",
         Pos = Vector(0, 16, -1),

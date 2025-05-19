@@ -21,7 +21,7 @@ SWEP.Trivia = {
     ["eft_trivia_year5"] = "1967"
 }
 
-SWEP.Description = "eft_weapon_pb_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_pb_desc")
 
 SWEP.IronSights = {
     Pos = Vector(-4.265, -8, 2.05),

@@ -29,7 +29,7 @@ ATT.Max = 1
 ATT.Category = {"eft_custom_slot_rhino"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_slot_rhino", "eft_custom_slot_rsh12"},
@@ -256,7 +256,7 @@ ATT.SpreadMult = 0.85
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_small"},
         Pos = Vector(-1.2, 0, -1.02),
         Ang = Angle(0, 0, 0),
@@ -293,7 +293,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_custom_slot_revolver"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot"},

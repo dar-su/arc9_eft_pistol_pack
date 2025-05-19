@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_cr200ds")
-SWEP.Description = "eft_weapon_cr200ds_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_cr200ds_desc")
 
-SWEP.Class = "eft_class_weapon_revol"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_revol")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
@@ -1019,7 +1019,7 @@ SWEP.ExtraSightDistanceNoRT = true
 
 SWEP.Attachments = {
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_9x19",
         Bone = "mod_magazine",
         Integral = "eft_ammo_9x19_pst_gzh",
@@ -1029,7 +1029,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_rhino_mag",
         Bone = "mod_magazine",
         Installed = "eft_rhino_mag_std",
@@ -1038,7 +1038,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_rhino_pgrip",
         Bone = "mod_pistol_grip",
         Installed = "eft_rhino_pgrip_std",
@@ -1047,7 +1047,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_rhino_fs",
         Bone = "weapon",
         Installed = "eft_rhino_fs_std",
@@ -1056,7 +1056,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     -- {
-    --     PrintName = "Tactical",
+    --     PrintName = ARC9:GetPhrase("eft_cat_tactical"),
     --     Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big", "eft_rsh12_tacticalslot", "eft_bipod"},
     --     RejectAttachments = { ["eft_tactical_raptar"] = true },
     --     Bone = "mod_tactical",
@@ -1065,7 +1065,7 @@ SWEP.Attachments = {
     --     Icon_Offset = Vector(0, 0, 0),
     -- },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_rhino", "eft_custom_slot_revolver"},
         Bone = "weapon",
         Pos = Vector(0, 15, -2),

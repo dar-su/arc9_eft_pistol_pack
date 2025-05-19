@@ -50,7 +50,7 @@ ATT.Category = {"eft_p226_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_9mm_muzzle", "eft_p226_muzzle"},
         Pos = Vector(0, 3.4, -0.045),
         Ang = Angle(0, -90, 0),
@@ -178,14 +178,14 @@ ATT.Category = {"eft_p226_tac"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_optic_small",
         Pos = Vector(0.7, 0, 2.2),
         Ang = Angle(0, 0, 180),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical_pistol"},
         Pos = Vector(0.1, 0, -0.55),
         Ang = Angle(0, 0, 0),
@@ -432,14 +432,14 @@ ATT.Category = {"eft_p226_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_p226_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_p226_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -473,14 +473,14 @@ ATT.Category = {"eft_p226_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_p226_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_p226_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -514,14 +514,14 @@ ATT.Category = {"eft_p226_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_p226_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_p226_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -555,14 +555,14 @@ ATT.Category = {"eft_p226_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_p226_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_p226_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -596,14 +596,14 @@ ATT.Category = {"eft_p226_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_p226_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_p226_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -676,7 +676,7 @@ ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_optic_micro",
         Pos = Vector(1.5, 0, -0.35),
         Ang = Angle(0, 0, 0),
@@ -705,7 +705,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Holosight",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_rmr",
         Pos = Vector(1.74, 0.0, -0.35),
         Ang = Angle(0, 0, 0),

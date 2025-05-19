@@ -10,7 +10,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_glock19x")
 SWEP.DefaultBodygroups = "20000000000000"
 
-SWEP.Description = "eft_weapon_glock19x_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_glock19x_desc")
 
 SWEP.Trivia = {
     ["eft_trivia_manuf1"] = "eft_trivia_manuf_glock",
@@ -34,7 +34,7 @@ SWEP.Attachments = {
         Installed = "eft_barrel_g19x_std"
     },
     {
-        PrintName = "Reciever",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_g19x_rec",
         Installed = "eft_rec_g19x_std",
         SubAttachments = {
@@ -55,7 +55,7 @@ SWEP.Attachments = {
         RejectAttachments = { ["eft_silencer_fd917"] = true },
     },
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Bone = "weapon",
         Category = "eft_g17_tshark",
         Pos = Vector(0, 17.6, -1),
@@ -63,14 +63,14 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Coyote",
+        PrintName = ARC9:GetPhrase("eft_cat_misc"),
         Category = "eft_glock19_color",
         Bone = "weapon",
         Pos = Vector(0, 15, -2),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_glock"},
         Bone = "weapon",
         Pos = Vector(0, 12, -1),

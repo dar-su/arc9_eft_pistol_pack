@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_deaglel6")
-SWEP.Description = "eft_weapon_deaglel6_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_deaglel6_desc")
 
-SWEP.Class = "eft_class_weapon_pist"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_pist")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_pist")
 
 SWEP.Trivia = {
@@ -651,7 +651,7 @@ SWEP.Attachments = {
     {
         Category = "eft_deagle_barrel_l6",
         Installed = "eft_barrel_deagle_l6_50ae",
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Bone = "mod_barrel",
         Pos = Vector(0, 0, 0.0),
         Ang = Angle(0, 0, 0),
@@ -664,7 +664,7 @@ SWEP.Attachments = {
     {
         Category = "eft_deagle_slide_l6",
         Installed = "eft_slide_deagle_l6",
-        PrintName = "Slide",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Bone = "mod_reciever",
         Pos = Vector(0, 1, 0),
         Ang = Angle(0, 0, 0),
@@ -676,7 +676,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_50ae",
         Bone = "mod_magazine",
         Integral = "eft_ammo_50ae_fmj",
@@ -687,7 +687,7 @@ SWEP.Attachments = {
         ExcludeElements = {"eft_slide_deagle_l5_357"}
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = "eft_deagle_mag",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
@@ -696,7 +696,7 @@ SWEP.Attachments = {
         Installed = "eft_mag_deagle_7"
     },  
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("eft_cat_pgrip"),
         Category = "eft_deagle_pg",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 2),
@@ -705,7 +705,7 @@ SWEP.Attachments = {
         Installed = "eft_pg_deagle_ergo"
     },    
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Bone = "mod_tactical",
         Category = {"eft_tactical"},
         Pos = Vector(0, 0, 0),
@@ -714,7 +714,7 @@ SWEP.Attachments = {
         ExcludeElements = {"eft_xix", "eft_l5"}
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_deagle"},
         Bone = "weapon",
         Pos = Vector(0, 16, -1),

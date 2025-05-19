@@ -236,7 +236,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ToggleOnF = true
 ATT.ToggleStats = {
     {
-        PrintName = "Blue Laser",
+        PrintName = "eft_toggle_laser_blue",
         Laser = true,
         LaserStrength = 1.3,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
@@ -246,7 +246,7 @@ ATT.ToggleStats = {
         EFTHipFireSpreadBonus = true,
     },   
     {
-        PrintName = "None",
+        PrintName = "eft_toggle_off",
     }
 }
 
@@ -275,7 +275,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_tt_dlp.mdl"
 ATT.ToggleOnF = true
 ATT.ToggleStats = {
     {
-        PrintName = "Blue Laser",
+        PrintName = "eft_toggle_laser_blue",
         Laser = true,
         LaserStrength = 1.3,
         LaserFlareMat = Material("effects/arc9_eft/laserdot"),
@@ -285,7 +285,7 @@ ATT.ToggleStats = {
         EFTHipFireSpreadBonus = true,
     },   
     {
-        PrintName = "None",
+        PrintName = "eft_toggle_off",
     }
 }
 
@@ -338,7 +338,7 @@ ATT.Max = 1
 
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_tt33", "eft_custom_slot"},

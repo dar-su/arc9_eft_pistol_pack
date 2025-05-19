@@ -9,9 +9,9 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_glock18c")
 SWEP.DefaultBodygroups = "10000000000"
 
-SWEP.Description = "eft_weapon_glock18c_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_glock18c_desc")
 
-SWEP.Class = "eft_class_weapon_megapist"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_megapist")
 
 SWEP.StandardPresets = {
     "[Lizzie]XQAAAQBfAQAAAAAAAAA9iIIiM7tupQCpjtoZF0tx3T1+wANbEVpxCLNFlXOeyQ4R/69N18r9zh/d8oSgzitMAI/rMKViVr2H6OV/M/GYal8hVJWN0+DwOXF1+/TTjqjuoUwSLVDZgEhOxQdvv6iRoCsGCLCzVWP1HIrA+EV+7vFpTaiS3JillQxwfchhdlZvee+amclr7fh/j4e6s0IO0rxlQRZocbPPEmliYz1qCSeYLuwDdBppP5wPBBLx/AA=",

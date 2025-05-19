@@ -27,14 +27,14 @@ ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_deagle_fs",
         Pos = Vector(0, 4.2, -1.5),
         Icon_Offset = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
     },    
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
         RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
         Pos = Vector(0, 2.2, -1.38),
@@ -72,14 +72,14 @@ ATT.RequireElements = {"eft_slide_deagle_l5_357"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_deagle_fs",
         Pos = Vector(0, 4.2, -1.5),
         Icon_Offset = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
     },    
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_small", "eft_reapir", "eft_optic_prism"},
         RejectAttachments = { ["eft_optic_boss"] = true, ["eft_optic_pk120"] = true, },
         Pos = Vector(0, 2.2, -1.38),
@@ -115,14 +115,14 @@ ATT.Category = {"eft_deagle_barrel_l6"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_deagle_fs",
         Pos = Vector(0, 4.2, -1.5),
         Icon_Offset = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
     },    
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
         RejectAttachments = { 
             ["eft_optic_boss"] = true, 
@@ -165,14 +165,14 @@ ATT.Category = {"eft_deagle_barrel_l6"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_deagle_fs",
         Pos = Vector(0, 4.2, -1.5),
         Icon_Offset = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
     },    
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
         RejectAttachments = { 
             ["eft_optic_boss"] = true, 
@@ -215,14 +215,14 @@ ATT.Category = {"eft_deagle_barrel_xix"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_deagle_fs",
         Pos = Vector(0, 4.2, -1.5),
         Icon_Offset = Vector(0, 0, 0),
         Ang = Angle(0, -90, 0),
     },    
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_medium",  "eft_optic_small", "eft_reapir", "eft_optic_prism"},
         RejectAttachments = { 
             ["eft_optic_boss"] = true, 
@@ -398,7 +398,7 @@ ATT.Category = {"eft_deagle_slide_l5"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_deagle_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -447,14 +447,14 @@ ATT.RecoilKickMult = 0.75
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_deagle_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_357",
         Integral = "eft_ammo_357_fmj",
         Installed = "eft_ammo_357_fmj",
@@ -491,7 +491,7 @@ ATT.Category = {"eft_deagle_slide_l6"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_deagle_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -525,7 +525,7 @@ ATT.Category = {"eft_deagle_slide_l6"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_deagle_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -557,7 +557,7 @@ ATT.Category = {"eft_deagle_slide_xix"}
 
 ATT.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_deagle_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),

@@ -25,7 +25,7 @@ ATT.Category = {"eft_m9a3_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_9mm_muzzle", "eft_m9a3_muzzle"},
         Pos = Vector(0, 3.95, -0.51),
         Ang = Angle(0, -90, 0),
@@ -78,7 +78,7 @@ ATT.Max = 1
 ATT.Category = {"eft_custom_m9a3"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_m9a3"},
@@ -217,14 +217,14 @@ ATT.Category = {"eft_m9a3_slide"}
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("eft_cat_frontsight"),
         Category = "eft_m9a3_fs",
         Pos = Vector(0, 0, -0.5),
         Icon_Offset = Vector(4.2, 0, 0.3),
         Ang = Angle(0, -90, 0),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_m9a3_rs",
         Pos = Vector(0, -0.05, -0.5),
         Icon_Offset = Vector(-2.2, 0, 0.3),
@@ -271,7 +271,7 @@ ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_optic_micro",
         Pos = Vector(1.5, 0, -0.45),
         Ang = Angle(0, 0, 0),

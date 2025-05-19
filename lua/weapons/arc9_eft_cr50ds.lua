@@ -10,7 +10,7 @@ SWEP.Spawnable = true
 SWEP.Category = "ARC9 - Escape From Tarkov"
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_cr50ds")
-SWEP.Description = "eft_weapon_cr50ds_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_cr50ds_desc")
 
 SWEP.Trivia = {
     _,
@@ -144,7 +144,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.078, 25.51, 1.85),
     },
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("eft_cat_rearsight"),
         Category = "eft_rhino_rs",
         Bone = "weapon",
         Installed = "eft_rhino_rs_std",
@@ -153,7 +153,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_rhino357_barrel",
         Bone = "mod_pistol_grip",
         Pos = Vector(0, 5, 1),
@@ -161,7 +161,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Bone = "weapon",
@@ -170,7 +170,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_rhino", "eft_custom_slot_revolver"},
         Bone = "weapon",
         Pos = Vector(0, 15, -2),
