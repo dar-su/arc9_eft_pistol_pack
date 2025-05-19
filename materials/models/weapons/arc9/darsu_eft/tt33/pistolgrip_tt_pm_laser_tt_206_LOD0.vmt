@@ -3,9 +3,9 @@
 
 "VertexLitGeneric"
 {
-	"$basetexture" "models/weapons/arc9/darsu_eft/pm/pistolgrip_tt_pm_laser_tt_206_LOD0_diff"
-	"$bumpmap" "models/weapons/arc9/darsu_eft/pm/pistolgrip_tt_pm_laser_tt_206_LOD0_nrm"
-	"$phongexponenttexture" "models/weapons/arc9/darsu_eft/pm/pistolgrip_tt_pm_laser_tt_206_LOD0_gloss"
+	"$basetexture" "models/weapons/arc9/darsu_eft/tt33/pistolgrip_tt_pm_laser_tt_206_LOD0_diff"
+	"$bumpmap" "models/weapons/arc9/darsu_eft/tt33/pistolgrip_tt_pm_laser_tt_206_LOD0_nrm"
+	"$phongexponenttexture" "models/weapons/arc9/darsu_eft/tt33/pistolgrip_tt_pm_laser_tt_206_LOD0_gloss"
 	"$phong"		"1"
 	"$phongboost"	"6"
 	"$blendtintbybasealpha"	"1"
