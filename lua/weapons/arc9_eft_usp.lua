@@ -306,7 +306,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending
     end
     
-    if anim == "reload" or anim == "reload_empty" and nomag then -- reload
+    if (anim == "reload" or anim == "reload_empty") and nomag then -- reload
         return "reload_single"
     end
     
