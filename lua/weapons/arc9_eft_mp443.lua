@@ -246,6 +246,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -292,6 +293,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload then
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -362,6 +366,27 @@ local rst_def = {
     { s = randspin, t = 3.12 },
 }
 local rst_def2 = {
+    { s = randspin, t = 0.1 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
+    { s =  path .. "grach_mag_out.ogg", t = 0.55 },
+    { s = pouchin, t = 1.2 },
+    { s = pouchout, t = 1.6 },
+    { s = randspin, t = 1.95 },
+    { s =  path .. "grach_mag_in.ogg", t = 2.72 + 0.15 },
+    { s = randspin, t = 3.4 },
+}
+
+local rst_tac = {
+    { s = randspin, t = 0.1 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
+    { s =  path .. "grach_mag_out.ogg", t = 0.55 },
+    { s = pouchin, t = 1.2 },
+    { s = pouchout, t = 1.6 },
+    { s = randspin, t = 1.7 },
+    { s =  path .. "grach_mag_in.ogg", t = 2.45 + 0.15 },
+    { s = randspin, t = 3.12 },
+}
+local rst_tac2 = {
     { s = randspin, t = 0.1 },
     { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
     { s =  path .. "grach_mag_out.ogg", t = 0.55 },
@@ -496,6 +521,26 @@ SWEP.Animations = {
         Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def2
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_tac,
+
+        DropMagAt = 0.2,
+        DumpAmmo = true
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_tac2,
+
+        DropMagAt = 0.2,
+        DumpAmmo = true
     },
 
     ["reload_empty0"] = {
