@@ -213,6 +213,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -259,6 +260,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload and !empty then
+            return "reload_tactical" .. ending
+        end
         if anim == "reload" and empty then anim = "reload_empty" end
         return anim .. ending
     end
@@ -322,6 +326,18 @@ local rst_def = {
     { s = pouchout, t = 1.5 },
     { s = path .. "deagle_mag_in.ogg", t = 1.95 },
     { s = randspin, t = 2.66 },
+}
+
+local rst_deft = {
+    { s = randspin, t = 0.1 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.3 }, -- eft devs redarded
+    { s = path .. "deagle_mag_out.ogg", t = 0.41 - 0.3 },
+    { s = pouchout, t = 1.5 - 0.6 },
+    { s = path .. "deagle_mag_in.ogg", t = 1.95 - 0.6 },
+    { s = randspin, t = 2.66 - 0.6 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.37},
+    {hide = 0, t = 1.0}
 }
 
 local rst_empty = {
@@ -438,6 +454,16 @@ SWEP.Animations = {
         -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def
+    },
+
+    ["reload_tactical0"] = {
+        Source = "reloadt",
+        MinProgress = 0.9,
+        -- Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft
     },
 
     ["reload_empty0"] = {

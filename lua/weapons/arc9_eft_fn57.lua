@@ -250,6 +250,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -288,8 +289,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending
     end
     
-    if anim == "reload" or anim == "reload_empty" and nomag then -- reload
-        return "relaod_single"
+    if anim == "reload" or anim == "reload_empty" then -- reload
+        if swep.EFT_StartedTacReload and !empty then
+            return "reload_tactical"
+        end
+		if nomag then return "reload_single" end
     end
     
     if anim == "fix" then
@@ -337,18 +341,30 @@ local rst_def = {
     { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 14/28 },
     { s =  path .. "fiveseven_mag_out.ogg", t = 16/28 },
     { s =  path .. "fiveseven_mag_rattle3.ogg", t = 21/28 },
-
-
     { s =  path .. "fiveseven_mag_rattle.ogg", t = 25/28 },
     -- { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 35/28 },
     -- { s = "arc9_eft_shared/weap_mag_pullout.ogg", t = 46/24 },
     { s = pouchin, t = 1.08 },
     { s = pouchout, t = 1.55 },
-
     { s =  path .. "fiveseven_mag_rattle2.ogg", t = 56/28 },
     { s =  path .. "fiveseven_mag_in.ogg", t = 62/28 },
-
     { s = randspin, t = 75/28 },
+}
+
+local rst_deft = {
+    { s = randspin, t = 4/28 },    
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 7/28 - 0.25 },
+    { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 14/28 - 0.25 },
+    { s =  path .. "fiveseven_mag_out.ogg", t = 16/28 - 0.3 },
+    { s =  path .. "fiveseven_mag_rattle3.ogg", t = 21/28 - 0.5 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 25/28 - 0.5 },
+    { s = pouchout, t = 1.55 - 0.8 },
+    { s =  path .. "fiveseven_mag_rattle2.ogg", t = 56/28 - 0.8 },
+    { s =  path .. "fiveseven_mag_in.ogg", t = 62/28 - 0.8 },
+    { s = randspin, t = 75/28 - 0.8 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.3},
+    {hide = 0, t = 1.0}
 }
 
 local rst_empty = {
@@ -450,20 +466,6 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    ["reload_empty_single"] = {
-        Source = "reload_single",
-        RefillProgress = 0.825,
-        PeekProgress = 0.975,
-        MinProgress = 0.975,
-        FireASAP = true,
-        EventTable = rst_single,
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.25, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },
 
     ["reload"] = {
         Source = "reload",
@@ -472,6 +474,22 @@ SWEP.Animations = {
         MinProgress = 0.975,
         FireASAP = true,
         EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.25, lhik = 0 },

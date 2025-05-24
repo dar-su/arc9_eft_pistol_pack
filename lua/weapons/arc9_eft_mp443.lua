@@ -1,6 +1,4 @@
--- reuses p226 anims  so i reused p226 file too :-p
-
-AddCSLuaFile()
+AddCSLuaFile() -- reuses p226 anims  so i reused p226 file too :-p
 SWEP.Base = "arc9_eft_base"
 SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.Spawnable = true
@@ -379,22 +377,26 @@ local rst_def2 = {
 local rst_tac = {
     { s = randspin, t = 0.1 },
     { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  path .. "grach_mag_out.ogg", t = 0.55 },
-    { s = pouchin, t = 1.2 },
-    { s = pouchout, t = 1.6 },
-    { s = randspin, t = 1.7 },
-    { s =  path .. "grach_mag_in.ogg", t = 2.45 + 0.15 },
-    { s = randspin, t = 3.12 },
+    { s =  path .. "grach_mag_out.ogg", t = 0.4 },
+    { s = pouchout, t = 1.6 - 1 },
+    { s = randspin, t = 1.7 - 1 },
+    { s =  path .. "grach_mag_in.ogg", t = 2.45 + 0.15 - 1},
+    { s = randspin, t = 3.12 - 1 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.66},
+    {hide = 0, t = 1.15}
 }
 local rst_tac2 = {
     { s = randspin, t = 0.1 },
     { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  path .. "grach_mag_out.ogg", t = 0.55 },
-    { s = pouchin, t = 1.2 },
-    { s = pouchout, t = 1.6 },
-    { s = randspin, t = 1.95 },
-    { s =  path .. "grach_mag_in.ogg", t = 2.72 + 0.15 },
-    { s = randspin, t = 3.4 },
+    { s =  path .. "grach_mag_out.ogg", t = 0.4 },
+    { s = pouchout, t = 1.6 - 1 },
+    { s = randspin, t = 1.95 - 1 },
+    { s =  path .. "grach_mag_in.ogg", t = 2.72 + 0.15 - 1},
+    { s = randspin, t = 3.4 - 1 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.66},
+    {hide = 0, t = 1.15}
 }
 
 local rst_empty = {

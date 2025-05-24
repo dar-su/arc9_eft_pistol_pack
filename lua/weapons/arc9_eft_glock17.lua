@@ -242,6 +242,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -289,9 +290,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         end
 
         return anim .. ending
-    elseif anim == "reload" then
-        return anim .. (empty and "_empty" or "") .. ending
-    end
+    
+		elseif anim == "reload" or anim == "reload_empty" then -- reload
+			if swep.EFT_StartedTacReload and !empty then
+				return "reload_tactical" .. ending
+			end
+			if nomag then return "reload" end
+			if empty then return "reload_empty" .. ending end
+			return anim .. ending
+		end
 
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
@@ -342,6 +349,19 @@ local rst_def = {
     { s = randspin, t = 1.52 },
     { s = pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.1 },
     { s = randspin, t = 2.7 },
+}
+
+local rst_deft = {
+    { s = randspin, t = 0.1 },    
+    { s = pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.28 - 0.15 }, -- eft devs redarded
+    { s = pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.38 - 0.15 },
+    { s = pouchout, t = 1.32 - 0.9 },
+    { s = randspin, t = 1.52 - 0.9 },
+    { s = pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.1 - 0.9 },
+    { s = randspin, t = 2.7 - 0.9 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 0.95}
 }
 
 local rst_empty = {
@@ -447,12 +467,39 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["reload_empty"] = {
+        Source = "reload_single",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_single,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
 
     ["reload0"] = {
         Source = "reload0",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.2, lhik = 0 },
@@ -472,6 +519,20 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
     ["reload2"] = {
         Source = "reload2",
         MinProgress = 0.85,
@@ -484,11 +545,39 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["reload_tactical2"] = {
+        Source = "reload2t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
     ["reload3"] = {
         Source = "reload3",
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical3"] = {
+        Source = "reload3t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        DumpAmmo = true,
+        EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.2, lhik = 0 },

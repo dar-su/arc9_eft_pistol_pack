@@ -257,6 +257,7 @@ SWEP.BulletBones = { -- the bone that represents bullets in gun/mag
 
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -303,6 +304,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. (empty and "_empty" or "") .. ending
     elseif anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload and !empty then
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
@@ -457,6 +461,29 @@ SWEP.Animations = {
             { s = pouchout, t = 1.8 },
             { s =  path .. "aps_mag_in.ogg", t = 2.35 },
             { s = randspin, t = 2.8 },
+        },
+        Mult = 1.1
+    },
+
+    ["reload_tactical0"] = {
+        Source = "reloadt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.9,
+        DumpAmmo = true,
+        EventTable = {
+            { s = randspin, t = 0.37 },
+            { s =  path .. "aps_magrelease_button.ogg", t = 0.6 - 0.3 },
+            { s =  path .. "aps_mag_out.ogg", t = 0.78 - 0.3 },
+            { s = randspin, t = 1.44 },
+            { s = pouchout, t = 1.8 - 0.85 },
+            { s =  path .. "aps_mag_in.ogg", t = 2.35 - 0.85 },
+            { s = randspin, t = 2.8 - 0.85 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.86},
+            {hide = 0, t = 1.3}
         },
         Mult = 1.1
     },
