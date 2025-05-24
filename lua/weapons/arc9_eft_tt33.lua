@@ -296,6 +296,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. ending
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
@@ -445,6 +449,29 @@ SWEP.Animations = {
             { s =  path .. "pm_mag_pullin.ogg", t = 2.1 },
             { s =  path .. "pm_mag_in.ogg", t = 2.4 },
             { s = randspin, t = 2.81 },
+        },
+        Mult = 1.0
+    },
+    ["reload_tactical0"] = {
+        Source = "reloadt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.55,
+        EventTable = {
+            { s = randspin, t = 0.1 - 4/27.5 },    
+            { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/27.5 }, -- eft devs redarded
+            { s =  randspin, t = 0.36 - 4/27.5 },
+            { s =  path .. "pm_mag_out.ogg", t = 0.26 - 4/27.5 },
+            { s =  path .. "pm_mag_pullout.ogg", t = 0.4 - 4/27.5 },
+            { s =  randspin, t = 0.71 - 4/27.5 },
+            { s = pouchout, t = 0.94 - 4/27.5 },
+            { s =  path .. "pm_mag_pullin.ogg", t = 1.4 - 4/27.5 },
+            { s =  path .. "pm_mag_in.ogg", t = 1.6 - 4/27.5 },
+            { s = randspin, t = 2.0 - 4/27.5 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.55},
+            {hide = 0, t = 0.9}
         },
         Mult = 1.0
     },

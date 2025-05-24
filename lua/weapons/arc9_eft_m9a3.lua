@@ -278,6 +278,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -348,6 +352,20 @@ local rst_empty = {
     { s = randspin, t = 2.95 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
+    {hide = 0, t = 1.15}
+}
+
+local rst_tac = {
+    { s = randspin, t = 0.1 - 4/24 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.5 - 4/24 },
+    { s =  randspin, t = 0.53 - 4/24 },
+    { s =  randspin, t = 1.04 - 4/24 },
+    { s = pouchout, t = 1.15 - 4/24 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 4/24 },
+    { s = randspin, t = 2.24 - 4/24 },  
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
     {hide = 0, t = 1.15}
 }
 
@@ -433,6 +451,14 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = rst_def
     },
+    ["reload_tactical0"] = {
+        Source = "reloadt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = rst_tac
+    },
 
     ["reload_empty0"] = {
         Source = {"reload_empty0", "reload_empty1", "reload_empty2"}, 
@@ -448,6 +474,14 @@ SWEP.Animations = {
         Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def
+    },
+    ["reload_tactical1"] = {
+        Source = "reload_1t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = rst_tac
     },
 
     ["reload_empty1"] = {

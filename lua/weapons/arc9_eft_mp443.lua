@@ -292,6 +292,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending
     elseif anim == "reload" then
         if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
             return "reload_tactical" .. ending
         end
         return anim .. (empty and "_empty" or "") .. ending
@@ -375,27 +376,29 @@ local rst_def2 = {
 }
 
 local rst_tac = {
-    { s = randspin, t = 0.1 },
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  path .. "grach_mag_out.ogg", t = 0.4 },
-    { s = pouchout, t = 1.6 - 1 },
-    { s = randspin, t = 1.7 - 1 },
-    { s =  path .. "grach_mag_in.ogg", t = 2.45 + 0.15 - 1},
-    { s = randspin, t = 3.12 - 1 },
+    { s = randspin, t = 0.1 - 4/24 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+    { s =  path .. "grach_mag_out.ogg", t = 0.4 - 4/24 },
+    { s =  randspin, t = 0.53 - 4/24 },
+    { s =  randspin, t = 1.04 - 4/24 },
+    { s = pouchout, t = 1.15 - 4/24 },
+    { s =  path .. "grach_mag_in.ogg", t = 1.8 + 0.15 - 4/24 },
+    { s = randspin, t = 2.24 - 4/24 },
     {hide = 0, t = 0},
-    {hide = 1, t = 0.66},
+    {hide = 1, t = 0.5},
     {hide = 0, t = 1.15}
 }
 local rst_tac2 = {
-    { s = randspin, t = 0.1 },
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  path .. "grach_mag_out.ogg", t = 0.4 },
-    { s = pouchout, t = 1.6 - 1 },
-    { s = randspin, t = 1.95 - 1 },
-    { s =  path .. "grach_mag_in.ogg", t = 2.72 + 0.15 - 1},
-    { s = randspin, t = 3.4 - 1 },
+    { s = randspin, t = 0.1 - 4/24 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+    { s =  path .. "grach_mag_out.ogg", t = 0.4 - 4/24 },
+    { s =  randspin, t = 0.53 - 4/24 },
+    { s =  randspin, t = 1.04  - 4/24},
+    { s = pouchout, t = 1.2  - 4/24},
+    { s =  path .. "grach_mag_in.ogg", t = 2.2 + 0.15 - 4/24 },
+    { s = randspin, t = 2.4 - 4/24 },  
     {hide = 0, t = 0},
-    {hide = 1, t = 0.66},
+    {hide = 1, t = 0.5},
     {hide = 0, t = 1.15}
 }
 
@@ -531,8 +534,7 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = rst_tac,
 
-        DropMagAt = 0.2,
-        DumpAmmo = true
+        DropMagAt = 0.5,
     },
     ["reload_tactical1"] = {
         Source = "reload1t",
@@ -541,8 +543,7 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = rst_tac2,
 
-        DropMagAt = 0.2,
-        DumpAmmo = true
+        DropMagAt = 0.5,
     },
 
     ["reload_empty0"] = {

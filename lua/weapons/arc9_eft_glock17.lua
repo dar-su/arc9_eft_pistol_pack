@@ -293,6 +293,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
 		elseif anim == "reload" or anim == "reload_empty" then -- reload
 			if swep.EFT_StartedTacReload and !empty then
+                if SERVER then swep:SetClip1(1) end
 				return "reload_tactical" .. ending
 			end
 			if nomag then return "reload" end
@@ -361,7 +362,7 @@ local rst_deft = {
     { s = randspin, t = 2.7 - 0.9 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.5},
-    {hide = 0, t = 0.95}
+    {hide = 0, t = 0.7}
 }
 
 local rst_empty = {
@@ -498,7 +499,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.2,
-        DumpAmmo = true,
+        -- DumpAmmo = true,
         EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -524,7 +525,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.2,
-        DumpAmmo = true,
+        -- DumpAmmo = true,
         EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -550,7 +551,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.2,
-        DumpAmmo = true,
+        -- DumpAmmo = true,
         EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -576,7 +577,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.2,
-        DumpAmmo = true,
+        -- DumpAmmo = true,
         EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },

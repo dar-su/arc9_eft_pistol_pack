@@ -291,6 +291,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
     if anim == "reload" or anim == "reload_empty" then -- reload
         if swep.EFT_StartedTacReload and !empty then
+            if SERVER then swep:SetClip1(1) end
             return "reload_tactical"
         end
 		if nomag then return "reload_single" end
@@ -488,7 +489,6 @@ SWEP.Animations = {
         MinProgress = 0.975,
         FireASAP = true,
         DropMagAt = 0.2,
-        DumpAmmo = true,
         EventTable = rst_deft,
         IKTimeLine = {
             { t = 0, lhik = 1 },

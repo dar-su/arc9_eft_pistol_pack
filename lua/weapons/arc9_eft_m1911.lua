@@ -295,6 +295,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
     
     if anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. mag
+        end
         if nomag then return "reload" end
         if empty then return "reload_empty" .. mag end
         return anim .. mag
@@ -480,6 +484,46 @@ SWEP.Animations = {
             { s = randspin, t = 1.9 },    
             { s =  path .. "1911_mag_in.ogg", t = 2.42 - 0.35 },
             { s = randspin, t = 2.68 },
+        },
+    },
+    ["reload_tactical_0"] = {
+        Source = "reload0t",
+        MinProgress = 0.925,
+        MagSwapTime = 0.8,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = {
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.06 - 4/26 },
+            { s = randspin, t = 0.45 - 4/26 },    
+            { s =  path .. "1911_magrelease_button.ogg", t = 0.46 - 4/26 },
+            { s =  path .. "1911_mag_out_fast.ogg", t = 0.49 - 4/26 },
+            { s = pouchout, t = 0.7 - 4/26 },
+            { s =  randspin, t = 1 - 4/26 },
+            { s =  path .. "1911_mag_in.ogg", t = 1.48 - 0.3 - 4/26 },
+            { s = randspin, t = 2.4 - 4/26 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 0.9}
+        },
+    },
+    ["reload_tactical_1"] = {
+        Source = "reload1t",
+        MinProgress = 0.925,
+        MagSwapTime = 0.8,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = {
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.06 - 4/26 },
+            { s = randspin, t = 0.45 - 4/26 },    
+            { s =  path .. "1911_magrelease_button.ogg", t = 0.46 - 4/26 },
+            { s =  path .. "1911_mag_out_fast.ogg", t = 0.49 - 4/26 },
+            { s = pouchout, t = 1 - 4/26 },
+            { s =  randspin, t = 1.27 - 4/26 },
+            { s =  path .. "1911_mag_in.ogg", t = 1.77 - 0.3 - 4/26 },
+            { s = randspin, t = 2.4 - 4/26 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 1.0}
         },
     },
 

@@ -310,6 +310,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if (anim == "reload" or anim == "reload_empty") and nomag then -- reload
         return "reload_single"
     end
+
+    if anim == "reload" and swep.EFT_StartedTacReload then
+        if SERVER then swep:SetClip1(1) end
+        return "reload_tactical"
+    end
     
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
@@ -386,6 +391,23 @@ local rst_empty = {
     { s = pathgenericpistol .. "grach_catch_button.ogg", t = 2.71+0.02 },
     { s = path .. "1911_slide_out.ogg", t = 2.85-0.05 },
     { s = "arc9_eft_shared/weapon_generic_rifle_spin2.ogg", t = 3.3 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6},
+    {hide = 0, t = 1.1}
+    
+}
+
+local rst_tac = {
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.06 - 2/24 },
+    { s = randspin, t = 0.16 - 2/24 },    
+    { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 0.32 - 2/24 },
+    { s =  path .. "fiveseven_mag_out.ogg", t = 0.38 - 2/24 },
+    { s =  randspin, t = 0.44 - 2/24 },
+    { s = pouchout, t = 0.87 - 2/24 },
+    { s =  randspin, t = 1.12 - 2/24 },
+    { s =  path .. "fiveseven_mag_rattle3.ogg", t = 1.44 - 2/24 },
+    { s =  path .. "fiveseven_mag_in.ogg", t = 1.79-0.08 - 2/24 },
+    { s = randspin, t = 2.3 - 2/24 },
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1.1}
@@ -500,6 +522,20 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def,
+        Mult = 0.85, -- we are TACTICAL
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_tac,
+        DropMagAt = 0.6,
         Mult = 0.85, -- we are TACTICAL
         IKTimeLine = {
             { t = 0, lhik = 1 },

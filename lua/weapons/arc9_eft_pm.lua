@@ -299,6 +299,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. (empty and "_empty" or "") .. ending
     elseif anim == "reload" or anim == "reload_empty" then
         if elements["eft_pm_pg_fab"] or elements["eft_pm_pg_fab_od"] or elements["eft_pm_pg_laser"] then ending = ending .. "_fab" end
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
@@ -464,6 +468,30 @@ SWEP.Animations = {
         },
         Mult = 1.1
     },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        DropMagAt = 0.86,
+        FireASAP = true,
+        EventTable = {
+            { s = randspin, t = 0.08  - 1/28},
+            { s =  path .. "pm_mag_button.ogg", t = 0.28  - 1/28},
+            { s =  path .. "pm_mag_out.ogg", t = 0.44 - 1/28 },
+            { s =  path .. "pm_mag_pullout.ogg", t = 0.67  - 1/28},
+            { s = randspin, t = 0.69  - 1/28},
+            { s = randspin, t = 1.09 - 1/28 },
+            { s = pouchout, t = 1.2  - 1/28},
+            { s =  path .. "pm_mag_pullin.ogg", t = 1.64 - 1/28 },
+            { s =  path .. "pm_mag_in.ogg", t = 1.92 - 1/28 },
+            { s = randspin, t = 2.19  - 1/28},
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.86},
+            {hide = 0, t = 1.3}
+        },
+        Mult = 1.1
+    },
 
     ["reload_empty0"] = {
         Source = "reload_empty0", 
@@ -509,6 +537,29 @@ SWEP.Animations = {
             { s =  path .. "pm_mag_pullin.ogg", t = 2.65 },
             { s =  path .. "ppsh_mag_in.ogg", t = 3.01 - 0.3 },
             { s = randspin, t = 3.31 },
+        },
+        Mult = 1.1
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.7,
+        EventTable = {
+            { s = randspin, t = 0.08 - 1/28 },
+            { s =  path .. "pm_mag_button.ogg", t = 0.32  - 1/28},
+            { s =  path .. "ppsh_mag_out.ogg", t = 0.55  - 1/28},
+            { s =  path .. "pm_mag_pullout.ogg", t = 0.64 - 1/28 },
+            { s = randspin, t = 0.94 - 1/28 },
+            { s = pouchout, t = 1.36 - 1/28 },
+            { s =  path .. "pm_mag_pullin.ogg", t = 2.25 - 1/28 },
+            { s =  path .. "ppsh_mag_in.ogg", t = 2.57 - 0.3 - 1/28  },
+            { s = randspin, t = 2.87 - 1/28 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.3}
         },
         Mult = 1.1
     },
@@ -568,6 +619,31 @@ SWEP.Animations = {
         Mult = 1.1
     },
 
+    ["reload_tactical0_fab"] = {
+        Source = "reload0fabt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.7,
+        EventTable = {
+            { s = randspin, t = 4/28 - 1/28 },
+            { s =  path .. "pm_mag_button.ogg", t = 12/28  - 1/28},
+            { s =  path .. "pm_mag_out.ogg", t = 15/28  - 1/28},
+            { s =  path .. "pm_mag_pullout.ogg", t = 20/28 - 1/28 },
+            { s = randspin, t = 23/28  - 1/28},
+            { s = randspin, t = 26/28  - 1/28},
+            { s = pouchout, t = 30/28  - 1/28},
+            { s =  path .. "pm_mag_pullin.ogg", t = 55/28 - 1/28  - 6/28 },
+            { s =  path .. "pm_mag_in.ogg", t = 62/28  - 1/28  - 6/28},
+            { s = randspin, t = 69/28  - 1/28},
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.7},
+            {hide = 0, t = 1.3}
+        },
+        Mult = 1.1
+    },
+
     ["reload_empty0_fab"] = {
         Source = {"reload_empty0fab", "reload_empty0fab1"}, 
         MinProgress = 0.9,
@@ -585,8 +661,8 @@ SWEP.Animations = {
             { s = randspin, t = 23/28 },
             { s = randspin, t = 26/28 },
             { s = pouchout, t = 30/28 },
-            { s =  path .. "pm_mag_pullin.ogg", t = 55/28 },
-            { s =  path .. "pm_mag_in.ogg", t = 62/28 },
+            { s =  path .. "pm_mag_pullin.ogg", t = 55/28  - 6/28 },
+            { s =  path .. "pm_mag_in.ogg", t = 62/28  - 6/28 },
             { s = randspin, t = 69/28 },
             { s =  path .. "pm_catch_button.ogg", t = 75/28 },
             { s =  path .. "pm_catch_slider.ogg", t = 78/28 },
@@ -618,6 +694,29 @@ SWEP.Animations = {
             { s =  path .. "pm_mag_pullin.ogg", t = 69/28 },
             { s =  path .. "ppsh_mag_in.ogg", t = 75/28 },
             { s = randspin, t = 92/28 },
+        },
+        Mult = 1.1
+    },
+    ["reload_tactical1_fab"] = {
+        Source = "reload1fabt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = {
+            { s = randspin, t = 5/28 - 1/28 },
+            { s =  path .. "pm_mag_button.ogg", t = 7/28 - 1/28 },
+            { s =  path .. "ppsh_mag_out.ogg", t = 10/28  - 1/28},
+            { s =  path .. "pm_mag_pullout.ogg", t = 15/28 - 1/28 },
+            { s = randspin, t = 20/28 - 1/28 },
+            { s = pouchout, t = 42/28 - 1/28 },
+            { s =  path .. "pm_mag_pullin.ogg", t = 63/28 - 1/28 },
+            { s =  path .. "ppsh_mag_in.ogg", t = 69/28 - 1/28  },
+            { s = randspin, t = 81/28 - 1/28 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 1.3}
         },
         Mult = 1.1
     },

@@ -294,6 +294,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -442,6 +446,28 @@ SWEP.Animations = {
             { s =  path .. "fiveseven_mag_rattle3.ogg", t = 1.94 },
             { s =  path .. "fiveseven_mag_in.ogg", t = 2.16 },
             { s = randspin, t = 2.81 },
+        }
+    },
+
+    ["reload_tactical0"] = {
+        Source = "reloadt",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.55,
+        EventTable = {
+            { s = randspin, t = 0.1 - 4/24 },    
+            { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+            { s =  randspin, t = 0.36 - 4/24 },
+            { s =  path .. "fiveseven_mag_out.ogg", t = 0.38 - 4/24 },
+            { s =  randspin, t = 0.71 - 4/24 },
+            { s = pouchout, t = 0.94 - 4/24 },
+            { s =  path .. "fiveseven_mag_rattle3.ogg", t = 1.52 - 4/24 },
+            { s =  path .. "fiveseven_mag_in.ogg", t = 1.93 - 4/24 },
+            { s = randspin, t = 2.1 - 4/24 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.55},
+            {hide = 0, t = 1.15}
         }
     },
 

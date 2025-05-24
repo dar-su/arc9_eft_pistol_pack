@@ -20,7 +20,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".50 AE Copper Solid"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50ae_copper.printname")
 
 ATT.DamageMax = 94 * mult9
 ATT.DamageMin = 94 * 0.163 * mult9
@@ -98,7 +98,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".50 AE FMJ"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50ae_fmj.printname")
 
 ATT.DamageMax = 85 * mult9
 ATT.DamageMin = 85 * 0.131 * mult9
@@ -174,7 +174,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".50 AE Hawk JSP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50ae_jsp.printname")
 
 ATT.DamageMax = 122 * mult9
 ATT.DamageMin = 122 * 0.166 * mult9
@@ -250,7 +250,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".50 AE JHP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_50ae_jhp.printname")
 
 ATT.DamageMax = 147 * mult9
 ATT.DamageMin = 147 * 0.122 * mult9
@@ -338,7 +338,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".357 Magnum FMJ"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_357_fmj.printname")
 
 ATT.DamageMax = 70 * mult9
 ATT.DamageMin = 48 * mult9
@@ -415,7 +415,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".357 Magnum JHP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_357_jhp.printname")
 
 ATT.DamageMax = 88 * mult9
 ATT.DamageMin = 58.66 * mult9
@@ -492,7 +492,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".357 Magnum HP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_357_hp.printname")
 
 ATT.DamageMax = 99 * mult9
 ATT.DamageMin = 61.53 * mult9
@@ -569,7 +569,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = ".357 Magnum SP"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_357_sp.printname")
 
 ATT.DamageMax = 108 * mult9
 ATT.DamageMin = 74 * mult9

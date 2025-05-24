@@ -282,6 +282,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -352,6 +356,33 @@ local rst_def2 = {
     { s = randspin, t = 1.95 },
     { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.72 },
     { s = randspin, t = 3.4 },
+}
+
+local rst_tac = {
+    { s = randspin, t = 0.1 - 4/24 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.4 - 4/24 },
+    { s =  randspin, t = 0.53 - 4/24 },
+    { s =  randspin, t = 1.04 - 4/24 },
+    { s = pouchout, t = 1.15 - 4/24 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.8 + 0.15 - 4/24 },
+    { s = randspin, t = 2.24 - 4/24 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.15}
+}
+local rst_tac2 = {
+    { s = randspin, t = 0.1 - 4/24 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
+    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.4 - 4/24 },
+    { s =  randspin, t = 0.53 - 4/24 },
+    { s =  randspin, t = 1.04  - 4/24},
+    { s = pouchout, t = 1.2  - 4/24},
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.2 + 0.15 - 4/24 },
+    { s = randspin, t = 2.4 - 4/24 },  
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.15}
 }
 
 local rst_empty = {
@@ -478,6 +509,24 @@ SWEP.Animations = {
         Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def2
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_tac,
+
+        DropMagAt = 0.5,
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.9,
+        Mult = 0.85,
+        FireASAP = true,
+        EventTable = rst_tac2,
+
+        DropMagAt = 0.5,
     },
 
     ["reload_empty0"] = {

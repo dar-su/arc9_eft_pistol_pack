@@ -305,6 +305,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. (empty and "_empty" or "") .. ending
     elseif anim == "reload" or anim == "reload_empty" then
         if swep.EFT_StartedTacReload and !empty then
+            if SERVER then swep:SetClip1(1) end
             return "reload_tactical" .. ending
         end
         return anim .. (empty and "_empty" or "") .. ending
@@ -471,7 +472,7 @@ SWEP.Animations = {
         Mult = 0.85,
         FireASAP = true,
         DropMagAt = 0.9,
-        DumpAmmo = true,
+        MagSwapTime = 1.1,
         EventTable = {
             { s = randspin, t = 0.37 },
             { s =  path .. "aps_magrelease_button.ogg", t = 0.6 - 0.3 },
@@ -483,7 +484,7 @@ SWEP.Animations = {
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.86},
-            {hide = 0, t = 1.3}
+            {hide = 0, t = 1.1}
         },
         Mult = 1.1
     },

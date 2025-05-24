@@ -229,7 +229,7 @@ SWEP.ShotgunReload = true
 
 function SWEP:GetShouldShotgunReload() -- for some weird assss reason hooking shotgunreload not work reliably
     local eles = self:GetElements()
-    return !((eles["eft_rhino_speedloader"] and (self:Clip1() == 0 or eles["eft_rsh12_fastreload"])) or self.nosgreload)
+    return !((eles["eft_rhino_speedloader"] and (self:Clip1() == 0 or eles["eft_rsh12_fastreload"] or self.EFT_StartedTacReload)) or self.nosgreload)
 end
 
 SWEP.TriggerDelay = true
@@ -273,6 +273,7 @@ local function spindelay(swep) -- setting nwint not in start of anim but while o
 end
 
 local infammo = GetConVar("arc9_infinite_ammo")
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -330,7 +331,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         spindelay(swep)
     elseif anim == "reload_start" then  
         swep.roundcount = swep.roundcount or 6
-        if clip == 0 or swep:GetValue("EFTForceFastReload") then 
+        if clip == 0 or swep:GetValue("EFTForceFastReload") or swep.EFT_StartedTacReload then 
             anim = "fistful_start" .. swep.roundcount
             swep.fistful = true
             if SERVER then swep:SetClip1(0) end -- animation.DumpAmmo unloads LoadedRounds too

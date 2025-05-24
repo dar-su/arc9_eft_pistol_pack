@@ -244,6 +244,7 @@ local function spindelay(swep) -- setting nwint not in start of anim but while o
 end
 
 local infammo = GetConVar("arc9_infinite_ammo")
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -299,7 +300,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         spindelay(swep)
     elseif anim == "reload_start" then  
         swep.roundcount = swep.roundcount or 5
-        if clip == 0 or swep:GetValue("EFTForceFastReload") then 
+        if clip == 0 or swep:GetValue("EFTForceFastReload") or swep.EFT_StartedTacReload then 
             anim = "fistful_start" .. swep.roundcount
             swep.fistful = true
             swep:SetClip1(0) -- animation.DumpAmmo unloads LoadedRounds too
