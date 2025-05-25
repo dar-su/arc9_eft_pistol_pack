@@ -245,6 +245,7 @@ end
 
 local infammo = GetConVar("arc9_infinite_ammo")
 SWEP.EFT_HasTacReloads = true 
+SWEP.EFT_HasTacReloadsAlways = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -262,15 +263,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         local inspect = swep.EFTInspectBool
 
         if !inspect then
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(true) -- accurate or not based on mag type
                 net.WriteUInt(math.min(clip , swep:GetMaxClip1()) + 1, 9)
                 net.WriteUInt(swep:GetCapacity(), 9)
                 net.Send(swep:GetOwner())
-
-                return "mag_check__" .. cylrot
             end
+            return "mag_check__" .. cylrot
         else
             return "look__" .. cylrot
         end

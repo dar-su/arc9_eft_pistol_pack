@@ -277,7 +277,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!elements["eft_mag_g17_sgmt_50"] and !elements["eft_mag_g17_gl9_21"]) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -293,7 +293,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     
 		elseif anim == "reload" or anim == "reload_empty" then -- reload
 			if swep.EFT_StartedTacReload and !empty then
-                if SERVER then swep:SetClip1(1) end
+                if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
 				return "reload_tactical" .. ending
 			end
 			if nomag then return "reload" end
@@ -304,7 +304,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())

@@ -283,7 +283,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             
             if elements["eft_pm_pg_fab"] or elements["eft_pm_pg_fab_od"] or elements["eft_pm_pg_laser"] then ending = ending .. "_fab" end
 
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!elements["eft_pm_mag_84"]) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -300,7 +300,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     elseif anim == "reload" or anim == "reload_empty" then
         if elements["eft_pm_pg_fab"] or elements["eft_pm_pg_fab_od"] or elements["eft_pm_pg_laser"] then ending = ending .. "_fab" end
         if swep.EFT_StartedTacReload then
-            if SERVER then swep:SetClip1(1) end
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
             return "reload_tactical" .. ending
         end
         return anim .. (empty and "_empty" or "") .. ending
@@ -308,7 +308,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- rand = 4
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
