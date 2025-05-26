@@ -695,6 +695,10 @@ SWEP.Animations = {
 
     -- ["dryfire"] = { Source = "fire_dry" },
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
     ["look__0"] = { Source = "look__0", MinProgress = 0.95, FireASAP = true, EventTable = look },
     ["look__1"] = { Source = "look__1", MinProgress = 0.95, FireASAP = true, EventTable = look },

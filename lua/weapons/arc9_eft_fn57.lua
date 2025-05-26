@@ -648,9 +648,6 @@ SWEP.Animations = {
     ["inspect"] = { -- TO STUPID ARK NINE SEE WE HAVE INSPECT
         Source = "idle",
     },
-    ["inspect_empty"] = { -- TO STUPID ARK NINE SEE WE HAVE INSPECT
-        Source = "idle_empty",
-    },
 
     ["inspect1"] = {
         Source = "inspect0",

@@ -893,6 +893,10 @@ SWEP.Animations = {
     ["reload__4"] = { Source = "speedloader_reload__4", EventTable = sloader, NoMagSwap = true, DropMagAt = 86/26 },
     ["reload__5"] = { Source = "speedloader_reload__5", EventTable = sloader, NoMagSwap = true, DropMagAt = 86/26 },
 
+    ["inspect"] = { -- shutup arc9 we have inspect
+        Source = "idle",
+        Time = 0.05,
+    },
 
     ["look__0"] = { Source = "look__0", MinProgress = 0.95, FireASAP = true, EventTable = look },
     ["look__1"] = { Source = "look__1", MinProgress = 0.95, FireASAP = true, EventTable = look },
