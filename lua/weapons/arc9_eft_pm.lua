@@ -204,18 +204,18 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/pm/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/pm/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
 SWEP.ShootSound = { path .. "pm_close1.ogg", path .. "pm_close2.ogg" }
-SWEP.ShootSoundIndoor = { path .. "pm_indoor_close1.ogg", path .. "pm_indoor_close2.ogg" }
+SWEP.ShootSoundIndoor = { path .. "pm_indoor_close1.wav", path .. "pm_indoor_close2.wav" }
 SWEP.DistantShootSound = { path .. "pm_distant1.ogg", path .. "pm_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "pm_indoor_distant1.ogg", path .. "pm_indoor_distant2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "pm_indoor_distant1.wav", path .. "pm_indoor_distant2.wav" }
 
 SWEP.ShootSoundSilenced = path .. "pb_silenced_close1.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "pb_silenced_indoor_close1.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "pb_silenced_indoor_close1.wav"
 SWEP.DistantShootSoundSilenced = path .. "pb_silenced_far1.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "pb_silenced_indoor_distant1.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "pb_silenced_indoor_distant1.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -415,7 +415,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {

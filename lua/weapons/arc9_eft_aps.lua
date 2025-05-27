@@ -193,25 +193,25 @@ SWEP.ShellSounds = ARC9EFT.Shells9mm
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/aps/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/aps/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
-SWEP.ShootSound = { path .. "aps_outdoor_close_loop1.ogg", path .. "aps_outdoor_close_loop2.ogg", path .. "aps_outdoor_close_loop3.ogg", path .. "aps_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "aps_outdoor_close_loop_tail.ogg"
+SWEP.ShootSound = { path .. "aps_outdoor_close_loop1.wav", path .. "aps_outdoor_close_loop2.wav", path .. "aps_outdoor_close_loop3.wav", path .. "aps_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "aps_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "aps_outdoor_silenced_close_loop1.ogg", path .. "aps_outdoor_silenced_close_loop2.ogg", path .. "aps_outdoor_silenced_close_loop3.ogg", path .. "aps_outdoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilenced = path .. "aps_outdoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "aps_outdoor_silenced_close_loop1.wav", path .. "aps_outdoor_silenced_close_loop2.wav", path .. "aps_outdoor_silenced_close_loop3.wav", path .. "aps_outdoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilenced = path .. "aps_outdoor_silenced_close_loop_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "aps_indoor_close_loop1.ogg", path .. "aps_indoor_close_loop2.ogg", path .. "aps_indoor_close_loop3.ogg", path .. "aps_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "aps_indoor_close_loop_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "aps_indoor_close_loop1.wav", path .. "aps_indoor_close_loop2.wav", path .. "aps_indoor_close_loop3.wav", path .. "aps_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "aps_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "aps_indoor_silenced_close_loop1.ogg", path .. "aps_indoor_silenced_close_loop2.ogg", path .. "aps_indoor_silenced_close_loop3.ogg", path .. "aps_indoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "aps_indoor_silenced_close_loop_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "aps_indoor_silenced_close_loop1.wav", path .. "aps_indoor_silenced_close_loop2.wav", path .. "aps_indoor_silenced_close_loop3.wav", path .. "aps_indoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "aps_indoor_silenced_close_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "aps_outdoor_distant_loop1.ogg", path .. "aps_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "aps_outdoor_silenced_distant_loop1.ogg", path .. "aps_outdoor_silenced_distant_loop2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "aps_indoor_distant_loop1.ogg", path .. "aps_indoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "aps_indoor_silenced_distant_loop1.ogg", path .. "aps_indoor_silenced_distant_loop2.ogg" }
+SWEP.DistantShootSound = { path .. "aps_outdoor_distant_loop1.wav", path .. "aps_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "aps_outdoor_silenced_distant_loop1.wav", path .. "aps_outdoor_silenced_distant_loop2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "aps_indoor_distant_loop1.wav", path .. "aps_indoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "aps_indoor_silenced_distant_loop1.wav", path .. "aps_indoor_silenced_distant_loop2.wav" }
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -413,7 +413,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {

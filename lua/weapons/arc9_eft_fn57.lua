@@ -212,17 +212,17 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/57/"
+local path = ")weapons/darsu_eft/57/"
 
 SWEP.ShootSound = path .. "fiveseven_fire_close.ogg"
-SWEP.ShootSoundIndoor = path .. "fiveseven_fire_indoor_close.ogg"
+SWEP.ShootSoundIndoor = path .. "fiveseven_fire_indoor_close.wav"
 SWEP.DistantShootSound = path .. "fiveseven_fire_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "fiveseven_fire_indoor_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "fiveseven_fire_indoor_distant.wav"
 
 SWEP.ShootSoundSilenced = path .. "fiveseven_fire_silenced_close.ogg"
 SWEP.DistantShootSoundSilenced = path .. "fiveseven_fire_silenced_distant.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "fiveseven_fire_silenced_indoor_close.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "fiveseven_fire_silenced_indoor_distant.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "fiveseven_fire_silenced_indoor_close.wav"
+SWEP.DistantShootSoundSilencedIndoor = path .. "fiveseven_fire_silenced_indoor_distant.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -437,7 +437,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 },
+            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {

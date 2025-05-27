@@ -430,11 +430,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/darsu_eft/shells/357.mdl"
 
-local path = "weapons/darsu_eft/deagle/"
-ATT.ShootSound = path .. "de357_outdoor_close.ogg"
-ATT.ShootSoundIndoor = path .. "de357_indoor_close.ogg"
-ATT.DistantShootSound = path .. "de357_outdoor_distant.ogg"
-ATT.DistantShootSoundIndoor = path .. "de357_indoor_distant.ogg"
+local path = ")weapons/darsu_eft/deagle/"
+ATT.ShootSound = path .. "de357_outdoor_close.wav"
+ATT.ShootSoundIndoor = path .. "de357_indoor_close.wav"
+ATT.DistantShootSound = path .. "de357_outdoor_distant.wav"
+ATT.DistantShootSoundIndoor = path .. "de357_indoor_distant.wav"
 
 ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
 ATT.Category = {"eft_deagle_slide_l5"}

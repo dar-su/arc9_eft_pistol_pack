@@ -190,18 +190,18 @@ SWEP.ShellSounds = ARC9EFT.Shells9mm
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/pl15/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/pl15/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
 SWEP.ShootSound = path .. "pl_fire_close1.ogg"
-SWEP.ShootSoundIndoor = path .. "pl_fire_indoor_close.ogg"
+SWEP.ShootSoundIndoor = path .. "pl_fire_indoor_close.wav"
 SWEP.DistantShootSound = path .. "pl_fire_distant1.ogg"
-SWEP.DistantShootSoundIndoor = path .. "pl_fire_indoor_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "pl_fire_indoor_distant.wav"
 
 SWEP.ShootSoundSilenced = path .. "pl_fire_silenced_close1.ogg"
-SWEP.ShootSoundSilencedIndoor = path .. "pl_fire_silenced_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "pl_fire_silenced_indoor_close.wav"
 SWEP.DistantShootSoundSilenced = path .. "pl_fire_silenced_distant1.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "pl_fire_silenced_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "pl_fire_silenced_indoor_distant.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -415,7 +415,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {

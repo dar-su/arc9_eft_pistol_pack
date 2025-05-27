@@ -28,11 +28,11 @@ SWEP.IronSights = {
     Ang = Angle(0, -0.28, 0),
 }
 
-local path = "weapons/darsu_eft/pm/"
+local path = ")weapons/darsu_eft/pm/"
 SWEP.ShootSound = { path .. "pb_close1.ogg", path .. "pb_close1.ogg" }
-SWEP.ShootSoundIndoor = { path .. "pb_indoor_close1.ogg", path .. "pb_indoor_close1.ogg" }
+SWEP.ShootSoundIndoor = { path .. "pb_indoor_close1.wav", path .. "pb_indoor_close1.wav" }
 SWEP.DistantShootSound = { path .. "pb_distant1.ogg", path .. "pb_distant1.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "pb_indoor_distant1.ogg", path .. "pb_indoor_distant1.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "pb_indoor_distant1.wav", path .. "pb_indoor_distant1.wav" }
 
 SWEP.RecoilAutoControl = 3.25 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 SWEP.RecoilUp   = 2.3   -- up recoil

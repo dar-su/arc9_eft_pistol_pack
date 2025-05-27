@@ -185,12 +185,12 @@ SWEP.ShellSounds = ARC9EFT.ShellsHeavy
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/rsh12/"
+local path = ")weapons/darsu_eft/rsh12/"
 
-SWEP.ShootSound = path .. "rsh_12_outdoor_close_oneshot.ogg"
-SWEP.ShootSoundIndoor = path .. "rsh_12_indoor_close_oneshot.ogg"
-SWEP.DistantShootSound = path .. "rsh_12_outdoor_distant_oneshot.ogg"
-SWEP.DistantShootSoundIndoor = path .. "rsh_12_indoor_distant_oneshot.ogg"
+SWEP.ShootSound = path .. "rsh_12_outdoor_close_oneshot.wav"
+SWEP.ShootSoundIndoor = path .. "rsh_12_indoor_close_oneshot.wav"
+SWEP.DistantShootSound = path .. "rsh_12_outdoor_distant_oneshot.wav"
+SWEP.DistantShootSoundIndoor = path .. "rsh_12_indoor_distant_oneshot.wav"
 
 SWEP.EnterSightsSound = ARC9EFT.ADSPistol
 SWEP.ExitSightsSound = ARC9EFT.ADSPistol
@@ -518,11 +518,11 @@ local ff_end5 = {
 
 local drawa = { { s = "arc9_eft_shared/pm_draw.ogg", t = 0 } }
 local holstera = { { s = "arc9_eft_shared/pm_holster.ogg", t = 0 } }
-local fireda = { { s = path .. "rhino_hammer_release.ogg", t = 0.06 } }
-local firesa = { { s = path .. "rhino_hammer_release.ogg", t = 0 } }
-local firedadry = { { s = path .. "rhino_hammer_release.ogg", t = 0.17 } }
+local fireda = { { s = path .. "rhino_hammer_release.wav", t = 0.06 } }
+local firesa = { { s = path .. "rhino_hammer_release.wav", t = 0 } }
+local firedadry = { { s = path .. "rhino_hammer_release.wav", t = 0.17 } }
 local firesadry = { 
-    { s = path .. "rhino_hammer_release.ogg", t = 0 },
+    { s = path .. "rhino_hammer_release.wav", t = 0 },
     { s = randspin, t = 0.25 },
     { s = path .. "rsh_12_cock.ogg", t = 0.25+5/24 },
 }

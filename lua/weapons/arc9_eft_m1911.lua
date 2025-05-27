@@ -206,18 +206,18 @@ SWEP.ShellSounds = ARC9EFT.Shells9mm
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/1911/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/1911/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
 SWEP.ShootSound = { path .. "1911_fire_close.ogg" }
-SWEP.ShootSoundIndoor = path .. "1911_fire_indoor_close.ogg"
+SWEP.ShootSoundIndoor = path .. "1911_fire_indoor_close.wav"
 SWEP.DistantShootSound = { path .. "1911_fire_distant.ogg" }
-SWEP.DistantShootSoundIndoor = path .. "1911_fire_indoor_distant.ogg"
+SWEP.DistantShootSoundIndoor = path .. "1911_fire_indoor_distant.wav"
 
 SWEP.ShootSoundSilenced = { path .. "1911_fire_silenced_close1.ogg", path .. "1911_fire_silenced_close2.ogg" }
-SWEP.ShootSoundSilencedIndoor = path .. "1911_fire_silenced_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "1911_fire_silenced_indoor_close.wav"
 SWEP.DistantShootSoundSilenced = { path .. "1911_fire_silenced_distant1.ogg", path .. "1911_fire_silenced_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = path .. "1911_fire_silenced_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "1911_fire_silenced_indoor_distant.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -407,27 +407,27 @@ SWEP.Animations = {
         Source = "fire",
         Mult = 1,
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 },
+            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 },
+            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },
     ["dryfire"] = {
         Source = "fire_dry",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 },
+            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },
     ["dryfire_empty"] = {
         Source = "fire_dry_empty",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.ogg", t = 0 },
+            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },

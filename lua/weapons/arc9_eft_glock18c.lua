@@ -52,17 +52,17 @@ SWEP.VisualRecoil = 0.5 -- general multiplier for it
 SWEP.VisualRecoilDampingConst = 600  -- spring settings, this is speed of visrec
 SWEP.VisualRecoilSpringPunchDamping = 10 -- the less this is the more wobbly gun moves
 
-local path = "weapons/darsu_eft/glock/"
+local path = ")weapons/darsu_eft/glock/"
 
-SWEP.ShootSound = { path .. "glock18_outdoor_close_1.ogg", path .. "glock18_outdoor_close_2.ogg", path .. "glock18_outdoor_close_2.ogg" }
-SWEP.ShootSoundIndoor = { path .. "glock18_indoor_close_1.ogg", path .. "glock18_indoor_close_2.ogg"}
-SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.ogg", path .. "glock18_outdoor_distant_2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.ogg", path .. "glock18_indoor_distant_2.ogg" }
+SWEP.ShootSound = { path .. "glock18_outdoor_close_1.wav", path .. "glock18_outdoor_close_2.wav", path .. "glock18_outdoor_close_2.wav" }
+SWEP.ShootSoundIndoor = { path .. "glock18_indoor_close_1.wav", path .. "glock18_indoor_close_2.wav"}
+SWEP.DistantShootSound = { path .. "glock18_outdoor_distant_1.wav", path .. "glock18_outdoor_distant_2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "glock18_indoor_distant_1.wav", path .. "glock18_indoor_distant_2.wav" }
 
 SWEP.ShootSoundSilenced = { path .. "glock17_close_silenced.ogg", path .. "glock17_close_silenced2.ogg" }
-SWEP.ShootSoundSilencedIndoor = path .. "glock17_indoor_close_silenced.ogg"
+SWEP.ShootSoundSilencedIndoor = path .. "glock17_indoor_close_silenced.wav"
 SWEP.DistantShootSoundSilenced = path .. "glock17_distant_silenced.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path .. "glock17_indoor_distant_silenced.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path .. "glock17_indoor_distant_silenced.wav"
 
 
 SWEP.Attachments = {

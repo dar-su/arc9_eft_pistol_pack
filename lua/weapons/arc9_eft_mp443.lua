@@ -191,19 +191,19 @@ SWEP.ShellSounds = ARC9EFT.Shells9mm
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mp443/"
-local path2 = "weapons/darsu_eft/p226/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/mp443/"
+local path2 = ")weapons/darsu_eft/p226/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
-SWEP.ShootSound = { path .. "grach_fire_outdoor_close.ogg", path .. "grach_fire_outdoor_close2.ogg" }
-SWEP.ShootSoundIndoor = { path .. "grach_fire_indoor_close.ogg", path .. "grach_fire_indoor_close2.ogg" }
-SWEP.DistantShootSound = { path .. "grach_fire_outdoor_distant.ogg", path .. "grach_fire_outdoor_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "grach_fire_indoor_distant.ogg", path .. "grach_fire_indoor_distant2.ogg" }
+SWEP.ShootSound = { path .. "grach_fire_outdoor_close.wav", path .. "grach_fire_outdoor_close2.wav" }
+SWEP.ShootSoundIndoor = { path .. "grach_fire_indoor_close.wav", path .. "grach_fire_indoor_close2.wav" }
+SWEP.DistantShootSound = { path .. "grach_fire_outdoor_distant.wav", path .. "grach_fire_outdoor_distant2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "grach_fire_indoor_distant.wav", path .. "grach_fire_indoor_distant2.wav" }
 
 SWEP.ShootSoundSilenced = path2 .. "p226_fire_silenced_close.ogg"
-SWEP.ShootSoundSilencedIndoor = path2 .. "p226_fire_silenced_indoor_close.ogg"
+SWEP.ShootSoundSilencedIndoor = path2 .. "p226_fire_silenced_indoor_close.wav"
 SWEP.DistantShootSoundSilenced = path2 .. "p226_fire_silenced_distant.ogg"
-SWEP.DistantShootSoundSilencedIndoor = path2 .. "p226_fire_silenced_indoor_distant.ogg"
+SWEP.DistantShootSoundSilencedIndoor = path2 .. "p226_fire_silenced_indoor_distant.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -490,7 +490,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {

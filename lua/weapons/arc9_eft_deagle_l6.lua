@@ -173,13 +173,13 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/deagle/"
-local pathgenericpistol = "weapons/darsu_eft/generic_pistol/"
+local path = ")weapons/darsu_eft/deagle/"
+local pathgenericpistol = ")weapons/darsu_eft/generic_pistol/"
 
-SWEP.ShootSound = path .. "deagle_outdoor_close.ogg"
-SWEP.ShootSoundIndoor = path .. "deagle_indoor_close.ogg"
-SWEP.DistantShootSound = path .. "deagle_outdoor_distant.ogg"
-SWEP.DistantShootSoundIndoor = path .. "deagle_indoor_distant.ogg"
+SWEP.ShootSound = path .. "deagle_outdoor_close.wav"
+SWEP.ShootSoundIndoor = path .. "deagle_indoor_close.wav"
+SWEP.DistantShootSound = path .. "deagle_outdoor_distant.wav"
+SWEP.DistantShootSoundIndoor = path .. "deagle_indoor_distant.wav"
 
 SWEP.DryFireSound = "arc9_eft_shared/weap_trigger_empty.ogg"
 
@@ -426,13 +426,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = pathgenericpistol .. "pm_trigger_hammer.ogg", t = 0 },
+            { s = pathgenericpistol .. "pm_trigger_hammer.wav", t = 0 },
         }
     },
     ["dryfire"] = {
