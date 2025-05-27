@@ -467,27 +467,27 @@ SWEP.Animations = {
         Source = "fire",
         Mult = 1,
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },
     ["dryfire"] = {
         Source = "fire_dry",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },
     ["dryfire_empty"] = {
         Source = "fire_dry_empty",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
             -- { s = path .. "1911_slide_out.ogg", t = 0.05 },
         }
     },
