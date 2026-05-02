@@ -61,6 +61,17 @@ if GetConVar("arc9_eft_nontpik_mode"):GetBool() then -- pistols
     SWEP.HoldTypeSprint = "normal"
     SWEP.HoldTypeSights = "revolver"
     SWEP.HoldTypeCustomize = "passive"
+    
+    SWEP.WorldModelOffset = { -- some bitches turn on nontpik mode while keeping tpik on
+        Pos = Vector(-16.25, 5.5, -4),
+        Ang = Angle(-7, 0, 180),
+        TPIKPos = Vector(-10, 6, -5), -- rpg
+        TPIKAng = Angle(-11.5, 0, 180),
+        Scale = 1,
+        TPIKHolsterOffset = Vector(0.5, -1, -1),
+
+        TPIKPosSightOffset = Vector(-10, -6, 3),
+    }
 end
 
 -- this thing WILL one hand sprint always
