@@ -30,6 +30,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6374a822e629013b9c0645c8
 ARC9.LoadAttachment(ATT, "eft_pm_rec_std")
 
 ///////////////////////////////////////      eft_pm_rs_std
@@ -46,6 +47,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_rs"}
 
+-- EFT ID: 63c6adcfb4ba094317063742
 ARC9.LoadAttachment(ATT, "eft_pm_rs_std")
 
 ///////////////////////////////////////      eft_pm_pg_std
@@ -67,6 +69,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
 
+-- EFT ID: 6374a7e7417239a7bf00f042
 ARC9.LoadAttachment(ATT, "eft_pm_pg_std")
 
 ///////////////////////////////////////      eft_pm_pg_fab
@@ -88,6 +91,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
 
+-- EFT ID: 637784c5f7b3f4ac1a0d1a9a
 ARC9.LoadAttachment(ATT, "eft_pm_pg_fab")
 
 ///////////////////////////////////////      eft_pm_pg_fab_od
@@ -109,6 +113,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
 
+-- EFT ID: 648afce7ec6bb25b2608defb
 ARC9.LoadAttachment(ATT, "eft_pm_pg_fab_od")
 
 ///////////////////////////////////////      eft_pm_pg_tk
@@ -139,6 +144,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 637b6d610aef6cfc5e02dd14
 ARC9.LoadAttachment(ATT, "eft_pm_pg_tk")
 
 ///////////////////////////////////////      eft_pm_pg_laser
@@ -185,6 +191,7 @@ ATT.Category = {"eft_pm_pg"}
 
 
 
+-- EFT ID: 661f8995c341ea101e0d33e8
 ARC9.LoadAttachment(ATT, "eft_pm_pg_laser")
 
 
@@ -215,6 +222,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
 
+-- EFT ID: 5448c12b4bdc2d02308b456f
 ARC9.LoadAttachment(ATT, "eft_pm_mag_8")
 
 ///////////////////////////////////////      eft_pm_mag_84
@@ -244,6 +252,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 84
 ATT.ChamberSize = 1
 
+-- EFT ID: 55d485be4bdc2d962f8b456f
 ARC9.LoadAttachment(ATT, "eft_pm_mag_84")
 
 ///////////////////////////////////////      eft_pm_thread
@@ -276,6 +285,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 571a279b24597720b4066566
 ARC9.LoadAttachment(ATT, "eft_pm_thread")
 
 
@@ -305,6 +315,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pb_pg"}
 
+-- EFT ID: 56e05a6ed2720bd0748b4567
 ARC9.LoadAttachment(ATT, "eft_pb_pg_std")
 
 ///////////////////////////////////////      eft_pb_silencer
@@ -335,4 +346,5 @@ ATT.BarrelLengthAdd = 5
 
 ATT.Category = {"eft_pb_sil"}
 
+-- EFT ID: 56e05b06d2720bb2668b4586
 ARC9.LoadAttachment(ATT, "eft_pb_silencer")

@@ -36,6 +36,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 61a4cda622af7f4f6a3ce617
 ARC9.LoadAttachment(ATT, "eft_rhino_speedloader")
 
 
@@ -61,6 +62,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_mag"}
 
+-- EFT ID: 624c3074dbbd335e8e6becf3
 ARC9.LoadAttachment(ATT, "eft_rhino_mag_std")
 
 
@@ -84,6 +86,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_pgrip"}
 
+-- EFT ID: 619f4bffd25cbd424731fb97
 ARC9.LoadAttachment(ATT, "eft_rhino_pgrip_std")
 
 ///////////////////////////////////////      eft_rhino_pgrip_poly
@@ -106,6 +109,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_pgrip"}
 
+-- EFT ID: 619f4ab2d25cbd424731fb95
 ARC9.LoadAttachment(ATT, "eft_rhino_pgrip_poly")
 
 
@@ -135,6 +139,7 @@ ATT.Sights = {
 
 ATT.Category = {"eft_rhino_rs"}
 
+-- EFT ID: 619f4cee4c58466fe1228435
 ARC9.LoadAttachment(ATT, "eft_rhino_rs_std")
 
 ///////////////////////////////////////      eft_rhino_rs_red
@@ -163,6 +168,7 @@ ATT.Sights = {
 
 ATT.Category = {"eft_rhino_rs"}
 
+-- EFT ID: 619f4f8c4c58466fe1228439
 ARC9.LoadAttachment(ATT, "eft_rhino_rs_red")
 
 ///////////////////////////////////////      eft_rhino_fs_std
@@ -183,6 +189,7 @@ ATT.ModelBodygroups = "0"
 
 ATT.Category = {"eft_rhino_fs"}
 
+-- EFT ID: 619f4d304c58466fe1228437
 ARC9.LoadAttachment(ATT, "eft_rhino_fs_std")
 
 ///////////////////////////////////////      eft_rhino_fs_red
@@ -203,6 +210,7 @@ ATT.ModelBodygroups = "1"
 
 ATT.Category = {"eft_rhino_fs"}
 
+-- EFT ID: 619f52454c58466fe122843b
 ARC9.LoadAttachment(ATT, "eft_rhino_fs_red")
 
 
@@ -229,6 +237,7 @@ ATT.VisualRecoilMult = 1.15
 ATT.RecoilMult = 1.15
 ATT.SpreadMult = 1.15
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_rhino_barrel_40ds")
 
 ///////////////////////////////////////      eft_rhino_barrel_60ds
@@ -249,7 +258,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_rhino357_barrel"}
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 ATT.SpreadMult = 0.85
@@ -264,40 +272,6 @@ ATT.Attachments = {
         ExtraSightDistance = 7,
     },
 }
+
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_rhino_barrel_60ds")
-
-
-
-
--- remove before merging!!
-
-///////////////////////////////////////      eft_shared_fastreload
-
-
-ATT = {}
-
-ATT.PrintName = "Dump cylinder on every reload"
-ATT.CompactName = "Fast reload"
-ATT.Icon = Material("entities/eft_ash12_attachments/fastreload.png", "mips smooth")
-ATT.Description = [[Attachment instead of double pressing R in EFT.
-Drops all ammo on ground on any reload for faster reload.]]
-
-ATT.EFTForceFastReload = true
-
-ATT.AttNotForNPCs = true 
-ATT.Max = 1
-
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.Category = {"eft_custom_slot_revolver"}
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("eft_cat_custom"),
-        Pos = Vector(0, 0, 1),
-        Ang = Angle(0, 0, 0),
-        Category = {"eft_custom_slot"},
-    },
-}
-
-ARC9.LoadAttachment(ATT, "eft_shared_fastreload")

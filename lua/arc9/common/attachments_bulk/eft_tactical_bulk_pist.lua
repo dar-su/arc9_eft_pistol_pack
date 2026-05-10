@@ -85,6 +85,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 6272370ee4013c5d7e31f418
 ARC9.LoadAttachment(ATT, "eft_tactical_baldrpro")
 
 
@@ -165,6 +166,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 6272379924e29f06af4d5ecb
 ARC9.LoadAttachment(ATT, "eft_tactical_baldrpro_tan")
 
 
@@ -240,6 +242,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 5a800961159bd4315e3a1657
 ARC9.LoadAttachment(ATT, "eft_tactical_gtl21")
 
 
@@ -315,6 +318,7 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 56def37dd2720bec348b456a
 ARC9.LoadAttachment(ATT, "eft_tactical_x400")
 
 
@@ -359,5 +363,6 @@ ATT.ToggleStats = {
 }
 
 
+-- EFT ID: 5a7b483fe899ef0016170d15
 ARC9.LoadAttachment(ATT, "eft_tactical_xc1")
 

@@ -41,6 +41,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5e81edc13397a21db957f6a1
 ARC9.LoadAttachment(ATT, "eft_slide_1911_std")
 
 ///////////////////////////////////////      eft_slide_1911_m45
@@ -83,6 +84,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5f3e7823ddc4f03b010e2045
 ARC9.LoadAttachment(ATT, "eft_slide_1911_m45")
 
 
@@ -110,6 +112,7 @@ ATT.Category = {"eft_1911_barrel"}
 
 -- ATT.ExcludeElements = { "eft_slide_1911_elite", "eft_slide_1911_expert" }
 
+-- EFT ID: 5e81c519cb2b95385c177551
 ARC9.LoadAttachment(ATT, "eft_barrel_1911_std")
 
 ///////////////////////////////////////      eft_barrel_1911_nat
@@ -122,7 +125,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_45_acp_national_match
 ATT.Description = "The National Match barrel for the M1911A1 .45 ACP pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.1
@@ -136,6 +138,7 @@ ATT.Category = {"eft_1911_barrel"}
 
 -- ATT.ExcludeElements = { "eft_slide_1911_elite", "eft_slide_1911_expert" }
 
+-- EFT ID: 5f3e7801153b8571434a924c
 ARC9.LoadAttachment(ATT, "eft_barrel_1911_nat")
 
 ///////////////////////////////////////      eft_barrel_1911_thr
@@ -171,6 +174,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5f3e77f59103d430b93f94c1
 ARC9.LoadAttachment(ATT, "eft_barrel_1911_thr")
 
 ///////////////////////////////////////      eft_1911_pgrip_std
@@ -192,6 +196,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_pgrip"}
 
+-- EFT ID: 5e81c6bf763d9f754677beff
 ARC9.LoadAttachment(ATT, "eft_1911_pgrip_std")
 
 ///////////////////////////////////////      eft_1911_pgrip_m45
@@ -213,6 +218,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_pgrip", "eft_m45_pgrip"}
 
+-- EFT ID: 5f3e778efcd9b651187d7201
 ARC9.LoadAttachment(ATT, "eft_1911_pgrip_m45")
 
 ///////////////////////////////////////      eft_1911_pgrip_pach
@@ -234,6 +240,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_pgrip"}
 
+-- EFT ID: 5ef366938cef260c0642acad
 ARC9.LoadAttachment(ATT, "eft_1911_pgrip_pach")
 
 ///////////////////////////////////////      eft_1911_pgrip_gene
@@ -255,6 +262,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_pgrip"}
 
+-- EFT ID: 626a9cb151cb5849f6002890
 ARC9.LoadAttachment(ATT, "eft_1911_pgrip_gene")
 
 
@@ -272,6 +280,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_fs"}
 
+-- EFT ID: 5e81ee213397a21db957f6a6
 ARC9.LoadAttachment(ATT, "eft_fs_1911_std")
 
 ///////////////////////////////////////      eft_fs_1911_m45
@@ -288,6 +297,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m45_fs"}
 
+-- EFT ID: 5f3e78a7fbf956000b716b8e
 ARC9.LoadAttachment(ATT, "eft_fs_1911_m45")
 
 ///////////////////////////////////////      eft_rs_1911_std
@@ -304,6 +314,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_rs"}
 
+-- EFT ID: 5e81ee4dcb2b95385c177582
 ARC9.LoadAttachment(ATT, "eft_rs_1911_std")
 
 ///////////////////////////////////////      eft_rs_1911_m45
@@ -320,6 +331,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m45_rs"}
 
+-- EFT ID: 5f3e7897ddc4f03b010e204a
 ARC9.LoadAttachment(ATT, "eft_rs_1911_m45")
 
 
@@ -352,6 +364,7 @@ ATT.Attachments = {
 
 ATT.ExcludeElements = { "eft_mount_1911_top" }
 
+-- EFT ID: 5ef369b08cef260c0642acaf
 ARC9.LoadAttachment(ATT, "eft_mount_1911_rail")
 
 
@@ -385,6 +398,7 @@ ATT.ExcludeElements = { "eft_mount_1911_rail" }
 
 ATT.Category = {"eft_1911_tactop"}
 
+-- EFT ID: 5ef5d994dfbc9f3c660ded95
 ARC9.LoadAttachment(ATT, "eft_mount_1911_top")
 
 
@@ -410,6 +424,7 @@ ATT.ExcludeElements = { "eft_barrel_1911_thr" }
 
 ATT.Category = {"eft_1911_muzzlerec"}
 
+-- EFT ID: 5ef61964ec7f42238c31e0c1
 ARC9.LoadAttachment(ATT, "eft_muzzle_1911_anarcj")
 
 ///////////////////////////////////////      eft_1911_slock_std
@@ -431,6 +446,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_slock"}
 
+-- EFT ID: 5e81c539cb2b95385c177553
 ARC9.LoadAttachment(ATT, "eft_1911_slock_std")
 
 ///////////////////////////////////////      eft_1911_slock_m45
@@ -452,6 +468,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_slock"}
 
+-- EFT ID: 5f3e777688ca2d00ad199d25
 ARC9.LoadAttachment(ATT, "eft_1911_slock_m45")
 
 ///////////////////////////////////////      eft_1911_slock_wils
@@ -473,6 +490,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_slock"}
 
+-- EFT ID: 5ef3553c43cb350a955a7ccb
 ARC9.LoadAttachment(ATT, "eft_1911_slock_wils")
 
 ///////////////////////////////////////      eft_1911_hammer_std
@@ -491,6 +509,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: 5e81c550763d9f754677befd
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_std")
 
 ///////////////////////////////////////      eft_1911_hammer_m45
@@ -512,6 +531,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: 5f3e76d86cda304dcc634054
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_m45")
 
 ///////////////////////////////////////      eft_1911_hammer_retro
@@ -533,6 +553,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: 5ef35d2ac64c5d0dfc0571b0
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_retro")
 
 ///////////////////////////////////////      eft_1911_hammer_ultra
@@ -554,6 +575,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: 5ef35bc243cb350a955a7ccd
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_ultra")
 
 ///////////////////////////////////////      eft_1911_hammer_hex
@@ -575,6 +597,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: 5ef35f46382a846010715a96
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_hex")
 
 ///////////////////////////////////////      eft_1911_trigger_std
@@ -596,6 +619,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_trigger"}
 
+-- EFT ID: 5e81c6a2ac2bb513793cdc7f
 ARC9.LoadAttachment(ATT, "eft_1911_trigger_std")
 
 ///////////////////////////////////////      eft_1911_trigger_m45
@@ -617,6 +641,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_trigger"}
 
+-- EFT ID: 5f3e772a670e2a7b01739a52
 ARC9.LoadAttachment(ATT, "eft_1911_trigger_m45")
 
 ///////////////////////////////////////      eft_1911_trigger_trik
@@ -638,6 +663,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_trigger"}
 
+-- EFT ID: 5ef32e4d1c1fd62aea6a150d
 ARC9.LoadAttachment(ATT, "eft_1911_trigger_trik")
 
 
@@ -667,6 +693,7 @@ ATT.ActivateElements = {"hasmag"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_1911_mag"}
 
+-- EFT ID: 5e81c4ca763d9f754677befa
 ARC9.LoadAttachment(ATT, "eft_mag_1911_std")
 
 ///////////////////////////////////////      eft_mag_1911_tac
@@ -695,6 +722,7 @@ ATT.ActivateElements = {"hasmag"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_1911_mag"}
 
+-- EFT ID: 5f3e77b26cda304dcc634057
 ARC9.LoadAttachment(ATT, "eft_mag_1911_tac")
 
 ///////////////////////////////////////      eft_mag_1911_11
@@ -708,7 +736,6 @@ ATT.Description = "An 11-round .45 ACP magazine for the Colt M1911A1 pistol, man
 
 ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.93
 
@@ -723,6 +750,7 @@ ATT.ActivateElements = {"hasmag"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_1911_mag"}
 
+-- EFT ID: 5ef3448ab37dfd6af863525c
 ARC9.LoadAttachment(ATT, "eft_mag_1911_11")
 
 ///////////////////////////////////////      eft_m45_black     NOT MADE BY DARSU
@@ -755,6 +783,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_m45_black")
 
 
@@ -802,6 +831,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_slide_1911_m45_blk")
 
 ///////////////////////////////////////      eft_1911_pgrip_m45_blk
@@ -827,6 +857,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_pgrip", "eft_m45_pgrip"}
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_1911_pgrip_m45_blk")
 
 ///////////////////////////////////////      eft_1911_slock_m45_blk
@@ -852,6 +883,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_slock"}
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_1911_slock_m45_blk")
 
 ///////////////////////////////////////      eft_1911_hammer_m45_blk
@@ -877,4 +909,5 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_1911_hammer"}
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_1911_hammer_m45_blk")

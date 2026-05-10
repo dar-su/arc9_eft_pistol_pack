@@ -24,6 +24,7 @@ ATT.RecoilMult = 0.97
 ATT.Category = {"eft_p226_barrel"}
 
 
+-- EFT ID: 56d5a1f7d2720bb3418b456a
 ARC9.LoadAttachment(ATT, "eft_barrel_p226_std")
 
 ///////////////////////////////////////      eft_barrel_p226_thr
@@ -58,6 +59,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 587de4282459771bca0ec90b
 ARC9.LoadAttachment(ATT, "eft_barrel_p226_thr")
 
 
@@ -78,6 +80,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_fs"}
 
 
+-- EFT ID: 56d5a661d2720bd8418b456b
 ARC9.LoadAttachment(ATT, "eft_fs_p226_std")
 
 ///////////////////////////////////////      eft_fs_p226_merp
@@ -96,6 +99,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_fs"}
 
 
+-- EFT ID: 5c07b36c0db834002a1259e9
 ARC9.LoadAttachment(ATT, "eft_fs_p226_merp")
 
 
@@ -127,6 +131,7 @@ ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_p226_mag"}
 
+-- EFT ID: 56d59948d2720bb7418b4582
 ARC9.LoadAttachment(ATT, "eft_mag_p226_15")
 
 ///////////////////////////////////////      eft_mag_p226_20
@@ -143,7 +148,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
 -- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_p226_20.mdl"
@@ -155,6 +159,7 @@ ATT.ActivateElements = {"magext"}
 
 ATT.Category = {"eft_p226_mag"}
 
+-- EFT ID: 5c920e902e221644f31c3c99
 ARC9.LoadAttachment(ATT, "eft_mag_p226_20")
 
 
@@ -193,6 +198,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5b3a08b25acfc4001754880c
 ARC9.LoadAttachment(ATT, "eft_mount_p226_bridge")
 
 ///////////////////////////////////////      eft_muzzle_p226_std
@@ -218,6 +224,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_muzzle"}
 
 
+-- EFT ID: 587de5ba2459771c0f1e8a58
 ARC9.LoadAttachment(ATT, "eft_muzzle_p226_std")
 
 ///////////////////////////////////////      eft_muzzle_p226_tjs
@@ -245,6 +252,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_muzzle"}
 
 
+-- EFT ID: 5c6beec32e221601da3578f2
 ARC9.LoadAttachment(ATT, "eft_muzzle_p226_tjs")
 
 
@@ -269,6 +277,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 56d5a2bbd2720bb8418b456a
 ARC9.LoadAttachment(ATT, "eft_grip_p226_std")
 
 
@@ -293,6 +302,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 5bffec120db834001c38f5fa
 ARC9.LoadAttachment(ATT, "eft_grip_p226_axel")
 
 ///////////////////////////////////////      eft_grip_p226_emp
@@ -316,6 +326,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 5c0006470db834001a6697fe
 ARC9.LoadAttachment(ATT, "eft_grip_p226_emp")
 
 ///////////////////////////////////////      eft_grip_p226_hog
@@ -339,6 +350,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 5b39ffbd5acfc47a8773fb06
 ARC9.LoadAttachment(ATT, "eft_grip_p226_hog")
 
 ///////////////////////////////////////      eft_grip_p226_fde
@@ -362,6 +374,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 57c9a89124597704ee6faec1
 ARC9.LoadAttachment(ATT, "eft_grip_p226_fde")
 
 ///////////////////////////////////////      eft_grip_p226_stain
@@ -385,6 +398,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 5c00076d0db834001d23ee1f
 ARC9.LoadAttachment(ATT, "eft_grip_p226_stain")
 
 ///////////////////////////////////////      eft_grip_p226_g10
@@ -408,6 +422,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_grip"}
 
 
+-- EFT ID: 5bffef760db8340019668fe4
 ARC9.LoadAttachment(ATT, "eft_grip_p226_g10")
 
 
@@ -448,6 +463,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 56d5a407d2720bb3418b456b
 ARC9.LoadAttachment(ATT, "eft_slide_p226_std")
 
 ///////////////////////////////////////      eft_slide_p226_emp
@@ -489,6 +505,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c010a700db834001d23ef5d
 ARC9.LoadAttachment(ATT, "eft_slide_p226_emp")
 
 ///////////////////////////////////////      eft_slide_p226_leg
@@ -530,6 +547,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c0125fc0db834001a669aa3
 ARC9.LoadAttachment(ATT, "eft_slide_p226_leg")
 
 ///////////////////////////////////////      eft_slide_p226_stain
@@ -571,6 +589,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5c0009510db834001966907f
 ARC9.LoadAttachment(ATT, "eft_slide_p226_stain")
 
 ///////////////////////////////////////      eft_slide_p226_axel
@@ -612,6 +631,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5bffe7c50db834001d23ece1
 ARC9.LoadAttachment(ATT, "eft_slide_p226_axel")
 
 
@@ -630,6 +650,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_rs"}
 
+-- EFT ID: 56d5a77ed2720b90418b4568
 ARC9.LoadAttachment(ATT, "eft_rs_p226_std")
 
 ///////////////////////////////////////      eft_rs_p226_merp
@@ -656,6 +677,7 @@ ATT.Sights = {
     }
 }
 
+-- EFT ID: 5c07b3850db834002330045b
 ARC9.LoadAttachment(ATT, "eft_rs_p226_merp")
 
 ///////////////////////////////////////      eft_rs_p226_mount
@@ -688,6 +710,7 @@ ATT.Attachments = {
 ATT.Category = {"eft_p226_rs"}
 
 
+-- EFT ID: 56ea7293d2720b8d4b8b45ba
 ARC9.LoadAttachment(ATT, "eft_rs_p226_mount")
 
 ///////////////////////////////////////      eft_rs_p226_rmr
@@ -717,5 +740,6 @@ ATT.Attachments = {
 ATT.Category = {"eft_p226_rs"}
 
 
+-- EFT ID: 5a32aa0cc4a28232996e405f
 ARC9.LoadAttachment(ATT, "eft_rs_p226_rmr")
 

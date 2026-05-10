@@ -22,6 +22,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_barrell"}
 
 
+-- EFT ID: 5d3eb5b6a4b9361eab311902
 ARC9.LoadAttachment(ATT, "eft_57_barrel")
 
 
@@ -46,6 +47,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_barrell"}
 
 
+-- EFT ID: 5d3eb59ea4b9361c284bb4b2
 ARC9.LoadAttachment(ATT, "eft_57_barrel_threaded")
 
 
@@ -67,7 +69,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_57_color"}
 
-
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_57_fde")
 
 
@@ -87,6 +89,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_fs"}
 
 
+-- EFT ID: 5d3eb536a4b9363b1f22f8e2
 ARC9.LoadAttachment(ATT, "eft_57_fs")
 
 
@@ -116,6 +119,7 @@ ATT.Category = {"eft_57_mag"}
 ATT.ActivateElements = {"magdefault"}
 
 
+-- EFT ID: 5d3eb5eca4b9363b1f22f8e4
 ARC9.LoadAttachment(ATT, "eft_57_mag")
 
 
@@ -140,6 +144,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_rec"}
 
 
+-- EFT ID: 5d3eb44aa4b93650d64e4979
 ARC9.LoadAttachment(ATT, "eft_57_rec")
 
 
@@ -159,6 +164,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_rs"}
 
 
+-- EFT ID: 5d3eb4aba4b93650d64e497d
 ARC9.LoadAttachment(ATT, "eft_57_rs")
 
 
@@ -188,6 +194,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5d7b6bafa4b93652786f4c76
 ARC9.LoadAttachment(ATT, "eft_57_rs_rmr")
 
 
@@ -224,5 +231,6 @@ ATT.NoFlash = true
 ATT.Category = {"eft_57_muzzle"}
 
 
+-- EFT ID: 5d3ef698a4b9361182109872
 ARC9.LoadAttachment(ATT, "eft_57_silencer")
 

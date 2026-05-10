@@ -23,6 +23,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
 
+-- EFT ID: 571a26d524597720680fbe8a
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_116")
 
 ///////////////////////////////////////      eft_tt33_barrel_116g
@@ -47,6 +48,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
 
+-- EFT ID: 5b3baf8f5acfc40dc5296692
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_116g")
 
 ///////////////////////////////////////      eft_tt33_barrel_121
@@ -71,6 +73,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
 
+-- EFT ID: 571a279b24597720b4066566
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_121")
 
 ///////////////////////////////////////      eft_tt33_asilencer
@@ -104,6 +107,7 @@ ATT.BarrelLengthAdd = 5
 ATT.Category = {"eft_tt33_muzz"}
 ATT.RequireElements = {"eft_tt33_barrel_121"}
 
+-- EFT ID: 571a28e524597720b4066567
 ARC9.LoadAttachment(ATT, "eft_tt33_asilencer")
 
 ///////////////////////////////////////      eft_tt33_dtk
@@ -128,6 +132,7 @@ ATT.BarrelLengthAdd = 1
 
 ATT.Category = {"eft_tt33_muzz"}
 
+-- EFT ID: 5bffd7ed0db834001d23ebf9
 ARC9.LoadAttachment(ATT, "eft_tt33_dtk")
 
 ///////////////////////////////////////      eft_tt33_pg_hogue
@@ -149,6 +154,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
 
+-- EFT ID: 5c0684e50db834002a12585a
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_hogue")
 
 ///////////////////////////////////////      eft_tt33_pg_razor
@@ -170,6 +176,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
 
+-- EFT ID: 5c079ec50db834001966a706
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_razor")
 
 ///////////////////////////////////////      eft_tt33_pg_std
@@ -191,6 +198,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
 
+-- EFT ID: 571a282c2459771fb2755a69
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_std")
 
 ///////////////////////////////////////      eft_tt33_pg_swag
@@ -212,6 +220,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
 
+-- EFT ID: 5b3cadf35acfc400194776a0
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_swag")
 
 ///////////////////////////////////////      eft_tt33_pg_206
@@ -252,6 +261,7 @@ ATT.ToggleStats = {
 
 ATT.Category = {"eft_tt33_pg"}
 
+-- EFT ID: 5bffcf7a0db83400232fea79
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_206")
 
 ///////////////////////////////////////      eft_tactical_ttprec
@@ -289,6 +299,7 @@ ATT.ToggleStats = {
     }
 }
 
+-- EFT ID: 5c079ed60db834001a66b372
 ARC9.LoadAttachment(ATT, "eft_tactical_ttprec")
 
 ///////////////////////////////////////      eft_tt33_mag_8
@@ -318,6 +329,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
 
+-- EFT ID: 571a29dc2459771fb2755a6a
 ARC9.LoadAttachment(ATT, "eft_tt33_mag_8")
 
 ///////////////////////////////////////      eft_tt33_gold
@@ -345,4 +357,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_tt33_gold")

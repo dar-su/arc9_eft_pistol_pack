@@ -24,6 +24,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rsh12_mag"}
 
+-- EFT ID: 633ec6ee025b096d320a3b15
 ARC9.LoadAttachment(ATT, "eft_rsh12_mag_std")
 
 
@@ -46,6 +47,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rsh12_pgrip"}
 
+-- EFT ID: 633ec8e4025b096d320a3b1e
 ARC9.LoadAttachment(ATT, "eft_rsh12_pgrip_std")
 
 
@@ -88,6 +90,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_silencerrr_sr1mp"}
 
+-- EFT ID: 5a27b6bec4a282000e496f78
 ARC9.LoadAttachment(ATT, "eft_silencer_sr1mp")
 
 ///////////////////////////////////////      eft_mount_sr1mp_1x
@@ -124,6 +127,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a27b281c4a28200741e1e52
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_1x")
 
 ///////////////////////////////////////      eft_mount_sr1mp_sil
@@ -153,6 +157,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a27b3d0c4a282000d721ec1
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_sil")
 
 ///////////////////////////////////////      eft_mount_sr1mp_4x
@@ -212,6 +217,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a27bad7c4a282000b15184b
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_4x")
 
 ///////////////////////////////////////      eft_mag_sr1mp_std
@@ -240,6 +246,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.98
 ATT.Category = {"eft_sr1mp_mag"}
 ATT.ActivateElements = {"magdef"}
 
+-- EFT ID: 59f99a7d86f7745b134aa97b
 ARC9.LoadAttachment(ATT, "eft_mag_sr1mp_std")
 
 
@@ -279,6 +286,7 @@ ATT.RecoilMult = 0.97
 ATT.Category = {"eft_pl15_barrel"}
 
 
+-- EFT ID: 602a95edda11d6478d5a06da
 ARC9.LoadAttachment(ATT, "eft_barrel_pl15_std")
 
 ///////////////////////////////////////      eft_barrel_pl15_thr
@@ -311,6 +319,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 602a95fe4e02ce1eaa358729
 ARC9.LoadAttachment(ATT, "eft_barrel_pl15_thr")
 
 ///////////////////////////////////////      eft_fs_pl15_std
@@ -327,6 +336,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_fs"}
 
+-- EFT ID: 60228a76d62c9b14ed777a66
 ARC9.LoadAttachment(ATT, "eft_fs_pl15_std")
 
 ///////////////////////////////////////      eft_fs_pl15_long
@@ -343,6 +353,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_fs"}
 
+-- EFT ID: 60228a850ddce744014caf69
 ARC9.LoadAttachment(ATT, "eft_fs_pl15_long")
 
 ///////////////////////////////////////      eft_mag_pl15_std
@@ -370,6 +381,7 @@ ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_pl15_mag"}
 
+-- EFT ID: 602286df23506e50807090c6
 ARC9.LoadAttachment(ATT, "eft_mag_pl15_std")
 
 ///////////////////////////////////////      eft_slide_pl15_std
@@ -408,6 +420,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 60228924961b8d75ee233c32
 ARC9.LoadAttachment(ATT, "eft_slide_pl15_std")
 
 ///////////////////////////////////////      eft_rs_pl15_std
@@ -425,6 +438,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_rs"}
 
+-- EFT ID: 60229948cacb6b0506369e27
 ARC9.LoadAttachment(ATT, "eft_rs_pl15_std")
 
 ///////////////////////////////////////      eft_rs_pl15_long
@@ -451,6 +465,7 @@ ATT.Sights = {
     }
 }
 
+-- EFT ID: 602293f023506e50807090cb
 ARC9.LoadAttachment(ATT, "eft_rs_pl15_long")
 
 ///////////////////////////////////////      eft_sil_pl15
@@ -482,6 +497,7 @@ ATT.Silencer = true
 
 ATT.Category = {"eft_pl15_muzzle"}
 
+-- EFT ID: 602a97060ddce744014caf6f
 ARC9.LoadAttachment(ATT, "eft_sil_pl15")
 
 
@@ -509,6 +525,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_rs"}
 
+-- EFT ID: 5aba637ad8ce87001773e17f
 ARC9.LoadAttachment(ATT, "eft_aps_rs_std")
 
 ///////////////////////////////////////      eft_aps_fs_std
@@ -525,6 +542,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_fs"}
 
+-- EFT ID: 5aba62f8d8ce87001943946b
 ARC9.LoadAttachment(ATT, "eft_aps_fs_std")
 
 ///////////////////////////////////////      eft_aps_rs_apb
@@ -541,6 +559,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_rs"}
 
+-- EFT ID: 5aba639ed8ce8700182ece67
 ARC9.LoadAttachment(ATT, "eft_aps_rs_apb")
 
 ///////////////////////////////////////      eft_aps_pg_std
@@ -562,6 +581,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_pg"}
 
+-- EFT ID: 5a17fc70fcdbcb0176308b3d
 ARC9.LoadAttachment(ATT, "eft_aps_pg_std")
 
 
@@ -593,6 +613,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 20
 ATT.ChamberSize = 1
 
+-- EFT ID: 5a17fb03fcdbcbcae668728f
 ARC9.LoadAttachment(ATT, "eft_aps_mag_20")
 
 
@@ -624,6 +645,7 @@ ATT.BarrelLengthAdd = 5
 
 ATT.Category = {"eft_apb_silencer"}
 
+-- EFT ID: 5abcc328d8ce8700194394f3
 ARC9.LoadAttachment(ATT, "eft_apb_silencer_std")
 
 ///////////////////////////////////////      eft_aps_stock_std
@@ -643,6 +665,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_stock"}
 
+-- EFT ID: 5a17fb9dfcdbcbcae6687291
 ARC9.LoadAttachment(ATT, "eft_aps_stock_std")
 
 
@@ -681,6 +704,7 @@ ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_mp443_mag"}
 
+-- EFT ID: 576a5ed62459771e9c2096cb
 ARC9.LoadAttachment(ATT, "eft_mag_mp443_std")
 
 ///////////////////////////////////////      eft_grip_mp443_std
@@ -700,6 +724,7 @@ ATT.HasGrip = true
 
 ATT.Category = {"eft_mp443_grip"}
 
+-- EFT ID: 576a63cd2459771e796e0e11
 ARC9.LoadAttachment(ATT, "eft_grip_mp443_std")
 
 
@@ -730,4 +755,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 576a7c512459771e796e0e17
 ARC9.LoadAttachment(ATT, "eft_mount_mp443_rail")

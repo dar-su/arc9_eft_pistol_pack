@@ -27,6 +27,7 @@ ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite", "eft_slide_usp_expert" }
 
+-- EFT ID: 6194ef39de3cdf1d2614a768
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_std")
 
 ///////////////////////////////////////      eft_barrel_usp_elite
@@ -53,6 +54,7 @@ ATT.HeatDissipationMult = 1.09
 
 ATT.Category = {"eft_usp_barrel"}
 
+-- EFT ID: 6194f017ed0429009f543eaa
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_elite")
 
 ///////////////////////////////////////      eft_barrel_usp_expert
@@ -81,6 +83,7 @@ ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite" }
 
+-- EFT ID: 6194eff92d2c397d6600348b
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_expert")
 
 ///////////////////////////////////////      eft_barrel_usp_match
@@ -109,6 +112,7 @@ ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite" }
 
+-- EFT ID: 6194f02d9bb3d20b0946d2f0
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_match")
 
 ///////////////////////////////////////      eft_barrel_usp_tac
@@ -125,7 +129,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.VisualRecoilMult = 0.98
 ATT.RecoilMult = 0.98
 ATT.Spread = 9.28 * ARC9.MOAToAcc
@@ -146,6 +149,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6194efe07c6c7b169525f11b
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_tac")
 
 
@@ -168,6 +172,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_slock"}
 
+-- EFT ID: 6193d5d4f8ee7e52e4210a1b
 ARC9.LoadAttachment(ATT, "eft_usp_slock_std")
 
 ///////////////////////////////////////      eft_usp_hammer_std
@@ -189,6 +194,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_hammer"}
 
+-- EFT ID: 6193d3be7c6c7b169525f0da
 ARC9.LoadAttachment(ATT, "eft_usp_hammer_std")
 
 ///////////////////////////////////////      eft_usp_trigger_std
@@ -210,6 +216,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_trigger"}
 
+-- EFT ID: 6193d3cded0429009f543e6a
 ARC9.LoadAttachment(ATT, "eft_usp_trigger_std")
 
 
@@ -248,6 +255,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6193d382ed0429009f543e65
 ARC9.LoadAttachment(ATT, "eft_slide_usp_std")
 
 ///////////////////////////////////////      eft_slide_usp_elite
@@ -289,6 +297,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6194f5d418a3974e5e7421ef
 ARC9.LoadAttachment(ATT, "eft_slide_usp_elite")
 
 ///////////////////////////////////////      eft_slide_usp_expert
@@ -330,6 +339,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6194f5722d2c397d6600348f
 ARC9.LoadAttachment(ATT, "eft_slide_usp_expert")
 
 ///////////////////////////////////////      eft_slide_usp_match
@@ -367,6 +377,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6194f5a318a3974e5e7421eb
 ARC9.LoadAttachment(ATT, "eft_slide_usp_match")
 
 ///////////////////////////////////////      eft_slide_usp_tac
@@ -404,6 +415,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6194f5a318a3974e5e7421eb
 ARC9.LoadAttachment(ATT, "eft_slide_usp_tac")
 
 ///////////////////////////////////////      eft_fs_usp_std
@@ -423,6 +435,7 @@ ATT.Category = {"eft_usp_fs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_fs.mdl"
 -- ATT.ModelBodygroups = "0"
 
+-- EFT ID: 6194f35c18a3974e5e7421e6
 ARC9.LoadAttachment(ATT, "eft_fs_usp_std")
 
 ///////////////////////////////////////      eft_fs_usp_tac
@@ -442,6 +455,7 @@ ATT.Category = {"eft_usp_fs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_fs.mdl"
 ATT.ModelBodygroups = "1"
 
+-- EFT ID: 6194f3286db0f2477964e67d
 ARC9.LoadAttachment(ATT, "eft_fs_usp_tac")
 
 ///////////////////////////////////////      eft_rs_usp_std
@@ -461,6 +475,7 @@ ATT.Category = {"eft_usp_rs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_rs.mdl"
 -- ATT.ModelBodygroups = "0"
 
+-- EFT ID: 6194f2912d2c397d6600348d
 ARC9.LoadAttachment(ATT, "eft_rs_usp_std")
 
 ///////////////////////////////////////      eft_rs_usp_tac
@@ -480,6 +495,7 @@ ATT.Category = {"eft_usp_rs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_rs.mdl"
 ATT.ModelBodygroups = "1"
 
+-- EFT ID: 6194f2df645b5d229654ad77
 ARC9.LoadAttachment(ATT, "eft_rs_usp_tac")
 
 ///////////////////////////////////////      eft_rs_usp_mount
@@ -512,6 +528,7 @@ ATT.ModelBodygroups = "2"
 
 ATT.Category = {"eft_usp_rs"}
 
+-- EFT ID: 61963a852d2c397d660036ad
 ARC9.LoadAttachment(ATT, "eft_rs_usp_mount")
 
 ///////////////////////////////////////      eft_mag_usp_std
@@ -540,6 +557,7 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_usp_mag"}
 
+-- EFT ID: 6193d338de3cdf1d2614a6fc
 ARC9.LoadAttachment(ATT, "eft_mag_usp_std")
 
 ///////////////////////////////////////      eft_mag_usp_tac
@@ -567,6 +585,7 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_usp_mag"}
 
+-- EFT ID: 6193d3149fb0c665d5490e32
 ARC9.LoadAttachment(ATT, "eft_mag_usp_tac")
 
 ///////////////////////////////////////      eft_muzzle_usp_cap
@@ -586,6 +605,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_muzzle"}
 
+-- EFT ID: 6194f1f918a3974e5e7421e4
 ARC9.LoadAttachment(ATT, "eft_muzzle_usp_cap")
 
 ///////////////////////////////////////      eft_mount_usp_rail
@@ -615,6 +635,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6196255558ef8c428c287d1c
 ARC9.LoadAttachment(ATT, "eft_mount_usp_rail")
 
 ///////////////////////////////////////      eft_mount_usp_elite
@@ -638,6 +659,7 @@ ATT.ExcludeElements = { "eft_slide_usp_expert", "eft_barrel_usp_std", "eft_barre
 
 ATT.Category = {"eft_usp_tac"}
 
+-- EFT ID: 619621a4de3cdf1d2614a7a7
 ARC9.LoadAttachment(ATT, "eft_mount_usp_elite")
 
 ///////////////////////////////////////      eft_mount_usp_match
@@ -671,6 +693,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 619624b26db0f2477964e6b0
 ARC9.LoadAttachment(ATT, "eft_mount_usp_match")
 
 ///////////////////////////////////////      eft_muzzle_omegapiston
@@ -702,5 +725,6 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fc4b97bab884124df0cd5e3
 ARC9.LoadAttachment(ATT, "eft_muzzle_omegapiston")
 

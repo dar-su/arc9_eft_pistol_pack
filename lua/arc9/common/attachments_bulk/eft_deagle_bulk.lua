@@ -44,6 +44,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 669fa4ba1bd4416eaa09b3c6
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_50ae")
 
 ///////////////////////////////////////      eft_barrel_deagle_l5_357
@@ -89,6 +90,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 669fa4c61bd4416eaa09b3ca
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_357")
 
 ///////////////////////////////////////      eft_barrel_deagle_l6_50ae
@@ -106,7 +108,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.VisualRecoilMult = 0.965
 ATT.RecoilMult = 0.965
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -139,6 +140,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 669fa47da0bab4e8510d9526
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_50ae")
 
 ///////////////////////////////////////      eft_barrel_deagle_l6_wts
@@ -156,7 +158,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.VisualRecoilMult = 0.965
 ATT.RecoilMult = 0.965
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -189,6 +190,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 669fa48fa0bab4e8510d952a
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_wts")
 
 ///////////////////////////////////////      eft_barrel_deagle_xix
@@ -239,6 +241,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 668fe5f62a0f85eea407cc18
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_xix")
 
 
@@ -260,6 +263,7 @@ ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Category = {"eft_deagle_pg"}
 
+-- EFT ID: 668fe5d42a0f85eea407cc16
 ARC9.LoadAttachment(ATT, "eft_pg_deagle_std")
 
 ///////////////////////////////////////      eft_pg_deagle_ergo
@@ -280,6 +284,7 @@ ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.Category = {"eft_deagle_pg"}
 
+-- EFT ID: 66a0da76b6f47fcfeb025e96
 ARC9.LoadAttachment(ATT, "eft_pg_deagle_ergo")
 
 ///////////////////////////////////////      eft_rs_deagle_std
@@ -297,6 +302,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_deagle_rs"}
 
+-- EFT ID: 668fe5e1800f0244f9036e46
 ARC9.LoadAttachment(ATT, "eft_rs_deagle_std")
 
 ///////////////////////////////////////      eft_fs_deagle_std
@@ -314,6 +320,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_deagle_fs"}
 
+-- EFT ID: 668fe5ec4315934ba10c6f96
 ARC9.LoadAttachment(ATT, "eft_fs_deagle_std")
 
 
@@ -346,6 +353,7 @@ ATT.ActivateElements = {"hasmag"}
 ATT.Category = {"eft_deagle_mag"}
 ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
 
+-- EFT ID: 668fe5c5f35310705d02b696
 ARC9.LoadAttachment(ATT, "eft_mag_deagle_7")
 
 ///////////////////////////////////////      eft_mag_deagle_9
@@ -375,6 +383,7 @@ ATT.ActivateElements = {"hasmag"}
 ATT.Category = {"eft_deagle_mag"}
 ATT.RequireElements = {"eft_slide_deagle_l5_357"}
 
+-- EFT ID: 669fa435803b94fb5d0e3a76
 ARC9.LoadAttachment(ATT, "eft_mag_deagle_9")
 
 ///////////////////////////////////////      eft_slide_deagle_l5
@@ -407,6 +416,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 669fa5019aa2a422600442f6
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5")
 
 ///////////////////////////////////////      eft_slide_deagle_l5_357
@@ -465,6 +475,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 669fa5127a09bc295603b499
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_357")
 
 ///////////////////////////////////////      eft_slide_deagle_l6
@@ -500,6 +511,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 669fa4d97a09bc295603b496
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6")
 
 ///////////////////////////////////////      eft_slide_deagle_l6_wts
@@ -534,6 +546,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 669fa5271bd4416eaa09b3ce
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6_wts")
 
 ///////////////////////////////////////      eft_slide_deagle_xix
@@ -566,4 +579,5 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 668fe60b56984d93550462c6
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_xix")

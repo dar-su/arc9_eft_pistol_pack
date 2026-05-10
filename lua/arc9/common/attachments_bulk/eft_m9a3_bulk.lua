@@ -33,6 +33,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cadc1c6ae9215000f2775a4
 ARC9.LoadAttachment(ATT, "eft_barrel_m9a3_std")
 
 
@@ -53,6 +54,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_m9a3_fs"}
 
 
+-- EFT ID: 5cadd919ae921500126a77f3
 ARC9.LoadAttachment(ATT, "eft_fs_m9a3_std")
 
 
@@ -86,6 +88,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_m9a3_black")
 
 
@@ -116,6 +119,7 @@ ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_m9a3_mag"}
 
+-- EFT ID: 5cadc2e0ae9215051e1c21e7
 ARC9.LoadAttachment(ATT, "eft_mag_m9a3_std")
 
 ///////////////////////////////////////      eft_mag_m9a3_ext
@@ -132,7 +136,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m9a3_ext.mdl"
@@ -144,6 +147,7 @@ ATT.ActivateElements = {"magext"}
 
 ATT.Category = {"eft_m9a3_mag"}
 
+-- EFT ID: 676176b762e0497044079f49
 ARC9.LoadAttachment(ATT, "eft_mag_m9a3_ext")
 
 ///////////////////////////////////////      eft_muzzle_m9a3_std
@@ -169,6 +173,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_m9a3_muzzle"}
 
 
+-- EFT ID: 5cadc390ae921500126a77f1
 ARC9.LoadAttachment(ATT, "eft_muzzle_m9a3_std")
 
 
@@ -193,6 +198,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_m9a3_grip"}
 
 
+-- EFT ID: 5cadc431ae921500113bb8d5
 ARC9.LoadAttachment(ATT, "eft_grip_m9a3_std")
 
 
@@ -233,6 +239,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 5cadc55cae921500103bb3be
 ARC9.LoadAttachment(ATT, "eft_slide_m9a3_std")
 
 
@@ -251,6 +258,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m9a3_rs"}
 
+-- EFT ID: 5cadd940ae9215051e1c2316
 ARC9.LoadAttachment(ATT, "eft_rs_m9a3_std")
 
 ///////////////////////////////////////      eft_rs_m9a3_mount
@@ -283,5 +291,6 @@ ATT.Attachments = {
 ATT.Category = {"eft_m9a3_rs"}
 
 
+-- EFT ID: 5cadd954ae921500103bb3c2
 ARC9.LoadAttachment(ATT, "eft_rs_m9a3_mount")
 
