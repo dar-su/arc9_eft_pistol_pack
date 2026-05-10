@@ -10,7 +10,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/cyl.png", "mips smooth")
 ATT.Description = [[A 5-round 12.7x55 cylinder for the RSh-12 revolver.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -37,7 +36,6 @@ ATT.Icon = Material("entities/eft_ash12_attachments/grip.png", "mips smooth")
 ATT.Description = [[A standard-issue plastic pistol grip for the RSh-12 revolver, manufactured by the KBP Instrument Design Bureau.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 
 ATT.HasGrip = true 
@@ -72,7 +70,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -103,7 +100,6 @@ ATT.Icon = Material("entities/eft_sr2m_attachments/1x.png", "mips smooth")
 ATT.Description = [[A mount for SR-1MP, included in the pistol kit, designed to form a single rail and silencer installation place.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -140,7 +136,6 @@ ATT.Icon = Material("entities/eft_sr2m_attachments/sm.png", "mips smooth")
 ATT.Description = [[A mount for SR-1MP from the pistol kit, used for quick installation and removal of the sound suppressor.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -170,7 +165,6 @@ ATT.Icon = Material("entities/eft_sr2m_attachments/4x.png", "mips smooth")
 ATT.Description = [[A mount for the SR-1MP pistol that forms four guide rails, allowing installation of the sound suppressor.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -235,7 +229,6 @@ ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sr1mp.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
@@ -278,7 +271,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -303,7 +295,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -369,7 +360,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 -- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pl15.mdl"
@@ -394,7 +384,6 @@ ATT.Icon = Material("entities/eft_pl15_attachments/s.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the PL-15 pistol.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -480,7 +469,6 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.SpreadMult = 0.98
@@ -574,7 +562,6 @@ ATT.Description = [[Standard-issue APS pistol bakelite side grips.]]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -595,7 +582,6 @@ ATT.Icon = Material("entities/eft_aps_attachments/20.png", "mips smooth")
 ATT.Description = [[A standard 20-round magazine for Molot-produced APS pistols. It features a side observation slot for faster capacity checking.]]
 
 ATT.EFTErgoAdd = -3
-ATT.CustomPros = { Ergonomics = "-3" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aps_20.mdl"
@@ -633,7 +619,6 @@ ATT.VisualRecoilMult = 0.94
 ATT.RecoilMult = 0.94
 ATT.HeatCapacityMult = 0.87
 ATT.EFTErgoAdd = -21
-ATT.CustomCons = { Ergonomics = "-21" }
 
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(26, 45, 4)
@@ -692,7 +677,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 -- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp443.mdl"
@@ -738,7 +722,6 @@ ATT.Icon = Material("entities/eft_mp443_attachments/b8.png", "mips smooth")
 ATT.Description = "B-8 rail mount is installed on Yarygin pistol (MP-443 Grach and its civilian version MP-446 Viking) for use with additional attachments, e.g. 2KS Klesch Mini tactical laser flashlight. "
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"

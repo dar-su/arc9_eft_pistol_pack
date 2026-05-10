@@ -64,9 +64,6 @@ ATT.Description = [[This model features a Flat Dark Earth colored frame.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
--- ATT.EFTErgoAdd = 90
--- ATT.CustomPros = { Ergonomics = "+90" }
-
 ATT.Category = {"eft_57_color"}
 
 -- EFT ID: NO
@@ -112,7 +109,6 @@ ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_57_mag"}
 
@@ -136,7 +132,6 @@ ATT.Description = [[A regular slide for the Five-seveN MK2 pistol, manufactured 
 ATT.HasSlide = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -218,7 +213,6 @@ ATT.RecoilMult = 0.91
 ATT.HeatCapacityMult = 0.87
 ATT.PhysBulletMuzzleVelocityMult = 1.015
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 
 ATT.Silencer = true
 -- ATT.CustomizeSnapshotFOVAdd = 22

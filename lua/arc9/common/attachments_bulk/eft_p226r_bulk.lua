@@ -16,7 +16,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -42,7 +41,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -119,7 +117,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 -- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_p226_15.mdl"
@@ -174,7 +171,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/bridge.png", "mips smooth")
 ATT.Description = [[The SIG Sauer Bridge sight mount for pistols. Allows mounting of various sights or tactical accesories.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -213,7 +209,6 @@ ATT.Description = [[A threading protection cap for the P226 9x19 barrel.]]
 
 -- ATT.VisualRecoilMult = 0.89
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 -- ATT.SpreadMult = 0.98
 -- ATT.PhysBulletMuzzleVelocityMult = 1.02
 ATT.HeatCapacityAdd = 1
@@ -239,7 +234,6 @@ ATT.Description = [[A compensator manufactured by TJs Custom Gunworks for the SI
 
 -- ATT.VisualRecoilMult = 0.89
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 1.02
 ATT.VisualRecoilMult = 0.88
 ATT.RecoilMult = 0.88
@@ -269,7 +263,6 @@ ATT.Description = [[Standard black polymer SIG Sauer side grip panels for the P2
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -294,7 +287,6 @@ ATT.Description = [[An enhanced version of the SIG Sauer P226 MK25 pistol grip, 
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -318,7 +310,6 @@ ATT.Description = [[The Emperor Scorpion polymer grip panels for P226 pistols, m
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -342,7 +333,6 @@ ATT.Description = [[A rubber pistol grip with finger grooves for SIG Sauer P226 
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -366,7 +356,6 @@ ATT.Description = [[Brown Flat Dark Earth polymer SIG Sauer grip panels for P226
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -390,7 +379,6 @@ ATT.Description = [[Wooden side grip panels from the Stainless Elite kit for P22
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -414,7 +402,6 @@ ATT.Description = [[The G10 Chain Link pistol grip for P226 pistols. Manufacture
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -437,7 +424,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/smk25.png", "mips smooth")
 ATT.Description = [[The SIG Sauer Mk25 blued slide for P226R 9x19 pistols.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -477,7 +463,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/ssk.png", "mips smooth")
 ATT.Description = [[A slide from the Emperor Scorpion modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 
@@ -519,7 +504,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/leg.png", "mips smooth")
 ATT.Description = [[A full-size slide from the Legion modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 
@@ -561,7 +545,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/elite.png", "mips smooth")
 ATT.Description = [[A slide from the Stainless Elite modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 
@@ -603,7 +586,6 @@ ATT.Icon = Material("entities/eft_p226_attachments/saxe.png", "mips smooth")
 ATT.Description = [[An enhanced version of the SIG Sauer P226 MK25 pistol slide, manufactured by Axelson Tactical. Limited edition.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 
@@ -694,7 +676,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {

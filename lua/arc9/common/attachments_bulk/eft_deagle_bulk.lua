@@ -16,7 +16,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -62,7 +61,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.VisualRecoilMult = 0.98
 ATT.RecoilMult = 0.98
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -208,7 +206,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -259,7 +256,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Category = {"eft_deagle_pg"}
 
@@ -280,7 +276,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.Category = {"eft_deagle_pg"}
 
@@ -340,7 +335,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_deagle_7.mdl"
@@ -370,7 +364,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_deagle_9.mdl"
@@ -397,7 +390,6 @@ ATT.Icon = Material("entities/eft_deagle_attachments/s6.png", "mips smooth")
 ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .50 AE, manufactured by Magnum Research.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -432,7 +424,6 @@ ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .357 Ma
 in this mod it converts l5 deagle to .357!!]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -489,7 +480,6 @@ ATT.Icon = Material("entities/eft_deagle_attachments/s.png", "mips smooth")
 ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Magnum Research.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.VisualRecoilMult = 1.1
 ATT.VisualRecoilPositionBumpUpMult = 1.1
@@ -527,7 +517,6 @@ ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Mag
 In this mod it colors frame to WTS too (it is seperate gun in tarbkov)]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -560,7 +549,6 @@ ATT.Icon = Material("entities/eft_deagle_attachments/sx.png", "mips smooth")
 ATT.Description = [[A Mark XIX slide for the Desert Eagle pistol, manufactured by Magnum Research.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0

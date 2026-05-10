@@ -51,7 +51,6 @@ ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_9x19_6round_cy
 ATT.Description = [[6-round cylinder for Chiappa Rhino. ]]
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.ClipSize = 6
 
@@ -77,7 +76,6 @@ ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_wooden_pistol_
 ATT.Description = [[Wooden pistol grip for Rhino revolvers, produced by "Chiappa Firearms". ]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasGrip = true 
 
@@ -100,7 +98,6 @@ ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_plastic_pistol
 ATT.Description = [[A standard-issue plastic pistol grip for Rhino revolvers, produced by "Chiappa Firearms". ]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true 
 
@@ -232,7 +229,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_rhino357_barrel"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.VisualRecoilMult = 1.15
 ATT.RecoilMult = 1.15
 ATT.SpreadMult = 1.15

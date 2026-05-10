@@ -16,7 +16,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.976
@@ -107,7 +106,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m9a3.mdl"
@@ -162,7 +160,6 @@ ATT.Description = [[A threading protection cap for the Beretta M9A3 9x19 barrel.
 
 -- ATT.VisualRecoilMult = 0.89
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 -- ATT.SpreadMult = 0.98
 -- ATT.PhysBulletMuzzleVelocityMult = 1.02
 ATT.HeatCapacityAdd = 1
@@ -190,7 +187,6 @@ ATT.Description = [[Standard-issue polymer side grip panels for Beretta M9A3 pis
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -213,7 +209,6 @@ ATT.Icon = Material("entities/eft_m9a3_attachments/s.png", "mips smooth")
 ATT.Description = [[A standard-issue pistol slide for Beretta M9A3 9x19 pistols.]]
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -275,7 +270,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {

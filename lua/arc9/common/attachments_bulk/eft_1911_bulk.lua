@@ -11,7 +11,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_pistol_slide.png", "m
 ATT.Description = "A standard-issue slide for the M1911A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.958
 
 ATT.HasSlide = true 
@@ -54,7 +53,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m45a1_pistol_slide.png", "mip
 ATT.Description = "A standard-issue slide for the M45A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 0.954
 
 ATT.HasSlide = true 
@@ -98,7 +96,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_45_acp_127mm_barrel.p
 ATT.Description = "A standard-issue 127mm .45 ACP barrel for M1911A1 pistols, manufactured by Colt."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.1
@@ -151,7 +148,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_45_acp_threaded_barre
 ATT.Description = "A standard-issue threaded barrel for the M1911A1 .45 ACP pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.08
@@ -187,7 +183,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_side_grips.png", "mip
 ATT.Description = "Standard-issue side grip panels for the M1911A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasGrip = true
 
@@ -209,7 +204,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m45a1_miltac_gvt_g10_side_gri
 ATT.Description = "The GVT G10 fiberglass grip panels for the Colt M45A1 pistol, manufactured by Mil-Tac."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -231,7 +225,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911_pachmayr_american_legen
 ATT.Description = "The \"American Legend Grip #423\" grips for the M1911 pistol, manufactured by Pachmayr."
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.HasGrip = true
 
@@ -253,7 +246,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911_kiba_arms_geneburn_cust
 ATT.Description = "Custom grip panels for the M1911 pistol, manufactured by Kiba Arms."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasGrip = true
 
@@ -345,7 +337,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_ncstar_trigger_guard_
 ATT.Description = "The NcSTAR Trigger guard mount for the M1911A1 pistol."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -378,7 +369,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_weigand_weigatinny_ra
 ATT.Description = "The Weig-a-tinny rail mount for the M1911A1 pistol, manufactured by Weigand."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -412,7 +402,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911_anarchy_outdoors_45_acp
 ATT.Description = "A muzzle brake for the M1911A1 pistol, manufactured by Anarchy Outdoors."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.HeatCapacityMult = 0.99
@@ -437,7 +426,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_slide_stop.png", "mip
 ATT.Description = "A standard-issue slide stop for the M1911A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.HasLock = true
 
@@ -459,7 +447,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m45a1_slide_lock.png", "mips 
 ATT.Description = "A standard-issue slide lock lever for M45A1 pistols, manufactured by Colt."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasLock = true
 
@@ -481,7 +468,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_wilson_extended_slide
 ATT.Description = "An extended slide lever for the M1911A1 pistol, manufactured by Wilson."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasLock = true
 
@@ -522,7 +508,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m45a1_hammer.png", "mips smoo
 ATT.Description = "A standard-issue hammer for the M45A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasHammer = true
 
@@ -544,7 +529,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_wilson_retro_commande
 ATT.Description = "The Retro Commander hammer for the M1911A1 pistol, manufactured by Wilson."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasHammer = true
 
@@ -566,7 +550,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_wilson_ultralight_ske
 ATT.Description = "The Ultralight Skeletonized hammer for the M1911A1 pistol, manufactured by Wilson."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasHammer = true
 
@@ -588,7 +571,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_sti_hex_hammer.png", 
 ATT.Description = "The HEX hammer for the M1911A1 pistol, manufactured by STI."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasHammer = true
 
@@ -610,7 +592,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_trigger.png", "mips s
 ATT.Description = "A standard-issue trigger for the M1911A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.HasTrigger = true
 
@@ -632,7 +613,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m45a1_trigger.png", "mips smo
 ATT.Description = "A standard-issue trigger for the M45A1 pistol, manufactured by Colt."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasTrigger = true
 
@@ -654,7 +634,6 @@ ATT.Icon = Material("entities/eft_1911_attachments/m1911a1_caspian_arms_trik_tri
 ATT.Description = "The \"Trik Trigger\" trigger for the M1911A1 pistol, manufactured by Caspian Arms."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasTrigger = true
 
@@ -678,7 +657,6 @@ ATT.Description = "A standard-issue 7-round .45 ACP magazine for the Colt M1911-
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
@@ -707,7 +685,6 @@ ATT.Description = "A 7-round .45 ACP magazine with a steel low-profile base pad 
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
@@ -801,7 +778,6 @@ ATT.Description = "A standard-issue slide for the M45A1 pistol, manufactured by 
 ATT.SubMaterial17 = "models/weapons/arc9/darsu_eft/1911/reciever_m1911_colt_m45a1_std_BLK"
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 0.954
 
 ATT.HasSlide = true 
@@ -848,7 +824,6 @@ ATT.Description = "The GVT G10 fiberglass grip panels for the Colt M45A1 pistol,
 ATT.SubMaterial22 = "models/weapons/arc9/darsu_eft/1911/pistolgrip_m1911_colt_m45a1_std_BLK"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasGrip = true
 
@@ -874,7 +849,6 @@ ATT.Description = "A standard-issue slide lock lever for M45A1 pistols, manufact
 ATT.SubMaterial3 = "models/weapons/arc9/darsu_eft/1911/catch_m1911_colt_m45a1_std_BLK"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasLock = true
 
@@ -900,7 +874,6 @@ ATT.Description = "A standard-issue hammer for the M45A1 pistol, manufactured by
 ATT.SubMaterial6 = "models/weapons/arc9/darsu_eft/1911/hammer_m1911_colt_m45a1_std_BLK"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasHammer = true
 

@@ -13,7 +13,6 @@ ATT.Description = [[A standard-issue barrel for the TT pistol.]]
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 12.03 * ARC9.MOAToAcc
@@ -38,7 +37,6 @@ ATT.Description = [[A 116mm barrel for the TT pistol, gilded by an unknown gunsm
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 12.03 * ARC9.MOAToAcc
@@ -63,7 +61,6 @@ ATT.Description = [[A homespun barrel for TT pistol with threading for sound sup
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 9.28    * ARC9.MOAToAcc
@@ -94,7 +91,6 @@ ATT.RecoilMult = 0.93
 ATT.HeatCapacityMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(25, 45, 4)
@@ -126,7 +122,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.VisualRecoilMult = 0.92
 ATT.RecoilMult = 0.92
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.BarrelLengthAdd = 1
 
@@ -147,7 +142,6 @@ ATT.Description = [[Hogue-like rubber grips made for TT pistol.]]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -169,7 +163,6 @@ ATT.Description = [[A rubber grip for TT pistols, manufactured by Razor Arms.]]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -191,7 +184,6 @@ ATT.Description = [[Standard post-war issue TT pistol side grips.]]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -213,7 +205,6 @@ ATT.Description = [[Ornated side grips for the TT pistol. So fancy and swaggy.]]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -235,7 +226,6 @@ ATT.Description = [[The TT-206 side grips with a laser aiming module, designed f
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -275,7 +265,6 @@ ATT.Description = [[A precision laser designator for the TT pistol, manufactured
 ATT.Icon = Material("entities/eft_tt33_attachments/l.png", "mips smooth")
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical_tt33"}
@@ -312,7 +301,6 @@ ATT.Icon = Material("entities/eft_tt33_attachments/8.png", "mips smooth")
 ATT.Description = [[A standard late-issue 8-round magazine for the TT pistol. It comes without a lanyard ring.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomPros = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_tt.mdl"

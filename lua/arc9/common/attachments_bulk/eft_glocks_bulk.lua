@@ -16,7 +16,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 ATT.PhysBulletMuzzleVelocityMult = 0.97
@@ -49,7 +48,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel_comp.png", "mips smoo
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 17 pistols.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 0.937
@@ -76,7 +74,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel_ddthr.png", "mips smo
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Double Diamond.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.97
@@ -147,7 +144,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard barrel for the Glock 17 9x19 pistol.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.97
@@ -174,7 +170,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/barrel_18c.png", "mips smoot
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 18C automatic pistols.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.94
 ATT.RecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 0.953
@@ -201,7 +196,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/g19xbarrel.png", "mips smoot
 ATT.Description = [[A standard barrel for the Glock 19X 9x19 pistol. The barrel is treated with an nDLC coating that protects against corrosion and scratches.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.977
@@ -371,7 +365,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.9
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_24.mdl"
@@ -403,7 +396,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.MalfunctionMeanShotsToFailMult = 0.85
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_31.mdl"
@@ -435,7 +427,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1.5
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-1.5" }
 -- ATT.MalfunctionMeanShotsToFailMult = 1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_19x.mdl"
@@ -464,7 +455,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/atbase.png", "mips smooth")
 ATT.Description = [[A sight mount base for Glock pistols, allows additional installation of reflex sights on the Weaver-type rail. Manufactured by Aimtech.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -498,7 +488,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/tshark.png", "mips smooth")
 ATT.Description = [[A Glock family sight mount base designed for installation of additional reflex sights on the pistol. Manufactured by Aimtech.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -536,7 +525,6 @@ ATT.Description = [[A compensator manufactured by CARVER Custom. The model is on
 ATT.VisualRecoilMult = 0.89
 ATT.RecoilMult = 0.89
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -2
@@ -564,7 +552,6 @@ ATT.Description = [[The Alpha Wolf compensator manufactured by Lone Wolf. Can on
 ATT.VisualRecoilMult = 0.93
 ATT.RecoilMult = 0.93
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 1.01
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -2
@@ -593,7 +580,6 @@ ATT.Description = [[A thread protector for threaded barrels of Glock Alpha Wolf 
 
 -- ATT.VisualRecoilMult = 0.89
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 -- ATT.SpreadMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 1.02
 ATT.HeatCapacityAdd = -1
@@ -621,7 +607,6 @@ ATT.Description = [[A custom compensator manufactured by CARVER Custom. The comp
 ATT.VisualRecoilMult = 0.88
 ATT.RecoilMult = 0.88
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -2
@@ -649,7 +634,6 @@ ATT.Description = [[A simple, inexpensive, but still quite effective compensator
 ATT.VisualRecoilMult = 0.91
 ATT.RecoilMult = 0.91
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -1
@@ -677,7 +661,6 @@ ATT.Description = [[A thread protector for threaded barrels of Glock family pist
 
 -- ATT.VisualRecoilMult = 0.91
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 -- ATT.SpreadMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 0.97
 ATT.HeatCapacityAdd = -1
@@ -705,7 +688,6 @@ ATT.Description = [[A unique compensator for Glock family pistols which can be m
 ATT.VisualRecoilMult = 0.86
 ATT.RecoilMult = 0.86
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -2
@@ -733,7 +715,6 @@ ATT.Description = [[A Glock 9x19 compensator manufactured by Lone Wolf.]]
 ATT.VisualRecoilMult = 0.88
 ATT.RecoilMult = 0.88
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.SpreadMult = 1.03
 ATT.PhysBulletMuzzleVelocityMult = 0.98
 ATT.HeatCapacityAdd = -1
@@ -760,7 +741,6 @@ ATT.Description = [[A thread protector for threaded barrels of Glock family pist
 
 -- ATT.VisualRecoilMult = 0.91
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 -- ATT.SpreadMult = 0.99
 ATT.PhysBulletMuzzleVelocityMult = 0.97
 ATT.HeatCapacityAdd = -1
@@ -787,7 +767,6 @@ ATT.Description = [[The Pachmayr tactical rubber grip increases the handling and
 
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -812,7 +791,6 @@ ATT.Description = [[A slide for Glock pistols family, manufactured by Lone Wolf.
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -862,7 +840,6 @@ ATT.Description = [[A special version of Glock family pistols’ slide made by L
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -910,7 +887,6 @@ ATT.Description = [[The MOS (Modular Optic System) slide designed for Glock 9x19
 
 -- ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -966,7 +942,6 @@ ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1014,7 +989,6 @@ ATT.Description = [[The PS9 slide for Glock family pistols, manufactured by Poly
 ATT.VisualRecoilMult = 0.98
 ATT.RecoilMult = 0.98
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1061,7 +1035,6 @@ ATT.Description = [[A standard-issue slide for Glock 9x19 pistols.]]
 
 -- ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1109,7 +1082,6 @@ ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 ATT.VisualRecoilMult = 0.99
 ATT.RecoilMult = 0.99
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1157,7 +1129,6 @@ ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Techno
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1212,7 +1183,6 @@ ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Techno
 ATT.VisualRecoilMult = 0.93
 ATT.RecoilMult = 0.93
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1266,7 +1236,6 @@ ATT.Description = [[A standard-issue slide for Glock 18C 9x19 pistols.]]
 
 -- ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1310,7 +1279,6 @@ Not presents in EFT, custom att.]]
 
 -- ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1352,7 +1320,6 @@ ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide 
 
 -- ATT.VisualRecoilMult = 0.99
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1560,7 +1527,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.VisualRecoilMult = 0.8
 ATT.RecoilMult = 0.8
 ATT.EFTErgoAdd = -22
-ATT.CustomCons = { Ergonomics = "-22" }
 ATT.PhysBulletMuzzleVelocityMult = 1.035
 ATT.HeatCapacityAdd = -50*0.43
 
@@ -1603,7 +1569,6 @@ ATT.Description = [[The GLR-17 telescoping buttstock, manufactured by FAB Defens
 ATT.VisualRecoilMult = 0.67
 ATT.RecoilMult = 0.67
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1657,7 +1622,6 @@ ATT.Icon = Material("entities/eft_glock_attachments/ztcap.png", "mips smooth")
 ATT.Description = [[A protective steel cap covering the mount for reflex sights, manufactured by ZEV Technologies.]]
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1688,7 +1652,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-2" }
 -- ATT.MalfunctionMeanShotsToFailMult = 0.85
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_pmag_21.mdl"
@@ -1719,7 +1682,6 @@ ATT.Description = [[A high-capacity 50-round magazine for the Glock family pisto
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.MalfunctionMeanShotsToFailMult = 0.77
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_drum_50.mdl"

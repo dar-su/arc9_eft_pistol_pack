@@ -15,7 +15,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.98
 ATT.RecoilMult = 0.98
 ATT.Spread = 9.63 * ARC9.MOAToAcc
@@ -44,7 +43,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.Spread = 7.22 * ARC9.MOAToAcc
@@ -71,7 +69,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.VisualRecoilMult = 0.975
 ATT.RecoilMult = 0.975
 ATT.Spread = 8.94 * ARC9.MOAToAcc
@@ -100,7 +97,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 ATT.Spread = 7.91 * ARC9.MOAToAcc
@@ -165,7 +161,6 @@ ATT.Description = [[A standard-issue slide lock lever for the USP pistol, manufa
 ATT.HasLock = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -187,7 +182,6 @@ ATT.Description = [[A standard-issue slide lock lever for the USP pistol, manufa
 ATT.HasHammer = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -209,7 +203,6 @@ ATT.Description = [[A standard-issue trigger for the USP pistol, manufactured by
 ATT.HasTrigger = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -230,7 +223,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/sstd.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the USP45 pistol, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.96
 ATT.HeatDissipationMult = 1.06
 
@@ -268,7 +260,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/sel.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Elite, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 ATT.HeatCapacityMult = 0.95
@@ -310,7 +301,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/sex.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Expert, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.VisualRecoilMult = 0.98
 ATT.RecoilMult = 0.98
 ATT.HeatCapacityMult = 0.958
@@ -352,7 +342,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/sm.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Match, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.958
 ATT.HeatDissipationMult = 1.06
 
@@ -390,7 +379,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/st.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Tactical, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 0.956
 ATT.HeatDissipationMult = 1.06
 
@@ -511,7 +499,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Attachments = {
     {
@@ -543,7 +530,6 @@ ATT.Description = [[A standard-issue 12-round .45 ACP magazine for the USP45 pis
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = -2
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
@@ -571,7 +557,7 @@ ATT.Description = [[A standard-issue 12-round .45 ACP magazine for the USP45 pis
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { ["Improved check accuracy"] = "Yes", Ergonomics = "+1" }
+ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.982
 
@@ -598,7 +584,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/thr.png", "mips smooth")
 ATT.Description = [[A thread protector for the Tactical barrel for the USP pistol, manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -618,7 +603,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/rail.png", "mips smooth")
 ATT.Description = [[An adapter for the USP pistol that allows the installation of additional tactical equipment. Manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -648,7 +632,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/elcomp.png", "mips smooth")
 ATT.Description = [[The Elite compensator from the special USP Elite pistol kit will add additional weight to the front of your gun assisting to reduce vertical recoil "bounce". Manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = -8
-ATT.CustomCons = { Ergonomics = "-8" }
 ATT.VisualRecoilMult = 0.9
 ATT.RecoilMult = 0.9
 
@@ -672,7 +655,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/matchcomp.png", "mips smooth")
 ATT.Description = [[The Match compensator from the special USP Match pistol kit will add additional weight to the front of your gun assisting to reduce vertical recoil "bounce". Features a mount for installation of additional tactical equipment. Manufactured by Heckler & Koch.]]
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.VisualRecoilMult = 0.85
 ATT.RecoilMult = 0.85
 
@@ -706,7 +688,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/omegapiston.png", "mips smooth
 ATT.Description = [[The Piston Mount adapter for installation of SilencerCo Omega 45k sound suppressor directly onto the barrel threading.]]
 
 -- ATT.EFTErgoAdd = 1
--- ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

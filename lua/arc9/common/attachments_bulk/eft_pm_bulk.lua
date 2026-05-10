@@ -13,7 +13,6 @@ ATT.Description = [[A standard-issue slide for Makarov Pistol 9x18.]]
 ATT.HasReciever = true 
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -62,7 +61,6 @@ ATT.Description = [[Standard-issue bakelite side grip panels for the PM pistol.]
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -84,7 +82,6 @@ ATT.Description = [[A PM grip by FAB Defense with a built-in magazine release me
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -106,7 +103,6 @@ ATT.Description = [[A PM grip by FAB Defense with a built-in magazine release me
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -128,7 +124,6 @@ ATT.Description = [[An ergonomic Makarov Pistol grip. Provides a comfortable gri
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -159,7 +154,6 @@ ATT.Description = [[A Makarov Pistol grip with built-in magazine release mechani
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -205,7 +199,6 @@ ATT.Icon = Material("entities/eft_pm_attachments/8.png", "mips smooth")
 ATT.Description = [[A standard 8-round magazine for IzhMekh-produced Makarov PM pistols. It features a side observation slot for checking the magazine capacity.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomPros = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pm_8.mdl"
@@ -235,7 +228,6 @@ ATT.Icon = Material("entities/eft_pm_attachments/84.png", "mips smooth")
 ATT.Description = [[A makeshift 84-round PM magazine. First assembled by an unknown genius by combining PM and PPSH magazines into a single design for operations in narrow spaces with the aid of ballistic shields. Although it was never serialized even in the smallest number, it can be crafted pretty easily, provided you have the donor mags and skillful hands.]]
 
 ATT.EFTErgoAdd = -18
-ATT.CustomPros = { Ergonomics = "-18" }
 ATT.MalfunctionMeanShotsToFailMult = 0.75
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pm_84.mdl"
@@ -308,7 +300,6 @@ ATT.HasReciever = true
 ATT.HasGrip = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -334,7 +325,6 @@ ATT.VisualRecoilMult = 0.92
 ATT.RecoilMult = 0.92
 ATT.HeatCapacityMult = 0.87
 ATT.EFTErgoAdd = -21
-ATT.CustomCons = { Ergonomics = "-21" }
 
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(24, 40, 4)

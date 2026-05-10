@@ -23,7 +23,6 @@ ATT.Description = [[The Baldr Pro flashlight by Olight is engineered to fit virt
 ATT.Icon = Material("entities/eft_attachments/tactical/baldr.png", "mips smooth")
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -104,7 +103,6 @@ ATT.Icon = Material("entities/eft_attachments/tactical/baldr_tan.png", "mips smo
 
 ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -182,7 +180,6 @@ ATT.Description = [[An underbarrel-mounted LED flashlight with a laser aiming mo
 ATT.Icon = Material("entities/eft_attachments/tactical/gtl21.png", "mips smooth")
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -258,7 +255,6 @@ ATT.Description = [[The X400U flashlight by SureFire is engineered to fit virtua
 ATT.Icon = Material("entities/eft_attachments/tactical/x400.png", "mips smooth")
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -334,7 +330,6 @@ ATT.Description = [[A compact tactical LED flashlight, manufactured by SureFire.
 ATT.Icon = Material("entities/eft_attachments/tactical/xc1.png", "mips smooth")
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol", "eft_tactical_top", "eft_tactical_xc1"}
