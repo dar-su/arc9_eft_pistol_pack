@@ -12,15 +12,20 @@ ATT.Description = [[A standard-issue barrel for the TT pistol.]]
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 12.03 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -3,
+    weight = 0.06,
+    velocity = -2.32,
+}))
+
 
 -- EFT ID: 571a26d524597720680fbe8a
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_116")
@@ -36,15 +41,20 @@ ATT.Description = [[A 116mm barrel for the TT pistol, gilded by an unknown gunsm
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -4
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 12.03 * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -3,
+    weight = 0.06,
+    velocity = -2.32,
+}))
+
 
 -- EFT ID: 5b3baf8f5acfc40dc5296692
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_116g")
@@ -60,15 +70,20 @@ ATT.Description = [[A homespun barrel for TT pistol with threading for sound sup
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.SpreadOverride = 9.28    * ARC9.MOAToAcc
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -3.25,
+    weight = 0.062,
+    velocity = -2.31,
+}))
+
 
 -- EFT ID: 571a279b24597720b4066566
 ARC9.LoadAttachment(ATT, "eft_tt33_barrel_121")
@@ -86,11 +101,6 @@ ATT.Description = [[A makeshift sound suppressor for TT with a homespun barrel. 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.VisualRecoilMult = 0.93
-ATT.RecoilMult = 0.93
-ATT.HeatCapacityMult = 0.85
-ATT.PhysBulletMuzzleVelocityMult = 1.005
-ATT.EFTErgoAdd = -12
 
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(25, 45, 4)
@@ -102,6 +112,14 @@ ATT.BarrelLengthAdd = 5
 
 ATT.Category = {"eft_tt33_muzz"}
 ATT.RequireElements = {"eft_tt33_barrel_121"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -7,
+    weight = 0.332,
+    velocity = 0.7,
+}))
+
 
 -- EFT ID: 571a28e524597720b4066567
 ARC9.LoadAttachment(ATT, "eft_tt33_asilencer")
@@ -119,13 +137,17 @@ ATT.Description = [[A custom compensator for TT pistols manufactured by PM-Laser
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.VisualRecoilMult = 0.92
-ATT.RecoilMult = 0.92
-ATT.EFTErgoAdd = -1
-
 ATT.BarrelLengthAdd = 1
 
 ATT.Category = {"eft_tt33_muzz"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -8,
+    accuracyModifier = 2,
+    weight = 0.036,
+}))
+
 
 -- EFT ID: 5bffd7ed0db834001d23ebf9
 ARC9.LoadAttachment(ATT, "eft_tt33_dtk")
@@ -141,12 +163,17 @@ ATT.Description = [[Hogue-like rubber grips made for TT pistol.]]
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 8
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 5c0684e50db834002a12585a
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_hogue")
@@ -162,12 +189,17 @@ ATT.Description = [[A rubber grip for TT pistols, manufactured by Razor Arms.]]
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 13
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 5c079ec50db834001966a706
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_razor")
@@ -183,12 +215,17 @@ ATT.Description = [[Standard post-war issue TT pistol side grips.]]
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 571a282c2459771fb2755a69
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_std")
@@ -204,12 +241,17 @@ ATT.Description = [[Ornated side grips for the TT pistol. So fancy and swaggy.]]
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_tt33_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 5b3cadf35acfc400194776a0
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_swag")
@@ -225,7 +267,6 @@ ATT.Description = [[The TT-206 side grips with a laser aiming module, designed f
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 2
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -251,6 +292,12 @@ ATT.ToggleStats = {
 
 ATT.Category = {"eft_tt33_pg"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5bffcf7a0db83400232fea79
 ARC9.LoadAttachment(ATT, "eft_tt33_pg_206")
 
@@ -264,7 +311,6 @@ ATT.Description = [[A precision laser designator for the TT pistol, manufactured
 
 ATT.Icon = Material("entities/eft_tt33_attachments/l.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical_tt33"}
@@ -288,6 +334,12 @@ ATT.ToggleStats = {
     }
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.086,
+}))
+
+
 -- EFT ID: 5c079ed60db834001a66b372
 ARC9.LoadAttachment(ATT, "eft_tactical_ttprec")
 
@@ -300,8 +352,6 @@ ATT.CompactName = "tt-105 8"
 ATT.Icon = Material("entities/eft_tt33_attachments/8.png", "mips smooth")
 ATT.Description = [[A standard late-issue 8-round magazine for the TT pistol. It comes without a lanyard ring.]]
 
-ATT.EFTErgoAdd = -1
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_tt.mdl"
 ATT.DropMagazineAmount = 1
@@ -316,6 +366,13 @@ ATT.SuppressEmptySuffix = false
 
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.08,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 571a29dc2459771fb2755a6a
 ARC9.LoadAttachment(ATT, "eft_tt33_mag_8")

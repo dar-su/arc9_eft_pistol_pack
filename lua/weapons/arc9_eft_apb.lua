@@ -28,3 +28,4 @@ SWEP.Attachments = {
 } -- overide
 
 SWEP.EFTErgo = 80
+SWEP.EFTWeight = 0.81

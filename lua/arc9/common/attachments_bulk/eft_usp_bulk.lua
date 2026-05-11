@@ -14,17 +14,20 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.98
-ATT.RecoilMult = 0.98
 ATT.Spread = 9.63 * ARC9.MOAToAcc
-ATT.PhysBulletMuzzleVelocityMult = 0.977
 ATT.HeatCapacityMult = 0.86
 ATT.HeatDissipationMult = 1.21
 
 ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite", "eft_slide_usp_expert" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -1.3,
+    weight = 0.113,
+    velocity = -2,
+}))
+
 
 -- EFT ID: 6194ef39de3cdf1d2614a768
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_std")
@@ -42,15 +45,20 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -6
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
 ATT.Spread = 7.22 * ARC9.MOAToAcc
-ATT.PhysBulletMuzzleVelocityMult = 0.977
 ATT.HeatCapacityMult = 0.94
 ATT.HeatDissipationMult = 1.09
 
 ATT.Category = {"eft_usp_barrel"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -1.8,
+    accuracyModifier = 1,
+    weight = 0.163,
+    velocity = 2,
+}))
+
 
 -- EFT ID: 6194f017ed0429009f543eaa
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_elite")
@@ -68,17 +76,21 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.975
-ATT.RecoilMult = 0.975
 ATT.Spread = 8.94 * ARC9.MOAToAcc
-ATT.PhysBulletMuzzleVelocityMult = 0.984
 ATT.HeatCapacityMult = 0.9
 ATT.HeatDissipationMult = 1.15
 
 ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1.5,
+    weight = 0.141,
+    velocity = -1,
+}))
+
 
 -- EFT ID: 6194eff92d2c397d6600348b
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_expert")
@@ -96,17 +108,22 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -7
-ATT.VisualRecoilMult = 0.96
-ATT.RecoilMult = 0.96
 ATT.Spread = 7.91 * ARC9.MOAToAcc
-ATT.PhysBulletMuzzleVelocityMult = 0.982
 ATT.HeatCapacityMult = 0.94
 ATT.HeatDissipationMult = 1.09
 
 ATT.Category = {"eft_usp_barrel"}
 
 ATT.ExcludeElements = { "eft_slide_usp_elite" }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -1.8,
+    accuracyModifier = 2,
+    weight = 0.17,
+    velocity = 1,
+}))
+
 
 -- EFT ID: 6194f02d9bb3d20b0946d2f0
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_match")
@@ -124,11 +141,7 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
-ATT.VisualRecoilMult = 0.98
-ATT.RecoilMult = 0.98
 ATT.Spread = 9.28 * ARC9.MOAToAcc
-ATT.PhysBulletMuzzleVelocityMult = 0.978
 ATT.HeatCapacityMult = 0.9
 ATT.HeatDissipationMult = 1.15
 
@@ -145,6 +158,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1.5,
+    weight = 0.122,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 6194efe07c6c7b169525f11b
 ARC9.LoadAttachment(ATT, "eft_barrel_usp_tac")
 
@@ -160,12 +181,16 @@ ATT.Description = [[A standard-issue slide lock lever for the USP pistol, manufa
 
 ATT.HasLock = true
 
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_slock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.008,
+}))
+
 
 -- EFT ID: 6193d5d4f8ee7e52e4210a1b
 ARC9.LoadAttachment(ATT, "eft_usp_slock_std")
@@ -181,12 +206,16 @@ ATT.Description = [[A standard-issue slide lock lever for the USP pistol, manufa
 
 ATT.HasHammer = true
 
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_hammer"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.017,
+}))
+
 
 -- EFT ID: 6193d3be7c6c7b169525f0da
 ARC9.LoadAttachment(ATT, "eft_usp_hammer_std")
@@ -202,12 +231,16 @@ ATT.Description = [[A standard-issue trigger for the USP pistol, manufactured by
 
 ATT.HasTrigger = true
 
-ATT.EFTErgoAdd = 2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_trigger"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.013,
+}))
+
 
 -- EFT ID: 6193d3cded0429009f543e6a
 ARC9.LoadAttachment(ATT, "eft_usp_trigger_std")
@@ -222,7 +255,6 @@ ATT.CompactName = "USP45"
 ATT.Icon = Material("entities/eft_usp_attachments/sstd.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the USP45 pistol, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 0.96
 ATT.HeatDissipationMult = 1.06
 
@@ -247,6 +279,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.409,
+}))
+
+
 -- EFT ID: 6193d382ed0429009f543e65
 ARC9.LoadAttachment(ATT, "eft_slide_usp_std")
 
@@ -259,9 +297,6 @@ ATT.CompactName = "USP45EL"
 ATT.Icon = Material("entities/eft_usp_attachments/sel.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Elite, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 2
-ATT.VisualRecoilMult = 0.96
-ATT.RecoilMult = 0.96
 ATT.HeatCapacityMult = 0.95
 ATT.HeatDissipationMult = 1.06
 
@@ -288,6 +323,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -4,
+    accuracyModifier = 5,
+    weight = 0.55,
+}))
+
+
 -- EFT ID: 6194f5d418a3974e5e7421ef
 ARC9.LoadAttachment(ATT, "eft_slide_usp_elite")
 
@@ -300,9 +343,6 @@ ATT.CompactName = "USP45EX"
 ATT.Icon = Material("entities/eft_usp_attachments/sex.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Expert, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 3
-ATT.VisualRecoilMult = 0.98
-ATT.RecoilMult = 0.98
 ATT.HeatCapacityMult = 0.958
 ATT.HeatDissipationMult = 1.06
 
@@ -329,6 +369,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -2,
+    weight = 0.44,
+}))
+
+
 -- EFT ID: 6194f5722d2c397d6600348f
 ARC9.LoadAttachment(ATT, "eft_slide_usp_expert")
 
@@ -341,7 +388,6 @@ ATT.CompactName = "USP45M"
 ATT.Icon = Material("entities/eft_usp_attachments/sm.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Match, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 0.958
 ATT.HeatDissipationMult = 1.06
 
@@ -366,6 +412,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.45,
+}))
+
+
 -- EFT ID: 6194f5a318a3974e5e7421eb
 ARC9.LoadAttachment(ATT, "eft_slide_usp_match")
 
@@ -373,12 +425,11 @@ ARC9.LoadAttachment(ATT, "eft_slide_usp_match")
 
 ATT = {}
 
-ATT.PrintName = "HK USP Match .45 ACP pistol slide"
+ATT.PrintName = "HK USP Tactical .45 ACP pistol slide"
 ATT.CompactName = "USP45T"
 ATT.Icon = Material("entities/eft_usp_attachments/st.png", "mips smooth")
 ATT.Description = [[A pistol slide for the special version of the USP45 pistol - USP45 Tactical, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 3
 ATT.HeatCapacityMult = 0.956
 ATT.HeatDissipationMult = 1.06
 
@@ -403,7 +454,13 @@ ATT.Attachments = {
     },
 }
 
--- EFT ID: 6194f5a318a3974e5e7421eb
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.45,
+}))
+
+
+-- EFT ID: 6194f41f9fb0c665d5490e75
 ARC9.LoadAttachment(ATT, "eft_slide_usp_tac")
 
 ///////////////////////////////////////      eft_fs_usp_std
@@ -422,6 +479,11 @@ ATT.Category = {"eft_usp_fs"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_fs.mdl"
 -- ATT.ModelBodygroups = "0"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.003,
+}))
+
 
 -- EFT ID: 6194f35c18a3974e5e7421e6
 ARC9.LoadAttachment(ATT, "eft_fs_usp_std")
@@ -443,6 +505,11 @@ ATT.Category = {"eft_usp_fs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_fs.mdl"
 ATT.ModelBodygroups = "1"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.005,
+}))
+
+
 -- EFT ID: 6194f3286db0f2477964e67d
 ARC9.LoadAttachment(ATT, "eft_fs_usp_tac")
 
@@ -462,6 +529,11 @@ ATT.Category = {"eft_usp_rs"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_rs.mdl"
 -- ATT.ModelBodygroups = "0"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.004,
+}))
+
 
 -- EFT ID: 6194f2912d2c397d6600348d
 ARC9.LoadAttachment(ATT, "eft_rs_usp_std")
@@ -483,6 +555,11 @@ ATT.Category = {"eft_usp_rs"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/usp_rs.mdl"
 ATT.ModelBodygroups = "1"
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 6194f2df645b5d229654ad77
 ARC9.LoadAttachment(ATT, "eft_rs_usp_tac")
 
@@ -497,8 +574,6 @@ ATT.Description = [[A rear sight mount allows the installation of Burris Fast Fi
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.EFTErgoAdd = -2
 
 ATT.Attachments = {
     {
@@ -515,6 +590,12 @@ ATT.ModelBodygroups = "2"
 
 ATT.Category = {"eft_usp_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.028,
+}))
+
+
 -- EFT ID: 61963a852d2c397d660036ad
 ARC9.LoadAttachment(ATT, "eft_rs_usp_mount")
 
@@ -528,7 +609,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/12.png", "mips smooth")
 ATT.Description = [[A standard-issue 12-round .45 ACP magazine for the USP45 pistol.]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.EFTErgoAdd = -2
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.98
@@ -543,6 +623,13 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_usp_mag"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.099,
+    malfunctionChance = 0.02,
+}))
+
+
 -- EFT ID: 6193d338de3cdf1d2614a6fc
 ARC9.LoadAttachment(ATT, "eft_mag_usp_std")
 
@@ -556,7 +643,6 @@ ATT.Icon = Material("entities/eft_usp_attachments/12t.png", "mips smooth")
 ATT.Description = [[A standard-issue 12-round .45 ACP magazine for the USP45 pistol.]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-ATT.EFTErgoAdd = 1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.982
@@ -571,6 +657,13 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_usp_mag"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.092,
+    malfunctionChance = 0.018,
+}))
+
+
 -- EFT ID: 6193d3149fb0c665d5490e32
 ARC9.LoadAttachment(ATT, "eft_mag_usp_tac")
 
@@ -583,12 +676,16 @@ ATT.CompactName = "USP45T"
 ATT.Icon = Material("entities/eft_usp_attachments/thr.png", "mips smooth")
 ATT.Description = [[A thread protector for the Tactical barrel for the USP pistol, manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = 1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_usp_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 6194f1f918a3974e5e7421e4
 ARC9.LoadAttachment(ATT, "eft_muzzle_usp_cap")
@@ -602,7 +699,6 @@ ATT.CompactName = "USP rail"
 ATT.Icon = Material("entities/eft_usp_attachments/rail.png", "mips smooth")
 ATT.Description = [[An adapter for the USP pistol that allows the installation of additional tactical equipment. Manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -619,6 +715,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.01,
+}))
+
+
 -- EFT ID: 6196255558ef8c428c287d1c
 ARC9.LoadAttachment(ATT, "eft_mount_usp_rail")
 
@@ -631,16 +733,19 @@ ATT.CompactName = "USP45EL"
 ATT.Icon = Material("entities/eft_usp_attachments/elcomp.png", "mips smooth")
 ATT.Description = [[The Elite compensator from the special USP Elite pistol kit will add additional weight to the front of your gun assisting to reduce vertical recoil "bounce". Manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = -8
-ATT.VisualRecoilMult = 0.9
-ATT.RecoilMult = 0.9
-
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = { "eft_slide_usp_expert", "eft_barrel_usp_std", "eft_barrel_usp_expert", "eft_barrel_usp_tac" }
 
 ATT.Category = {"eft_usp_tac"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -10,
+    weight = 0.31,
+}))
+
 
 -- EFT ID: 619621a4de3cdf1d2614a7a7
 ARC9.LoadAttachment(ATT, "eft_mount_usp_elite")
@@ -654,9 +759,6 @@ ATT.CompactName = "USP45M"
 ATT.Icon = Material("entities/eft_usp_attachments/matchcomp.png", "mips smooth")
 ATT.Description = [[The Match compensator from the special USP Match pistol kit will add additional weight to the front of your gun assisting to reduce vertical recoil "bounce". Features a mount for installation of additional tactical equipment. Manufactured by Heckler & Koch.]]
 
-ATT.EFTErgoAdd = -12
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilMult = 0.85
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -675,6 +777,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -12,
+    recoilModifier = -15,
+    weight = 0.34,
+}))
+
+
 -- EFT ID: 619624b26db0f2477964e6b0
 ARC9.LoadAttachment(ATT, "eft_mount_usp_match")
 
@@ -687,7 +796,6 @@ ATT.CompactName = "PM Omega"
 ATT.Icon = Material("entities/eft_usp_attachments/omegapiston.png", "mips smooth")
 ATT.Description = [[The Piston Mount adapter for installation of SilencerCo Omega 45k sound suppressor directly onto the barrel threading.]]
 
--- ATT.EFTErgoAdd = 1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -705,6 +813,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(1, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.141,
+}))
+
 
 -- EFT ID: 5fc4b97bab884124df0cd5e3
 ARC9.LoadAttachment(ATT, "eft_muzzle_omegapiston")

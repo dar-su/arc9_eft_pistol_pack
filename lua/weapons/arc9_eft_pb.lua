@@ -63,3 +63,4 @@ SWEP.HookP_NameChange = function(self, name) end
 
 SWEP.HookP_DescriptionChange = function(self, desc) end
 SWEP.EFTErgo = 80
+SWEP.EFTWeight = 0.674

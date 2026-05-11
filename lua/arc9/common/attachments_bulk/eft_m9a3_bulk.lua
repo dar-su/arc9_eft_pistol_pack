@@ -15,11 +15,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_m9a3_barrel"}
 
 ATT.Attachments = {
@@ -30,6 +25,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -3,
+    weight = 0.2,
+    velocity = -2.4,
+}))
 
 
 -- EFT ID: 5cadc1c6ae9215000f2775a4
@@ -51,6 +54,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m9a3_fs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
 
 
 -- EFT ID: 5cadd919ae921500126a77f3
@@ -104,9 +112,7 @@ ATT.Description = [[A standard 17-round 9x19 magazine for the Beretta M9A3 pisto
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m9a3.mdl"
 ATT.ChamberSize = 1
@@ -116,6 +122,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_m9a3_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.082,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5cadc2e0ae9215051e1c21e7
 ARC9.LoadAttachment(ATT, "eft_mag_m9a3_std")
@@ -132,9 +145,7 @@ ATT.Description = [[A 30-round 9x19 magazine for the Beretta M9A3 pistol]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_m9a3_ext.mdl"
 ATT.ChamberSize = 1
@@ -144,6 +155,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magext"}
 
 ATT.Category = {"eft_m9a3_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.091,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 676176b762e0497044079f49
 ARC9.LoadAttachment(ATT, "eft_mag_m9a3_ext")
@@ -158,16 +176,16 @@ ATT.CompactName = "M9A3 cap"
 ATT.Icon = Material("entities/eft_m9a3_attachments/c.png", "mips smooth")
 ATT.Description = [[A threading protection cap for the Beretta M9A3 9x19 barrel.]]
 
--- ATT.VisualRecoilMult = 0.89
-ATT.EFTErgoAdd = 1
--- ATT.SpreadMult = 0.98
--- ATT.PhysBulletMuzzleVelocityMult = 1.02
-ATT.HeatCapacityAdd = 1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m9a3_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 5cadc390ae921500126a77f1
@@ -186,12 +204,16 @@ ATT.Description = [[Standard-issue polymer side grip panels for Beretta M9A3 pis
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 4
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m9a3_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5cadc431ae921500113bb8d5
@@ -208,7 +230,6 @@ ATT.CompactName = "M9A3"
 ATT.Icon = Material("entities/eft_m9a3_attachments/s.png", "mips smooth")
 ATT.Description = [[A standard-issue pistol slide for Beretta M9A3 9x19 pistols.]]
 
-ATT.EFTErgoAdd = 1
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -234,6 +255,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.19,
+}))
+
+
 -- EFT ID: 5cadc55cae921500103bb3be
 ARC9.LoadAttachment(ATT, "eft_slide_m9a3_std")
 
@@ -253,6 +280,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_m9a3_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 5cadd940ae9215051e1c2316
 ARC9.LoadAttachment(ATT, "eft_rs_m9a3_std")
 
@@ -269,8 +301,6 @@ ATT.Description = [[A rear sight rail manufactured by Sight Mount for Beretta M9
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -283,6 +313,12 @@ ATT.Attachments = {
 
 
 ATT.Category = {"eft_m9a3_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.028,
+}))
 
 
 -- EFT ID: 5cadd954ae921500103bb3c2

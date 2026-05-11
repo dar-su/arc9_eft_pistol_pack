@@ -38,6 +38,8 @@ SWEP.Firemodes = {
 }
 SWEP.RPM = 1200
 
+SWEP.EFTWeight = 0.231
+
 SWEP.Recoil = 1.25 -- general multiplier of main recoil
 
 SWEP.RecoilUp   = 2.25   -- up recoil

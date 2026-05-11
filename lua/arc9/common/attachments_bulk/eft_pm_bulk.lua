@@ -10,9 +10,7 @@ ATT.CompactName = "PM"
 ATT.Icon = Material("entities/eft_pm_attachments/r.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for Makarov Pistol 9x18.]]
 
-ATT.HasReciever = true 
-
-ATT.EFTErgoAdd = 1
+ATT.HasReciever = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -27,6 +25,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.28,
+}))
 
 
 -- EFT ID: 6374a822e629013b9c0645c8
@@ -46,6 +50,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.002,
+}))
+
+
 -- EFT ID: 63c6adcfb4ba094317063742
 ARC9.LoadAttachment(ATT, "eft_pm_rs_std")
 
@@ -58,14 +67,18 @@ ATT.CompactName = "PM bak."
 ATT.Icon = Material("entities/eft_pm_attachments/g.png", "mips smooth")
 ATT.Description = [[Standard-issue bakelite side grip panels for the PM pistol.]]
 
-ATT.HasGrip = true 
-
-ATT.EFTErgoAdd = 5
+ATT.HasGrip = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 6374a7e7417239a7bf00f042
 ARC9.LoadAttachment(ATT, "eft_pm_pg_std")
@@ -79,14 +92,18 @@ ATT.CompactName = "PM-G"
 ATT.Icon = Material("entities/eft_pm_attachments/gfab.png", "mips smooth")
 ATT.Description = [[A PM grip by FAB Defense with a built-in magazine release mechanism that turns the Soviet classic into a modern handy pistol, significantly improving ergonomics.]]
 
-ATT.HasGrip = true 
-
-ATT.EFTErgoAdd = 10
+ATT.HasGrip = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.072,
+}))
+
 
 -- EFT ID: 637784c5f7b3f4ac1a0d1a9a
 ARC9.LoadAttachment(ATT, "eft_pm_pg_fab")
@@ -100,14 +117,18 @@ ATT.CompactName = "PM-G OD"
 ATT.Icon = Material("entities/eft_pm_attachments/gfabod.png", "mips smooth")
 ATT.Description = [[A PM grip by FAB Defense with a built-in magazine release mechanism that turns the Soviet classic into a modern handy pistol, significantly improving ergonomics. Olive Drab version.]]
 
-ATT.HasGrip = true 
-
-ATT.EFTErgoAdd = 10
+ATT.HasGrip = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pm_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.072,
+}))
+
 
 -- EFT ID: 648afce7ec6bb25b2608defb
 ARC9.LoadAttachment(ATT, "eft_pm_pg_fab_od")
@@ -121,9 +142,7 @@ ATT.CompactName = "PM TK"
 ATT.Icon = Material("entities/eft_pm_attachments/gtk.png", "mips smooth")
 ATT.Description = [[An ergonomic Makarov Pistol grip. Provides a comfortable grip and allows installation of additional accessories under the barrel. Manufactured by Gun Custom Tuning.]]
 
-ATT.HasGrip = true 
-
-ATT.EFTErgoAdd = 12
+ATT.HasGrip = true
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -139,6 +158,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.114,
+}))
+
+
 -- EFT ID: 637b6d610aef6cfc5e02dd14
 ARC9.LoadAttachment(ATT, "eft_pm_pg_tk")
 
@@ -153,7 +178,6 @@ ATT.Description = [[A Makarov Pistol grip with built-in magazine release mechani
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 7
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -185,6 +209,12 @@ ATT.Category = {"eft_pm_pg"}
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 661f8995c341ea101e0d33e8
 ARC9.LoadAttachment(ATT, "eft_pm_pg_laser")
 
@@ -197,9 +227,6 @@ ATT.PrintName = "PM 9x18PM 90-93 8-round magazine"
 ATT.CompactName = "PM 8"
 ATT.Icon = Material("entities/eft_pm_attachments/8.png", "mips smooth")
 ATT.Description = [[A standard 8-round magazine for IzhMekh-produced Makarov PM pistols. It features a side observation slot for checking the magazine capacity.]]
-
-ATT.EFTErgoAdd = -1
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pm_8.mdl"
 ATT.DropMagazineAmount = 1
@@ -215,6 +242,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.045,
+    malfunctionChance = 0.03,
+}))
+
+
 -- EFT ID: 5448c12b4bdc2d02308b456f
 ARC9.LoadAttachment(ATT, "eft_pm_mag_8")
 
@@ -226,9 +260,6 @@ ATT.PrintName = "PM 9x18PM 84-round makeshift drum magazine"
 ATT.CompactName = "PM drum 84"
 ATT.Icon = Material("entities/eft_pm_attachments/84.png", "mips smooth")
 ATT.Description = [[A makeshift 84-round PM magazine. First assembled by an unknown genius by combining PM and PPSH magazines into a single design for operations in narrow spaces with the aid of ballistic shields. Although it was never serialized even in the smallest number, it can be crafted pretty easily, provided you have the donor mags and skillful hands.]]
-
-ATT.EFTErgoAdd = -18
-ATT.MalfunctionMeanShotsToFailMult = 0.75
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pm_84.mdl"
 ATT.DropMagazineAmount = 1
@@ -243,6 +274,13 @@ ATT.SuppressEmptySuffix = false
 
 ATT.ClipSize = 84
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.364,
+    malfunctionChance = 0.259,
+}))
+
 
 -- EFT ID: 55d485be4bdc2d962f8b456f
 ARC9.LoadAttachment(ATT, "eft_pm_mag_84")
@@ -277,7 +315,7 @@ ATT.Attachments = {
     },
 }
 
--- EFT ID: 571a279b24597720b4066566
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_pm_thread")
 
 
@@ -299,12 +337,17 @@ ATT.Description = [[Standard-issue bakelite side grip panels for the PB pistol, 
 ATT.HasReciever = true 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pb_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.102,
+}))
+
 
 -- EFT ID: 56e05a6ed2720bd0748b4567
 ARC9.LoadAttachment(ATT, "eft_pb_pg_std")
@@ -321,11 +364,6 @@ ATT.Description = [[A standard-issue detachable sound suppressor for the PB pist
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.VisualRecoilMult = 0.92
-ATT.RecoilMult = 0.92
-ATT.HeatCapacityMult = 0.87
-ATT.EFTErgoAdd = -21
-
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(24, 40, 4)
 
@@ -335,6 +373,14 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.Category = {"eft_pb_sil"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -21,
+    recoilModifier = -8,
+    weight = 0.131,
+    velocity = 1,
+}))
+
 
 -- EFT ID: 56e05b06d2720bb2668b4586
 ARC9.LoadAttachment(ATT, "eft_pb_silencer")

@@ -36,7 +36,8 @@ ATT.Attachments = {
     },
 }
 
--- EFT ID: 61a4cda622af7f4f6a3ce617
+-- mehh 61a4cda622af7f4f6a3ce617
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_rhino_speedloader")
 
 
@@ -50,8 +51,6 @@ ATT.CompactName = "CR cyl."
 ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_9x19_6round_cylinder.png", "mips smooth")
 ATT.Description = [[6-round cylinder for Chiappa Rhino. ]]
 
-ATT.EFTErgoAdd = -2
-
 ATT.ClipSize = 6
 
 ATT.HasMag = true 
@@ -61,6 +60,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_mag"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.11,
+}))
+
+-- too lol 619f54a1d25cbd424731fb99
 -- EFT ID: 624c3074dbbd335e8e6becf3
 ARC9.LoadAttachment(ATT, "eft_rhino_mag_std")
 
@@ -75,14 +80,18 @@ ATT.CompactName = "CR wood"
 ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_wooden_pistol_grip.png", "mips smooth")
 ATT.Description = [[Wooden pistol grip for Rhino revolvers, produced by "Chiappa Firearms". ]]
 
-ATT.EFTErgoAdd = 3
-
 ATT.HasGrip = true 
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.1,
+}))
+
 
 -- EFT ID: 619f4bffd25cbd424731fb97
 ARC9.LoadAttachment(ATT, "eft_rhino_pgrip_std")
@@ -97,14 +106,18 @@ ATT.CompactName = "CR pl."
 ATT.Icon = Material("entities/eft_rhino_attachments/chiappa_rhino_plastic_pistol_grip.png", "mips smooth")
 ATT.Description = [[A standard-issue plastic pistol grip for Rhino revolvers, produced by "Chiappa Firearms". ]]
 
-ATT.EFTErgoAdd = 5
-
 ATT.HasGrip = true 
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rhino_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
+
 
 -- EFT ID: 619f4ab2d25cbd424731fb95
 ARC9.LoadAttachment(ATT, "eft_rhino_pgrip_poly")
@@ -136,6 +149,11 @@ ATT.Sights = {
 
 ATT.Category = {"eft_rhino_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.004,
+}))
+
+
 -- EFT ID: 619f4cee4c58466fe1228435
 ARC9.LoadAttachment(ATT, "eft_rhino_rs_std")
 
@@ -165,6 +183,11 @@ ATT.Sights = {
 
 ATT.Category = {"eft_rhino_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.004,
+}))
+
+
 -- EFT ID: 619f4f8c4c58466fe1228439
 ARC9.LoadAttachment(ATT, "eft_rhino_rs_red")
 
@@ -186,6 +209,11 @@ ATT.ModelBodygroups = "0"
 
 ATT.Category = {"eft_rhino_fs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.003,
+}))
+
+
 -- EFT ID: 619f4d304c58466fe1228437
 ARC9.LoadAttachment(ATT, "eft_rhino_fs_std")
 
@@ -206,6 +234,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/rhino_fs.mdl"
 ATT.ModelBodygroups = "1"
 
 ATT.Category = {"eft_rhino_fs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.003,
+}))
+
 
 -- EFT ID: 619f52454c58466fe122843b
 ARC9.LoadAttachment(ATT, "eft_rhino_fs_red")
@@ -232,6 +265,10 @@ ATT.EFTErgoAdd = 3
 ATT.VisualRecoilMult = 1.15
 ATT.RecoilMult = 1.15
 ATT.SpreadMult = 1.15
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_rhino_barrel_40ds")
@@ -268,6 +305,10 @@ ATT.Attachments = {
         ExtraSightDistance = 7,
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 -- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_rhino_barrel_60ds")

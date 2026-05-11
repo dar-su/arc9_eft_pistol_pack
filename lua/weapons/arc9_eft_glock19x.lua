@@ -25,6 +25,7 @@ SWEP.StandardPresets = false
 -- SWEP.DefaultElements = {"eft_l5"} -- owo
 
 SWEP.EFTErgo = 93
+SWEP.EFTWeight = 0.197
 SWEP.Spread = 10.31 * ARC9.MOAToAcc
 
 

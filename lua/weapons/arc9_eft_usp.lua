@@ -93,6 +93,7 @@ SWEP.HoldTypeSprint = "normal"
 SWEP.Spread = 9.97 * ARC9.MOAToAcc
 SWEP.RPM = 450
 SWEP.EFTErgo = 82
+SWEP.EFTWeight = 0.222
 SWEP.BarrelLength = 16
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = { { Mode = 1 } }

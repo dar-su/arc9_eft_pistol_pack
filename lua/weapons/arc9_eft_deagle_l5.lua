@@ -15,6 +15,7 @@ SWEP.Description = ARC9:GetPhrase("eft_weapon_deaglel5357_desc")
 SWEP.DefaultElements = {"eft_l5"} -- owo
 
 SWEP.EFTErgo = 68
+SWEP.EFTWeight = 0.55
 
 SWEP.Attachments = { -- hack
     {

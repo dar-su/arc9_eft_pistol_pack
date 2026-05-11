@@ -36,3 +36,5 @@ SWEP.Attachments = { -- hack
     _,
     { Installed = "eft_pg_deagle_std" },
 }
+
+SWEP.EFTWeight = 0.829

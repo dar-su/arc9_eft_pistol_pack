@@ -15,10 +15,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
 
 ATT.Category = {"eft_deagle_barrel_l5"}
 
@@ -43,6 +39,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -1,
+    weight = 0.336,
+}))
+
+
 -- EFT ID: 669fa4ba1bd4416eaa09b3c6
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_50ae")
 
@@ -60,10 +63,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-ATT.VisualRecoilMult = 0.98
-ATT.RecoilMult = 0.98
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
 
 ATT.Category = {"eft_deagle_barrel_l5"}
 
@@ -88,6 +87,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2,
+    weight = 0.336,
+}))
+
+
 -- EFT ID: 669fa4c61bd4416eaa09b3ca
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l5_357")
 
@@ -105,10 +111,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
-ATT.VisualRecoilMult = 0.965
-ATT.RecoilMult = 0.965
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
 
 ATT.Category = {"eft_deagle_barrel_l6"}
 
@@ -137,6 +139,13 @@ ATT.Attachments = {
         ExtraSightDistance = 6.5
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -3.5,
+    weight = 0.436,
+}))
+
 
 -- EFT ID: 669fa47da0bab4e8510d9526
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_50ae")
@@ -155,11 +164,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
-ATT.VisualRecoilMult = 0.965
-ATT.RecoilMult = 0.965
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_deagle_barrel_l6"}
 
 ATT.Attachments = {
@@ -188,6 +192,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -3.5,
+    weight = 0.436,
+}))
+
+
 -- EFT ID: 669fa48fa0bab4e8510d952a
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_l6_wts")
 
@@ -204,11 +215,6 @@ ATT.Description = [[A Mark XIX 152mm .50 AE barrel for the Desert Eagle pistol, 
 ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
 
 ATT.Category = {"eft_deagle_barrel_xix"}
 
@@ -238,6 +244,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -3,
+    accuracyModifier = 2,
+    weight = 0.436,
+}))
+
+
 -- EFT ID: 668fe5f62a0f85eea407cc18
 ARC9.LoadAttachment(ATT, "eft_barrel_deagle_xix")
 
@@ -255,9 +269,14 @@ ATT.HasGrip = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 4
-
 ATT.Category = {"eft_deagle_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 668fe5d42a0f85eea407cc16
 ARC9.LoadAttachment(ATT, "eft_pg_deagle_std")
@@ -275,9 +294,13 @@ ATT.HasGrip = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
-
 ATT.Category = {"eft_deagle_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 66a0da76b6f47fcfeb025e96
 ARC9.LoadAttachment(ATT, "eft_pg_deagle_ergo")
@@ -297,6 +320,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_deagle_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.006,
+}))
+
+
 -- EFT ID: 668fe5e1800f0244f9036e46
 ARC9.LoadAttachment(ATT, "eft_rs_deagle_std")
 
@@ -314,6 +342,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_deagle_fs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 668fe5ec4315934ba10c6f96
 ARC9.LoadAttachment(ATT, "eft_fs_deagle_std")
@@ -333,9 +366,7 @@ ATT.Description = [[A standard-issue 7-round .50 AE magazine for the Desert Eagl
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_deagle_7.mdl"
 ATT.ChamberSize = 1
@@ -346,6 +377,13 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_deagle_mag"}
 ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.18,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 668fe5c5f35310705d02b696
 ARC9.LoadAttachment(ATT, "eft_mag_deagle_7")
@@ -362,9 +400,7 @@ ATT.Description = [[A standard-issue 9-round .357 Magnum magazine for the Desert
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_deagle_9.mdl"
 ATT.ChamberSize = 1
@@ -375,6 +411,13 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_deagle_mag"}
 ATT.RequireElements = {"eft_slide_deagle_l5_357"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.18,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 669fa435803b94fb5d0e3a76
 ARC9.LoadAttachment(ATT, "eft_mag_deagle_9")
@@ -408,6 +451,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 669fa5019aa2a422600442f6
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5")
 
@@ -423,7 +472,6 @@ ATT.Description = [[An L5 slide for the Desert Eagle pistol chambered in .357 Ma
 
 in this mod it converts l5 deagle to .357!!]]
 
-ATT.EFTErgoAdd = 3
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -441,7 +489,6 @@ ATT.ActivateElements = {"eft_slide_deagle_l5_357"}
 ATT.Category = {"eft_deagle_slide_l5"}
 
 ATT.RecoilMult = 0.33
-ATT.VisualRecoilMult = 0.4
 ATT.VisualRecoilPositionBumpUpMult = 0.3
 ATT.VisualRecoilDampingConst = 65
 ATT.RecoilKickMult = 0.75
@@ -466,6 +513,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.31,
+}))
+
+
 -- EFT ID: 669fa5127a09bc295603b499
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l5_357")
 
@@ -479,9 +532,7 @@ ATT.CompactName = "L6"
 ATT.Icon = Material("entities/eft_deagle_attachments/s.png", "mips smooth")
 ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Magnum Research.]]
 
-ATT.EFTErgoAdd = 4
 
-ATT.VisualRecoilMult = 1.1
 ATT.VisualRecoilPositionBumpUpMult = 1.1
 
 ATT.HasSlide = true 
@@ -501,6 +552,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.43,
+}))
+
+
 -- EFT ID: 669fa4d97a09bc295603b496
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6")
 
@@ -516,7 +573,6 @@ ATT.Description = [[An L6 slide for the Desert Eagle pistol, manufactured by Mag
 
 In this mod it colors frame to WTS too (it is seperate gun in tarbkov)]]
 
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -535,6 +591,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.43,
+}))
+
+
 -- EFT ID: 669fa5271bd4416eaa09b3ce
 ARC9.LoadAttachment(ATT, "eft_slide_deagle_l6_wts")
 
@@ -548,7 +610,6 @@ ATT.CompactName = "Mk XIX"
 ATT.Icon = Material("entities/eft_deagle_attachments/sx.png", "mips smooth")
 ATT.Description = [[A Mark XIX slide for the Desert Eagle pistol, manufactured by Magnum Research.]]
 
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -565,6 +626,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.43,
+}))
 
 
 -- EFT ID: 668fe60b56984d93550462c6

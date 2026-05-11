@@ -30,6 +30,7 @@ SWEP.CustomizeRotateAnchor = Vector(22.25, -4.28, -5.23)
 
 SWEP.Spread = 5.16 * ARC9.MOAToAcc
 SWEP.EFTErgo = 80
+SWEP.EFTWeight = 0.685
 
 ------------------------- |||           Damage            ||| -------------------------
 --          Damage

@@ -22,7 +22,6 @@ ATT.Description = [[The Baldr Pro flashlight by Olight is engineered to fit virt
 
 ATT.Icon = Material("entities/eft_attachments/tactical/baldr.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -84,6 +83,12 @@ ATT.ToggleStats = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.129,
+}))
+
+
 -- EFT ID: 6272370ee4013c5d7e31f418
 ARC9.LoadAttachment(ATT, "eft_tactical_baldrpro")
 
@@ -101,7 +106,6 @@ Tan version.]]
 
 ATT.Icon = Material("entities/eft_attachments/tactical/baldr_tan.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -164,6 +168,12 @@ ATT.ToggleStats = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.129,
+}))
+
+
 -- EFT ID: 6272379924e29f06af4d5ecb
 ARC9.LoadAttachment(ATT, "eft_tactical_baldrpro_tan")
 
@@ -179,7 +189,6 @@ ATT.Description = [[An underbarrel-mounted LED flashlight with a laser aiming mo
 
 ATT.Icon = Material("entities/eft_attachments/tactical/gtl21.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -239,6 +248,12 @@ ATT.ToggleStats = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.086,
+}))
+
+
 -- EFT ID: 5a800961159bd4315e3a1657
 ARC9.LoadAttachment(ATT, "eft_tactical_gtl21")
 
@@ -254,7 +269,6 @@ ATT.Description = [[The X400U flashlight by SureFire is engineered to fit virtua
 
 ATT.Icon = Material("entities/eft_attachments/tactical/x400.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol"}
@@ -314,6 +328,12 @@ ATT.ToggleStats = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.138,
+}))
+
+
 -- EFT ID: 56def37dd2720bec348b456a
 ARC9.LoadAttachment(ATT, "eft_tactical_x400")
 
@@ -329,7 +349,6 @@ ATT.Description = [[A compact tactical LED flashlight, manufactured by SureFire.
 
 ATT.Icon = Material("entities/eft_attachments/tactical/xc1.png", "mips smooth")
 
-ATT.EFTErgoAdd = -1
 ATT.CustomPros = { ["Hipfire Spread if on (Cannot be stacked)"] = "-50%" }
 
 ATT.Category = {"eft_tactical", "eft_tactical_pistol", "eft_tactical_top", "eft_tactical_xc1"}
@@ -356,6 +375,12 @@ ATT.ToggleStats = {
         PrintName = "eft_toggle_off",
     }
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 5a7b483fe899ef0016170d15

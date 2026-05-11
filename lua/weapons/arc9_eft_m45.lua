@@ -18,6 +18,7 @@ SWEP.StandardPresets = {
 }
 
 SWEP.EFTErgo = 78
+SWEP.EFTWeight = 0.205
 
 -- SWEP.DefaultElements = {"eft_k"} -- owo
 

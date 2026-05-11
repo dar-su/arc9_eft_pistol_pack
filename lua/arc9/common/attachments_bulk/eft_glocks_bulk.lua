@@ -15,11 +15,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.96
-ATT.RecoilMult = 0.96
-ATT.PhysBulletMuzzleVelocityMult = 0.97
-
 ATT.Category = {"eft_g17_barrel"}
 
 ATT.Attachments = {
@@ -31,6 +26,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 5a6b5b8a8dc32e001207faf3
@@ -47,16 +50,19 @@ ATT.CompactName = "G17 comp"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_comp.png", "mips smooth")
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 17 pistols.]]
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.95
-ATT.RecoilMult = 0.95
-ATT.PhysBulletMuzzleVelocityMult = 0.937
-
 ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -3,
+}))
 
 
 -- EFT ID: 5a6b60158dc32e000a31138b
@@ -72,11 +78,6 @@ ATT.PrintName = "Glock 9x19 Double Diamond threaded barrel"
 ATT.CompactName = "G DD thr."
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_ddthr.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Double Diamond.]]
-
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.97
 
 ATT.HasBarrel = true 
 ATT.SortOrder = 0
@@ -94,6 +95,14 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5a6b5e468dc32e001207faf5
 ARC9.LoadAttachment(ATT, "eft_barrel_g17_dd_thr")
 
@@ -107,11 +116,6 @@ ATT.PrintName = "Glock 9x19 SAI threaded barrel"
 ATT.CompactName = "G SAI"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_sai.png", "mips smooth")
 ATT.Description = [[A threaded barrel for 9x19 pistols of Glock family. Manufactured by Salient Arms International.]]
-
-ATT.EFTErgoAdd = -3
-ATT.VisualRecoilMult = 0.92
-ATT.RecoilMult = 0.92
-ATT.PhysBulletMuzzleVelocityMult = 0.987
 
 ATT.HasBarrel = true 
 -- ATT.SortOrder = 0
@@ -129,6 +133,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -1,
+}))
+
+
 -- EFT ID: 5a6b5ed88dc32e000c52ec86
 ARC9.LoadAttachment(ATT, "eft_barrel_g17_sai")
 
@@ -143,16 +154,19 @@ ATT.CompactName = "G17"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard barrel for the Glock 17 9x19 pistol.]]
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.97
-
 ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 5a6b5f868dc32e000a311389
@@ -169,16 +183,19 @@ ATT.CompactName = "G18C comp"
 ATT.Icon = Material("entities/eft_glock_attachments/barrel_18c.png", "mips smooth")
 ATT.Description = [[A 114mm long barrel with a mounted compensator for Glock 18C automatic pistols.]]
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.94
-ATT.RecoilMult = 0.94
-ATT.PhysBulletMuzzleVelocityMult = 0.953
-
 ATT.HasBarrel = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g18c_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.9,
+    weight = 0.18,
+    velocity = -4,
+}))
 
 
 -- EFT ID: 5b1fa9ea5acfc40018633c0a
@@ -195,17 +212,19 @@ ATT.CompactName = "G19X"
 ATT.Icon = Material("entities/eft_glock_attachments/g19xbarrel.png", "mips smooth")
 ATT.Description = [[A standard barrel for the Glock 19X 9x19 pistol. The barrel is treated with an nDLC coating that protects against corrosion and scratches.]]
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.977
-
 ATT.HasBarrel = true 
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g19x_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2.6,
+    weight = 0.11,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 630764fea987397c0816d219
@@ -231,6 +250,11 @@ ATT.ModelBodygroups = "3"
 ATT.Category = {"eft_g17_fs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 5a7d90eb159bd400165484f1
 ARC9.LoadAttachment(ATT, "eft_fs_g17_se")
 
@@ -254,6 +278,11 @@ ATT.ModelBodygroups = "0"
 ATT.Category = {"eft_g17_fs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 5a6f58f68dc32e000a311390
 ARC9.LoadAttachment(ATT, "eft_fs_g17_std")
 
@@ -275,6 +304,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_fs.mdl"
 ATT.ModelBodygroups = "2"
 
 ATT.Category = {"eft_g17_fs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
 
 
 -- EFT ID: 5a7d9104159bd400134c8c21
@@ -301,6 +335,11 @@ ATT.ModelBodygroups = "1"
 ATT.Category = {"eft_g17_fs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 5a71e0048dc32e000c52ecc8
 ARC9.LoadAttachment(ATT, "eft_fs_g17_zt")
 
@@ -322,6 +361,11 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/glock_fs.mdl"
 ATT.ModelBodygroups = "4"
 
 ATT.Category = {"eft_g17_fs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
 
 
 -- EFT ID: 630765777d50ff5e8a1ea718
@@ -363,9 +407,7 @@ ATT.Description = [[A factory-produced 24-round 9x19 magazine for Glock pistols.
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.9
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_24.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_24.mdl"
@@ -376,6 +418,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.112,
+    malfunctionChance = 0.182,
+}))
 
 
 -- EFT ID: 630769c4962d0247b029dc60
@@ -394,9 +443,7 @@ ATT.Description = [[A factory-produced 31-round 9x19 magazine for Glock pistols.
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -5
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.85
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_31.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_bigstick_31.mdl"
@@ -407,6 +454,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.14,
+    malfunctionChance = 0.182,
+}))
 
 
 -- EFT ID: 630767c37d50ff5e8a1ea71a
@@ -425,9 +479,7 @@ ATT.Description = [[A 19-round 9x19 magazine for Glock 19X pistols. Coyote versi
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1.5
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
--- ATT.MalfunctionMeanShotsToFailMult = 1
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_19x.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_19x.mdl"
@@ -438,6 +490,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.106,
+    malfunctionChance = 0.085,
+}))
 
 
 -- EFT ID: 63076701a987397c0816d21b
@@ -454,7 +513,6 @@ ATT.CompactName = "G AT base"
 ATT.Icon = Material("entities/eft_glock_attachments/atbase.png", "mips smooth")
 ATT.Description = [[A sight mount base for Glock pistols, allows additional installation of reflex sights on the Weaver-type rail. Manufactured by Aimtech.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -473,6 +531,12 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5a7ad4af51dfba0013379717
 ARC9.LoadAttachment(ATT, "eft_mount_g17_at_base")
 
@@ -487,7 +551,6 @@ ATT.CompactName = "G TShark"
 ATT.Icon = Material("entities/eft_glock_attachments/tshark.png", "mips smooth")
 ATT.Description = [[A Glock family sight mount base designed for installation of additional reflex sights on the pistol. Manufactured by Aimtech.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -508,6 +571,12 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5a7ad55551dfba0015068f42
 ARC9.LoadAttachment(ATT, "eft_mount_g17_tshark")
 
@@ -522,17 +591,18 @@ ATT.CompactName = "G 3Port"
 ATT.Icon = Material("entities/eft_glock_attachments/3port.png", "mips smooth")
 ATT.Description = [[A compensator manufactured by CARVER Custom. The model is only compatible with the 3rd generation 9x19 pistols.]]
 
-ATT.VisualRecoilMult = 0.89
-ATT.RecoilMult = 0.89
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -12,
+    accuracyModifier = 2,
+    weight = 0.063,
+}))
 
 
 -- EFT ID: 5a7037338dc32e000d46d257
@@ -549,19 +619,20 @@ ATT.CompactName = "G AW"
 ATT.Icon = Material("entities/eft_glock_attachments/bullnose.png", "mips smooth")
 ATT.Description = [[The Alpha Wolf compensator manufactured by Lone Wolf. Can only be installed with the slides that have the bullnosed slide face.]]
 
-ATT.VisualRecoilMult = 0.93
-ATT.RecoilMult = 0.93
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 1.01
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.ExcludeElements = {"eft_rec_g17_std", "eft_rec_g17_motocut", "eft_rec_g17_vipercut", "eft_rec_g17_aw", "eft_rec_g17_zt_hex", "eft_rec_g17_ps9", "eft_rec_g17_zt_spartan", "eft_rec_g17_mos"}
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    recoilModifier = -17.5,
+    accuracyModifier = -1,
+    weight = 0.036,
+}))
 
 
 -- EFT ID: 5a705e128dc32e000d46d258
@@ -578,16 +649,16 @@ ATT.CompactName = "G AW thr."
 ATT.Icon = Material("entities/eft_glock_attachments/thr_aw.png", "mips smooth")
 ATT.Description = [[A thread protector for threaded barrels of Glock Alpha Wolf pistols produced by Lone Wolf.]]
 
--- ATT.VisualRecoilMult = 0.89
-ATT.EFTErgoAdd = 1
--- ATT.SpreadMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 1.02
-ATT.HeatCapacityAdd = -1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 5a6b585a8dc32e5a9c28b4f1
@@ -604,17 +675,18 @@ ATT.CompactName = "G CC 4P"
 ATT.Icon = Material("entities/eft_glock_attachments/4port.png", "mips smooth")
 ATT.Description = [[A custom compensator manufactured by CARVER Custom. The compensator includes 4 ports on the top with 3 exhaust ports on each side, totaling 10 ports. Can only fit 3rd generation Glock pistols.]]
 
-ATT.VisualRecoilMult = 0.88
-ATT.RecoilMult = 0.88
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 0.98
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -15,
+    accuracyModifier = 2,
+    weight = 0.036,
+}))
 
 
 -- EFT ID: 5a7ad0c451dfba0013379712
@@ -631,18 +703,18 @@ ATT.CompactName = "G DD FH"
 ATT.Icon = Material("entities/eft_glock_attachments/dd_fh.png", "mips smooth")
 ATT.Description = [[A simple, inexpensive, but still quite effective compensator for the Glock family of pistols.]]
 
-ATT.VisualRecoilMult = 0.91
-ATT.RecoilMult = 0.91
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 0.99
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -1
-
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -1,
+    accuracyModifier = 1,
+    weight = 0.063,
+}))
 
 
 -- EFT ID: 5a70366c8dc32e001207fb06
@@ -659,16 +731,16 @@ ATT.CompactName = "G DD thr."
 ATT.Icon = Material("entities/eft_glock_attachments/thr_dd.png", "mips smooth")
 ATT.Description = [[A thread protector for threaded barrels of Glock family pistols, manufactured by Double Diamond.]]
 
--- ATT.VisualRecoilMult = 0.91
-ATT.EFTErgoAdd = 1
--- ATT.SpreadMult = 0.99
-ATT.PhysBulletMuzzleVelocityMult = 0.97
-ATT.HeatCapacityAdd = -1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 5a6b592c8dc32e00094b97bf
@@ -685,17 +757,18 @@ ATT.CompactName = "G G4"
 ATT.Icon = Material("entities/eft_glock_attachments/g4.png", "mips smooth")
 ATT.Description = [[A unique compensator for Glock family pistols which can be mounted on a slide and not require a threaded barrel, manufactured by Strike Industries.]]
 
-ATT.VisualRecoilMult = 0.86
-ATT.RecoilMult = 0.86
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -2
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_g4"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -10,
+    accuracyModifier = 3,
+    weight = 0.105,
+}))
 
 
 -- EFT ID: 5a7b32a2e899ef00135e345a
@@ -712,17 +785,18 @@ ATT.CompactName = "LWD-COMP9"
 ATT.Icon = Material("entities/eft_glock_attachments/lwdcomp4.png", "mips smooth")
 ATT.Description = [[A Glock 9x19 compensator manufactured by Lone Wolf.]]
 
-ATT.VisualRecoilMult = 0.88
-ATT.RecoilMult = 0.88
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 1.03
-ATT.PhysBulletMuzzleVelocityMult = 0.98
-ATT.HeatCapacityAdd = -1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -12,
+    accuracyModifier = -3,
+    weight = 0.036,
+}))
 
 
 -- EFT ID: 5a7ad1fb51dfba0013379715
@@ -739,16 +813,16 @@ ATT.CompactName = "G SAI thr."
 ATT.Icon = Material("entities/eft_glock_attachments/thr_sai.png", "mips smooth")
 ATT.Description = [[A thread protector for threaded barrels of Glock family pistols, manufactured by Salient Arms International.]]
 
--- ATT.VisualRecoilMult = 0.91
-ATT.EFTErgoAdd = 1
--- ATT.SpreadMult = 0.99
-ATT.PhysBulletMuzzleVelocityMult = 0.97
-ATT.HeatCapacityAdd = -1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 5a6b59a08dc32e000b452fb7
@@ -765,13 +839,16 @@ ATT.CompactName = "G TGG"
 ATT.Icon = Material("entities/eft_glock_attachments/grip.png", "mips smooth")
 ATT.Description = [[The Pachmayr tactical rubber grip increases the handling and ergonomics of a pistol, designed to fit Glock family pistols.]]
 
-
-ATT.EFTErgoAdd = 7
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_pgrip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.08,
+}))
 
 
 -- EFT ID: 5a7b4960e899ef197b331a2d
@@ -787,10 +864,6 @@ ATT.PrintName = "Glock Alpha Wolf pistol slide"
 ATT.CompactName = "G AW"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_aw.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by Lone Wolf.]]
-
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-ATT.EFTErgoAdd = 2
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -823,6 +896,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.19,
+}))
+
+
 -- EFT ID: 5a702d198dc32e000b452fc3
 ARC9.LoadAttachment(ATT, "eft_rec_g17_aw")
 
@@ -836,10 +916,6 @@ ATT.PrintName = "Glock 9x19 Alpha Wolf custom pistol slide"
 ATT.CompactName = "G AW C"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_awc.png", "mips smooth")
 ATT.Description = [[A special version of Glock family pistols’ slide made by Lone Wolf.]]
-
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -871,6 +947,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1,
+    weight = 0.3,
+}))
+
+
 -- EFT ID: 5a7033908dc32e000a311392
 ARC9.LoadAttachment(ATT, "eft_rec_g17_aw_c")
 
@@ -885,8 +968,6 @@ ATT.CompactName = "G MOS"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_mos.png", "mips smooth")
 ATT.Description = [[The MOS (Modular Optic System) slide designed for Glock 9x19 pistols. Manufactured by Glock.]]
 
--- ATT.VisualRecoilMult = 0.99
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -925,6 +1006,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.325,
+}))
+
+
 -- EFT ID: 615d8dbd290d254f5e6b2ed6
 ARC9.LoadAttachment(ATT, "eft_rec_g17_mos")
 
@@ -938,10 +1025,6 @@ ATT.PrintName = "Glock 9x19 Moto Cut pistol slide"
 ATT.CompactName = "G MotoCut"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_motocut.png", "mips smooth")
 ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
-
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-ATT.EFTErgoAdd = 5
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -970,6 +1053,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -1,
+    weight = 0.25,
+}))
 
 
 -- EFT ID: 5a9685b1a2750c0032157104
@@ -986,10 +1076,6 @@ ATT.CompactName = "G PS9"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_ps9.png", "mips smooth")
 ATT.Description = [[The PS9 slide for Glock family pistols, manufactured by Polymer80.]]
 
-ATT.VisualRecoilMult = 0.98
-ATT.RecoilMult = 0.98
-ATT.EFTErgoAdd = 5
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1017,6 +1103,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    recoilModifier = -2,
+    weight = 0.355,
+}))
 
 
 -- EFT ID: 5a7afa25e899ef00135e31b0
@@ -1033,8 +1126,6 @@ ATT.CompactName = "Glock"
 ATT.Icon = Material("entities/eft_glock_attachments/slide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for Glock 9x19 pistols.]]
 
--- ATT.VisualRecoilMult = 0.99
-ATT.EFTErgoAdd = 3
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1063,6 +1154,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.355,
+}))
 
 
 -- EFT ID: 5a6f5e048dc32e00094b97da
@@ -1079,10 +1176,6 @@ ATT.CompactName = "G ViperCut"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_vipercut.png", "mips smooth")
 ATT.Description = [[A lightweight slide for Glock 9x19 pistols.]]
 
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-ATT.EFTErgoAdd = 6
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1110,6 +1203,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -1,
+    weight = 0.25,
+}))
 
 
 -- EFT ID: 5a6f5f078dc32e00094b97dd
@@ -1126,10 +1226,6 @@ ATT.CompactName = "G ZT HEX"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_zev.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.]]
 
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.EFTErgoAdd = 9
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1164,6 +1260,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    recoilModifier = -3,
+    weight = 0.19,
+}))
 
 
 -- EFT ID: 5a71e22f8dc32e00094b97f4
@@ -1180,9 +1283,6 @@ ATT.CompactName = "G ZT Spartan"
 ATT.Icon = Material("entities/eft_glock_attachments/slide_zev_spartan.png", "mips smooth")
 ATT.Description = [[A slide for Glock pistols family, manufactured by ZEV Technologies. Includes a mount for installation of the RMR reflex sights lineup.]]
 
-ATT.VisualRecoilMult = 0.93
-ATT.RecoilMult = 0.93
-ATT.EFTErgoAdd = 10
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1220,6 +1320,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -7,
+    weight = 0.19,
+}))
+
+
 -- EFT ID: 5a71e4f48dc32e001207fb26
 ARC9.LoadAttachment(ATT, "eft_rec_g17_zt_spartan")
 
@@ -1233,9 +1340,6 @@ ATT.PrintName = "Glock 18C 9x19 pistol slide"
 ATT.CompactName = "G18C"
 ATT.Icon = Material("entities/eft_glock_attachments/slide18c.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for Glock 18C 9x19 pistols.]]
-
--- ATT.VisualRecoilMult = 0.99
-ATT.EFTErgoAdd = 3
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1261,6 +1365,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.32,
+}))
+
+
 -- EFT ID: 5b1faa0f5acfc40dc528aeb5
 ARC9.LoadAttachment(ATT, "eft_rec_g18c_std")
 
@@ -1277,8 +1387,6 @@ ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide 
 
 Not presents in EFT, custom att.]]
 
--- ATT.VisualRecoilMult = 0.99
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1302,6 +1410,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.27,
+}))
 
 
 -- EFT ID: 63075cc5962d0247b029dc2a
@@ -1318,8 +1432,6 @@ ATT.CompactName = "G19X"
 ATT.Icon = Material("entities/eft_glock_attachments/g19xslide.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the Glock 19X 9x19 pistol. Slide surfaces are treated with an advanced nPVD coating that protects the steel from corrosion, chemical attack and harsh environmental conditions.]]
 
--- ATT.VisualRecoilMult = 0.99
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -1343,6 +1455,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.27,
+}))
 
 
 -- EFT ID: 63075cc5962d0247b029dc2a
@@ -1375,6 +1493,11 @@ ATT.Sights = {
 }
 
 ATT.Category = {"eft_g17_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
 
 
 -- EFT ID: 5a7d9122159bd4001438dbf4
@@ -1410,6 +1533,11 @@ ATT.Sights = {
 ATT.Category = {"eft_g17_rs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 5a6f5d528dc32e00094b97d9
 ARC9.LoadAttachment(ATT, "eft_rs_g17_std")
 
@@ -1442,6 +1570,11 @@ ATT.Sights = {
 ATT.Category = {"eft_g17_rs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 5a7d912f159bd400165484f3
 ARC9.LoadAttachment(ATT, "eft_rs_g17_tfx")
 
@@ -1472,6 +1605,11 @@ ATT.Sights = {
 }
 
 ATT.Category = {"eft_g17_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
 
 
 -- EFT ID: 5a71e0fb8dc32e00094b97f2
@@ -1507,6 +1645,11 @@ ATT.Sights = {
 ATT.Category = {"eft_g17_rs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 630765cb962d0247b029dc45
 ARC9.LoadAttachment(ATT, "eft_rs_g19x_std")
 
@@ -1524,10 +1667,6 @@ ATT.Description = [[A quick detach sound suppressor for Glock 17 9x19 pistols, m
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.VisualRecoilMult = 0.8
-ATT.RecoilMult = 0.8
-ATT.EFTErgoAdd = -22
-ATT.PhysBulletMuzzleVelocityMult = 1.035
 ATT.HeatCapacityAdd = -50*0.43
 
 ATT.Silencer = true 
@@ -1552,6 +1691,14 @@ ATT.Attachments = {
 
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -15,
+    weight = 0.35,
+    velocity = 0.9,
+}))
+
+
 -- EFT ID: 5a7ad74e51dfba0015068f45
 ARC9.LoadAttachment(ATT, "eft_silencer_fd917")
 
@@ -1566,14 +1713,18 @@ ATT.CompactName = "GLR-17"
 ATT.Icon = Material("entities/eft_glock_attachments/stock.png", "mips smooth")
 ATT.Description = [[The GLR-17 telescoping buttstock, manufactured by FAB Defense. Designed to fit Glock-family pistols.]]
 
-ATT.VisualRecoilMult = 0.67
-ATT.RecoilMult = 0.67
-ATT.EFTErgoAdd = 4
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -23,
+    weight = 0.39,
+}))
 
 
 -- EFT ID: 5d1c702ad7ad1a632267f429
@@ -1607,6 +1758,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 615d8da4d3a39d50044c10e8
 ARC9.LoadAttachment(ATT, "eft_tac_g17_tangodown")
 
@@ -1621,12 +1777,17 @@ ATT.CompactName = "G ZT cap"
 ATT.Icon = Material("entities/eft_glock_attachments/ztcap.png", "mips smooth")
 ATT.Description = [[A protective steel cap covering the mount for reflex sights, manufactured by ZEV Technologies.]]
 
-ATT.EFTErgoAdd = 4
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_g17_zt_cap"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
 
 
 -- EFT ID: 5a71e1868dc32e00094b97f3
@@ -1650,9 +1811,7 @@ ATT.Description = [[A 21-round GL9 polymer magazine, manufactured by Magpul.]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
--- ATT.MalfunctionMeanShotsToFailMult = 0.85
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_pmag_21.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_pmag_21.mdl"
@@ -1663,6 +1822,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.1,
+    malfunctionChance = 0.075,
+}))
 
 
 -- EFT ID: 5a718da68dc32e000d46d264
@@ -1681,8 +1847,6 @@ ATT.Description = [[A high-capacity 50-round magazine for the Glock family pisto
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -19
-ATT.MalfunctionMeanShotsToFailMult = 0.77
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_glock_drum_50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_glock_drum_50.mdl"
@@ -1693,6 +1857,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.6,
+    malfunctionChance = 0.208,
+}))
 
 
 -- EFT ID: 5a718f958dc32e00094b97e7

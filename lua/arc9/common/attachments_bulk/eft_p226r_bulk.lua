@@ -15,12 +15,15 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_p226_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.8,
+    weight = 0.18,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 56d5a1f7d2720bb3418b456a
@@ -40,11 +43,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_p226_barrel"}
 
 ATT.Attachments = {
@@ -55,6 +53,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.8,
+    weight = 0.18,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 587de4282459771bca0ec90b
@@ -78,6 +84,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p226_fs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 56d5a661d2720bd8418b456b
 ARC9.LoadAttachment(ATT, "eft_fs_p226_std")
 
@@ -95,6 +106,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_fs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5c07b36c0db834002a1259e9
@@ -115,10 +131,6 @@ ATT.Description = [[A standard 15-round 9x19 magazine for the SIG Sauer P226 pis
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
--- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
-
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_p226_15.mdl"
 ATT.ChamberSize = 1
 ATT.ClipSize = 15
@@ -127,6 +139,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_p226_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.096,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 56d59948d2720bb7418b4582
 ARC9.LoadAttachment(ATT, "eft_mag_p226_15")
@@ -143,10 +162,6 @@ ATT.Description = [[A 20-round 9x19 extended magazine for the SIG Sauer P226 pis
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
--- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.96
-
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_p226_20.mdl"
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
@@ -155,6 +170,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magext"}
 
 ATT.Category = {"eft_p226_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.11,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5c920e902e221644f31c3c99
 ARC9.LoadAttachment(ATT, "eft_mag_p226_20")
@@ -169,8 +191,6 @@ ATT.PrintName = "P226 Bridge sight mount"
 ATT.CompactName = "P226 Bridge"
 ATT.Icon = Material("entities/eft_p226_attachments/bridge.png", "mips smooth")
 ATT.Description = [[The SIG Sauer Bridge sight mount for pistols. Allows mounting of various sights or tactical accesories.]]
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -194,6 +214,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5b3a08b25acfc4001754880c
 ARC9.LoadAttachment(ATT, "eft_mount_p226_bridge")
 
@@ -207,16 +233,16 @@ ATT.CompactName = "P226 cap"
 ATT.Icon = Material("entities/eft_p226_attachments/prot.png", "mips smooth")
 ATT.Description = [[A threading protection cap for the P226 9x19 barrel.]]
 
--- ATT.VisualRecoilMult = 0.89
-ATT.EFTErgoAdd = 1
--- ATT.SpreadMult = 0.98
--- ATT.PhysBulletMuzzleVelocityMult = 1.02
-ATT.HeatCapacityAdd = 1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
 
 
 -- EFT ID: 587de5ba2459771c0f1e8a58
@@ -232,18 +258,18 @@ ATT.CompactName = "TJs Custom"
 ATT.Icon = Material("entities/eft_p226_attachments/tj.png", "mips smooth")
 ATT.Description = [[A compensator manufactured by TJs Custom Gunworks for the SIG Sauer P226 pistols.]]
 
--- ATT.VisualRecoilMult = 0.89
-ATT.EFTErgoAdd = -1
-ATT.SpreadMult = 1.02
-ATT.VisualRecoilMult = 0.88
-ATT.RecoilMult = 0.88
--- ATT.PhysBulletMuzzleVelocityMult = 1.02
-ATT.HeatCapacityAdd = 1
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -8,
+    accuracyModifier = -2,
+    weight = 0.036,
+}))
 
 
 -- EFT ID: 5c6beec32e221601da3578f2
@@ -262,12 +288,16 @@ ATT.Description = [[Standard black polymer SIG Sauer side grip panels for the P2
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 6
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 56d5a2bbd2720bb8418b456a
@@ -286,12 +316,16 @@ ATT.Description = [[An enhanced version of the SIG Sauer P226 MK25 pistol grip, 
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 7
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5bffec120db834001c38f5fa
@@ -309,12 +343,16 @@ ATT.Description = [[The Emperor Scorpion polymer grip panels for P226 pistols, m
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 8
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5c0006470db834001a6697fe
@@ -332,12 +370,16 @@ ATT.Description = [[A rubber pistol grip with finger grooves for SIG Sauer P226 
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 10
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5b39ffbd5acfc47a8773fb06
@@ -355,12 +397,16 @@ ATT.Description = [[Brown Flat Dark Earth polymer SIG Sauer grip panels for P226
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 5
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 57c9a89124597704ee6faec1
@@ -378,12 +424,16 @@ ATT.Description = [[Wooden side grip panels from the Stainless Elite kit for P22
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 8
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.08,
+}))
 
 
 -- EFT ID: 5c00076d0db834001d23ee1f
@@ -401,12 +451,16 @@ ATT.Description = [[The G10 Chain Link pistol grip for P226 pistols. Manufacture
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 12
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5bffef760db8340019668fe4
@@ -423,8 +477,6 @@ ATT.CompactName = "P226 MK25"
 ATT.Icon = Material("entities/eft_p226_attachments/smk25.png", "mips smooth")
 ATT.Description = [[The SIG Sauer Mk25 blued slide for P226R 9x19 pistols.]]
 
-ATT.EFTErgoAdd = 3
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -447,6 +499,12 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.19,
+}))
 
 
 -- EFT ID: 56d5a407d2720bb3418b456b
@@ -462,10 +520,6 @@ ATT.CompactName = "P226 Emperor"
 ATT.Icon = Material("entities/eft_p226_attachments/ssk.png", "mips smooth")
 ATT.Description = [[A slide from the Emperor Scorpion modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
-ATT.EFTErgoAdd = 2
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -488,6 +542,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -3,
+    weight = 0.22,
+}))
 
 
 -- EFT ID: 5c010a700db834001d23ef5d
@@ -503,10 +564,6 @@ ATT.CompactName = "P226 Legion"
 ATT.Icon = Material("entities/eft_p226_attachments/leg.png", "mips smooth")
 ATT.Description = [[A full-size slide from the Legion modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
-ATT.EFTErgoAdd = 2
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -529,6 +586,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.2,
+}))
 
 
 -- EFT ID: 5c0125fc0db834001a669aa3
@@ -544,10 +608,6 @@ ATT.CompactName = "P226 Stainless"
 ATT.Icon = Material("entities/eft_p226_attachments/elite.png", "mips smooth")
 ATT.Description = [[A slide from the Stainless Elite modification for the P226 9x19 pistols, manufactured by SIG Sauer.]]
 
-ATT.EFTErgoAdd = 3
-ATT.VisualRecoilMult = 0.99
-ATT.RecoilMult = 0.99
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -570,6 +630,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -1,
+    weight = 0.22,
+}))
 
 
 -- EFT ID: 5c0009510db834001966907f
@@ -585,10 +652,6 @@ ATT.CompactName = "P226 Axelson"
 ATT.Icon = Material("entities/eft_p226_attachments/saxe.png", "mips smooth")
 ATT.Description = [[An enhanced version of the SIG Sauer P226 MK25 pistol slide, manufactured by Axelson Tactical. Limited edition.]]
 
-ATT.EFTErgoAdd = 4
-ATT.VisualRecoilMult = 0.96
-ATT.RecoilMult = 0.96
-
 ATT.HasSlide = true 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -611,6 +674,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -4,
+    weight = 0.24,
+}))
 
 
 -- EFT ID: 5bffe7c50db834001d23ece1
@@ -631,6 +701,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p226_rs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
 
 -- EFT ID: 56d5a77ed2720b90418b4568
 ARC9.LoadAttachment(ATT, "eft_rs_p226_std")
@@ -659,6 +734,11 @@ ATT.Sights = {
     }
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 5c07b3850db834002330045b
 ARC9.LoadAttachment(ATT, "eft_rs_p226_merp")
 
@@ -675,8 +755,6 @@ ATT.Description = [[The 220-239 rear sight bearing manufactured by Sight Mount f
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_scope"),
@@ -689,6 +767,12 @@ ATT.Attachments = {
 
 
 ATT.Category = {"eft_p226_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.028,
+}))
 
 
 -- EFT ID: 56ea7293d2720b8d4b8b45ba
@@ -719,6 +803,11 @@ ATT.Attachments = {
 
 
 ATT.Category = {"eft_p226_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.017,
+}))
 
 
 -- EFT ID: 5a32aa0cc4a28232996e405f

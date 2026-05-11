@@ -12,14 +12,17 @@ ATT.Icon = Material("entities/eft_57_attachments/barrel.png", "mips smooth")
 ATT.Description = [[A standard-issue barrel for the FN Five-seveN pistol, manufactured by Fabrique Nationale Herstal.]]
 
 ATT.HasBarrel = true
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.9873
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_57_barrell"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2.4,
+    weight = 0.17,
+}))
 
 
 -- EFT ID: 5d3eb5b6a4b9361eab311902
@@ -37,14 +40,17 @@ ATT.Icon = Material("entities/eft_57_attachments/barrel_thr.png", "mips smooth")
 ATT.Description = [[A regular threaded barrel for the FN Five-seveN pistol, manufacted by Fabrique Nationale Herstal.]]
 
 ATT.HasBarrel = true
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
-ATT.PhysBulletMuzzleVelocityMult = 0.9873
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_57_barrell"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2.4,
+    weight = 0.18,
+}))
 
 
 -- EFT ID: 5d3eb59ea4b9361c284bb4b2
@@ -86,6 +92,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_57_fs"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 5d3eb536a4b9363b1f22f8e2
 ARC9.LoadAttachment(ATT, "eft_57_fs")
 
@@ -108,11 +119,17 @@ ATT.ClipSize = 20
 ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 
-ATT.EFTErgoAdd = -1
 
 ATT.Category = {"eft_57_mag"}
 
 ATT.ActivateElements = {"magdefault"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.088,
+    malfunctionChance = 0.02,
+}))
 
 
 -- EFT ID: 5d3eb5eca4b9363b1f22f8e4
@@ -131,12 +148,17 @@ ATT.Description = [[A regular slide for the Five-seveN MK2 pistol, manufactured 
 
 ATT.HasSlide = true
 
-ATT.EFTErgoAdd = 3
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_57_rec"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.16,
+}))
 
 
 -- EFT ID: 5d3eb44aa4b93650d64e4979
@@ -157,6 +179,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_57_rs"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
 
 
 -- EFT ID: 5d3eb4aba4b93650d64e497d
@@ -189,6 +216,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 5d7b6bafa4b93652786f4c76
 ARC9.LoadAttachment(ATT, "eft_57_rs_rmr")
 
@@ -207,12 +239,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 
-ATT.SpreadMult = 0.98
-ATT.VisualRecoilMult = 0.91
-ATT.RecoilMult = 0.91
-ATT.HeatCapacityMult = 0.87
-ATT.PhysBulletMuzzleVelocityMult = 1.015
-ATT.EFTErgoAdd = -15
 
 ATT.Silencer = true
 -- ATT.CustomizeSnapshotFOVAdd = 22
@@ -223,6 +249,14 @@ ATT.MuzzleEffectQCA = 5
 ATT.NoFlash = true
 
 ATT.Category = {"eft_57_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -1.5,
+    weight = 0.15,
+    velocity = 0.6,
+}))
 
 
 -- EFT ID: 5d3ef698a4b9361182109872

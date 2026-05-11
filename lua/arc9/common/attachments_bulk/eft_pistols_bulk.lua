@@ -9,11 +9,6 @@ ATT.CompactName = "RSh12 cyl."
 ATT.Icon = Material("entities/eft_ash12_attachments/cyl.png", "mips smooth")
 ATT.Description = [[A 5-round 12.7x55 cylinder for the RSh-12 revolver.]]
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
-
-
 ATT.ClipSize = 5
 
 ATT.HasMag = true 
@@ -22,6 +17,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rsh12_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -2,
+    weight = 0.23,
+}))
+
 
 -- EFT ID: 633ec6ee025b096d320a3b15
 ARC9.LoadAttachment(ATT, "eft_rsh12_mag_std")
@@ -35,15 +37,18 @@ ATT.CompactName = "RSh-12"
 ATT.Icon = Material("entities/eft_ash12_attachments/grip.png", "mips smooth")
 ATT.Description = [[A standard-issue plastic pistol grip for the RSh-12 revolver, manufactured by the KBP Instrument Design Bureau.]]
 
-ATT.EFTErgoAdd = 5
-
-
 ATT.HasGrip = true 
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_rsh12_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.11,
+}))
+
 
 -- EFT ID: 633ec8e4025b096d320a3b1e
 ARC9.LoadAttachment(ATT, "eft_rsh12_pgrip_std")
@@ -69,13 +74,6 @@ ATT.Description = [[A standard-issue sound suppressor from the SR-1MP pistol kit
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -15
-ATT.RecoilMult = 0.9
-ATT.VisualRecoilMult = 0.9
-ATT.PhysBulletMuzzleVelocityMult = 1.005
-ATT.HeatCapacityMult = 0.88
--- ATT.SpreadMult = 0.99
-
 ATT.CustomizePos = Vector(25.5, 50, 4)
 
 ATT.Silencer = true 
@@ -86,6 +84,14 @@ ATT.MuzzleEffectQCA = 5
 ATT.NoFlash = true
 
 ATT.Category = {"eft_silencerrr_sr1mp"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -2,
+    weight = 0.49,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 5a27b6bec4a282000e496f78
 ARC9.LoadAttachment(ATT, "eft_silencer_sr1mp")
@@ -98,8 +104,6 @@ ATT.PrintName = "SR-1MP single rail mount"
 ATT.CompactName = "SR-1MP 1x"
 ATT.Icon = Material("entities/eft_sr2m_attachments/1x.png", "mips smooth")
 ATT.Description = [[A mount for SR-1MP, included in the pistol kit, designed to form a single rail and silencer installation place.]]
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -123,6 +127,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 5a27b281c4a28200741e1e52
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_1x")
 
@@ -134,8 +144,6 @@ ATT.PrintName = "SR-1MP sound suppressor mount"
 ATT.CompactName = "SR-1MP mount"
 ATT.Icon = Material("entities/eft_sr2m_attachments/sm.png", "mips smooth")
 ATT.Description = [[A mount for SR-1MP from the pistol kit, used for quick installation and removal of the sound suppressor.]]
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -152,6 +160,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 5a27b3d0c4a282000d721ec1
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_sil")
 
@@ -163,8 +177,6 @@ ATT.PrintName = "SR-1MP quad rail mount"
 ATT.CompactName = "SR-1MP 4x"
 ATT.Icon = Material("entities/eft_sr2m_attachments/4x.png", "mips smooth")
 ATT.Description = [[A mount for the SR-1MP pistol that forms four guide rails, allowing installation of the sound suppressor.]]
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -211,6 +223,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 5a27bad7c4a282000b15184b
 ARC9.LoadAttachment(ATT, "eft_mount_sr1mp_4x")
 
@@ -228,16 +246,20 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.DropMagazineAmount = 1
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sr1mp.mdl"
 
-ATT.EFTErgoAdd = -1
-
 ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
 ATT.ClipSize = 18
 
-ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_sr1mp_mag"}
 ATT.ActivateElements = {"magdef"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.105,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 59f99a7d86f7745b134aa97b
 ARC9.LoadAttachment(ATT, "eft_mag_sr1mp_std")
@@ -270,12 +292,15 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_pl15_barrel"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.8,
+    weight = 0.18,
+    velocity = -2,
+}))
 
 
 -- EFT ID: 602a95edda11d6478d5a06da
@@ -294,11 +319,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.VisualRecoilMult = 0.97
-ATT.RecoilMult = 0.97
--- ATT.PhysBulletMuzzleVelocityMult = 0.976
-
 ATT.Category = {"eft_pl15_barrel"}
 
 ATT.Attachments = {
@@ -309,6 +329,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.8,
+    weight = 0.18,
+    velocity = -2,
+}))
+
 
 -- EFT ID: 602a95fe4e02ce1eaa358729
 ARC9.LoadAttachment(ATT, "eft_barrel_pl15_thr")
@@ -327,6 +355,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_fs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 60228a76d62c9b14ed777a66
 ARC9.LoadAttachment(ATT, "eft_fs_pl15_std")
 
@@ -344,6 +377,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_fs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 60228a850ddce744014caf69
 ARC9.LoadAttachment(ATT, "eft_fs_pl15_long")
 
@@ -358,10 +396,6 @@ ATT.Description = [[A standard-issue 16-round magazine for the PL-15 9x19 pistol
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
--- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
-
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_pl15.mdl"
 ATT.ChamberSize = 1
 ATT.ClipSize = 16
@@ -370,6 +404,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_pl15_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.096,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 602286df23506e50807090c6
 ARC9.LoadAttachment(ATT, "eft_mag_pl15_std")
@@ -382,8 +423,6 @@ ATT.PrintName = "PL-15 pistol slide"
 ATT.CompactName = "PL-15"
 ATT.Icon = Material("entities/eft_pl15_attachments/s.png", "mips smooth")
 ATT.Description = [[A standard-issue slide for the PL-15 pistol.]]
-
-ATT.EFTErgoAdd = 4
 
 ATT.HasSlide = true 
 ATT.SortOrder = 0
@@ -409,6 +448,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.16,
+}))
+
+
 -- EFT ID: 60228924961b8d75ee233c32
 ARC9.LoadAttachment(ATT, "eft_slide_pl15_std")
 
@@ -426,6 +471,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_pl15_rs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
 
 -- EFT ID: 60229948cacb6b0506369e27
 ARC9.LoadAttachment(ATT, "eft_rs_pl15_std")
@@ -454,6 +504,11 @@ ATT.Sights = {
     }
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
+
 -- EFT ID: 602293f023506e50807090cb
 ARC9.LoadAttachment(ATT, "eft_rs_pl15_long")
 
@@ -468,13 +523,6 @@ ATT.Description = [[A standard-issue sound suppressor for the PL-15 pistol.]]
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.SpreadMult = 0.98
-ATT.HeatCapacityMult = 0.87
-ATT.PhysBulletMuzzleVelocityMult = 1.005
-
 -- ATT.MuzzleDevice = true
 -- ATT.MuzzleDevice_Priority = 4
 ATT.MuzzleParticle = "muzzleflash_suppressed"
@@ -484,6 +532,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Silencer = true
 
 ATT.Category = {"eft_pl15_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -3,
+    weight = 0.293,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 602a97060ddce744014caf6f
 ARC9.LoadAttachment(ATT, "eft_sil_pl15")
@@ -513,6 +569,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 5aba637ad8ce87001773e17f
 ARC9.LoadAttachment(ATT, "eft_aps_rs_std")
 
@@ -529,6 +590,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_fs"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.007,
+}))
+
 
 -- EFT ID: 5aba62f8d8ce87001943946b
 ARC9.LoadAttachment(ATT, "eft_aps_fs_std")
@@ -547,6 +613,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_rs"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.008,
+}))
+
+
 -- EFT ID: 5aba639ed8ce8700182ece67
 ARC9.LoadAttachment(ATT, "eft_aps_rs_apb")
 
@@ -561,12 +632,16 @@ ATT.Description = [[Standard-issue APS pistol bakelite side grips.]]
 
 ATT.HasGrip = true 
 
-ATT.EFTErgoAdd = 5
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_pg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.102,
+}))
+
 
 -- EFT ID: 5a17fc70fcdbcb0176308b3d
 ARC9.LoadAttachment(ATT, "eft_aps_pg_std")
@@ -581,8 +656,6 @@ ATT.CompactName = "APS 20"
 ATT.Icon = Material("entities/eft_aps_attachments/20.png", "mips smooth")
 ATT.Description = [[A standard 20-round magazine for Molot-produced APS pistols. It features a side observation slot for faster capacity checking.]]
 
-ATT.EFTErgoAdd = -3
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_aps_20.mdl"
 ATT.DropMagazineAmount = 1
@@ -598,6 +671,12 @@ ATT.SuppressEmptySuffix = false
 
 ATT.ClipSize = 20
 ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.044,
+    malfunctionChance = 0.088,
+}))
+
 
 -- EFT ID: 5a17fb03fcdbcbcae668728f
 ARC9.LoadAttachment(ATT, "eft_aps_mag_20")
@@ -615,11 +694,6 @@ ATT.Description = [[A standard-issue detachable APB pistol sound suppressor.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.VisualRecoilMult = 0.94
-ATT.RecoilMult = 0.94
-ATT.HeatCapacityMult = 0.87
-ATT.EFTErgoAdd = -21
-
 ATT.Silencer = true 
 ATT.CustomizePos = Vector(26, 45, 4)
 
@@ -629,6 +703,14 @@ ATT.NoFlash = true
 ATT.BarrelLengthAdd = 5
 
 ATT.Category = {"eft_apb_silencer"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -21,
+    recoilModifier = -6,
+    weight = 0.49,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 5abcc328d8ce8700194394f3
 ARC9.LoadAttachment(ATT, "eft_apb_silencer_std")
@@ -642,13 +724,16 @@ ATT.CompactName = "APB stock"
 ATT.Icon = Material("entities/eft_aps_attachments/st.png", "mips smooth")
 ATT.Description = [[A standard-issue wire stock for APB pistols.]]
 
-ATT.VisualRecoilMult = 0.73
-ATT.RecoilMult = 0.73
-
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_aps_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -27,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 5a17fb9dfcdbcbcae6687291
 ARC9.LoadAttachment(ATT, "eft_aps_stock_std")
@@ -675,10 +760,6 @@ ATT.Description = [[Standard 18-round 9x19 magazine for MP-443 Grach.]]
 
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
--- ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.99
-
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp443.mdl"
 ATT.ChamberSize = 1
 ATT.ClipSize = 18
@@ -687,6 +768,13 @@ ATT.SuppressEmptySuffix = false
 ATT.ActivateElements = {"magdef"}
 
 ATT.Category = {"eft_mp443_mag"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.105,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 576a5ed62459771e9c2096cb
 ARC9.LoadAttachment(ATT, "eft_mag_mp443_std")
@@ -708,6 +796,12 @@ ATT.HasGrip = true
 
 ATT.Category = {"eft_mp443_grip"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.055,
+}))
+
+
 -- EFT ID: 576a63cd2459771e796e0e11
 ARC9.LoadAttachment(ATT, "eft_grip_mp443_std")
 
@@ -720,8 +814,6 @@ ATT.PrintName = "MP-443 Grach Zenit B-8 mount"
 ATT.CompactName = "B-8"
 ATT.Icon = Material("entities/eft_mp443_attachments/b8.png", "mips smooth")
 ATT.Description = "B-8 rail mount is installed on Yarygin pistol (MP-443 Grach and its civilian version MP-446 Viking) for use with additional attachments, e.g. 2KS Klesch Mini tactical laser flashlight. "
-
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = -99
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -737,6 +829,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 576a7c512459771e796e0e17
 ARC9.LoadAttachment(ATT, "eft_mount_mp443_rail")
