@@ -191,7 +191,7 @@ SWEP.DamageLookupTable = {
 ------------------------- |||           Malfunctions            ||| -------------------------
 
 SWEP.MalfunctionNeverLastShoot = true 
-SWEP.MalfunctionMeanShotsToFail = 500
+SWEP.MalfunctionMeanShotsToFail = 500 * 1.5
 SWEP.MalfunctionMeanShotsToFailMultHot = -1
 SWEP.MalfunctionWait = -1 -- oh god why the fuck 0 is 0.5???????
 SWEP.HeatCapacity = 200
