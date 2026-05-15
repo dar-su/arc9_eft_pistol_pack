@@ -120,7 +120,7 @@ ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 
 
-ATT.Category = {"eft_57_mag"}
+ATT.Category = {"eft_57_magg"}
 
 ATT.ActivateElements = {"magdefault"}
 
@@ -262,3 +262,36 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5d3ef698a4b9361182109872
 ARC9.LoadAttachment(ATT, "eft_57_silencer")
 
+
+///////////////////////////////////////      eft_57_mag_ext
+
+
+ATT = {}
+
+ATT.PrintName = "FN Five-seveN 5.7x28 Pro-Mag 30-round magazine"
+ATT.CompactName = "5-7 PM 30"
+ATT.Icon = Material("entities/eft_attachments/6889f1c4f7a5d7de7b089550.png", "mips smooth")
+ATT.Description = "A 30-round 5.7x28 magazine for the FN Five-seveN pistol. Manufactured by ProMag."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.ChamberSize = 1
+ATT.ClipSize = 30
+ATT.DropMagazineAmount = 1
+ATT.SuppressEmptySuffix = false 
+
+ATT.Category = {"eft_57_magg"}
+
+ATT.ActivateElements = {"magext"}
+
+ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/57mag_ext.mdl"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.088,
+    malfunctionChance = 0.045,
+}))
+-- EFT ID: 6889f1c4f7a5d7de7b089550
+ARC9.LoadAttachment(ATT, "eft_57_mag_ext")

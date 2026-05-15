@@ -268,8 +268,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
     
     local ending = ""
+    local mag = ""
 
-    local nomag = !elements["magdefault"]
+    local nomag = !elements["magdefault"] and !elements["magext"]
+    if elements["magext"] then mag = "_ext" end
+
     local empty = swep:Clip1() == 0
 
     -- 0 looking
@@ -298,15 +301,21 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             net.Send(swep:GetOwner())
         end
 
+        if ending == 2 then ending = ending .. mag end
+
         return anim .. ending
     end
     
     if anim == "reload" or anim == "reload_empty" then -- reload
+        anim = anim .. mag
+        
         if swep.EFT_StartedTacReload and !empty then
             if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
-            return "reload_tactical"
+            return "reload_tactical" .. mag
         end
 		if nomag then return "reload_single" end
+
+        return anim
     end
     
     if anim == "fix" then
@@ -524,6 +533,80 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_ext"] = {
+        Source = "reload1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        EventTable = rst_def,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_tactical_ext"] = {
+        Source = "reloadt1",
+        RefillProgress = 0.825,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        DropMagAt = 0.2,
+        EventTable = {
+            { s = randspin, t = 4/28 },    
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 7/28 - 0.25 },
+            { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 14/28 - 0.25 },
+            { s =  path .. "fiveseven_mag_out.ogg", t = 16/28 - 0.3 },
+            { s =  path .. "fiveseven_mag_rattle3.ogg", t = 21/28 - 0.5 },
+            { s =  path .. "fiveseven_mag_rattle.ogg", t = 25/28 - 0.5 },
+            { s = pouchout, t = 1.55 - 0.8 + 0.1 },
+            { s =  path .. "fiveseven_mag_rattle2.ogg", t = 56/28 - 0.8 + 0.215 },
+            { s =  path .. "fiveseven_mag_in.ogg", t = 62/28 - 0.8 + 0.215 },
+            { s = randspin, t = 75/28 - 0.8 + 0.215 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.3},
+            {hide = 0, t = 1.0}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_ext"] = {
+        Source = {"reload_empty01", "reload_empty11", "reload_empty21"}, 
+        RefillProgress = 0.85,
+        PeekProgress = 0.975,
+        MinProgress = 0.99,
+        FireASAP = true,
+        EventTable = {
+            { s = randspin, t = 3/28 },    
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 6/28 },
+            { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 9/28 },
+            { s =  path .. "fiveseven_mag_out.ogg", t = 12/28 },
+            { s = pouchout, t = 0.95 + 0.1 },
+            { s =  randspin, t = 35/28 + 0.215 },
+            { s =  path .. "fiveseven_mag_rattle3.ogg", t = 41/28 + 0.215 },
+            { s =  path .. "fiveseven_mag_in.ogg", t = 46/28 + 0.215 },
+            { s = randspin, t = 59/28 + 0.215 },  
+            { s =  path .. "fiveseven_slider_in_fast.ogg", t = 68/28 + 0.215 },
+            { s = randspin, t = 75/28 + 0.215 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 0.9}
+            
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
     ["toggle"] = {
         Source = "mod_switch",
         EventTable = {
@@ -702,6 +785,29 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["inspect2_ext"] = {
+        Source = "inspect11",
+        MinProgress = 0.95,
+        EventTable = {
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.05 },
+            { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 7/24 },
+            { s =  path .. "fiveseven_mag_out.ogg", t = 10/24 },
+            { s = randspin, t = 16/24 },
+            { s =  path .. "fiveseven_mag_rattle2.ogg", t = 24/24 },
+            { s = randspin, t = 29/24 },
+            -- { s =  path .. "fiveseven_mag_rattle3.ogg", t = 42/24 },
+            { s = randspin, t = 57/24 },
+            { s =  path .. "fiveseven_mag_rattle.ogg", t = 60/24 },
+            { s =  path .. "fiveseven_mag_in.ogg", t = 73/24 },
+            { s = randspin, t = 85/24 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
 
     ["inspect0"] = {
         Source = "inspect2",
@@ -788,6 +894,29 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["inspect_empty2_ext"] = {
+        Source = "inspect1_empty1",
+        MinProgress = 0.95,
+        EventTable = {
+            { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.05 },
+            { s =  path .. "fiveseven_mag_releasebutton.ogg", t = 7/24 },
+            { s =  path .. "fiveseven_mag_out.ogg", t = 10/24 },
+            { s = randspin, t = 16/24 },
+            { s =  path .. "fiveseven_mag_rattle2.ogg", t = 24/24 },
+            { s = randspin, t = 29/24 },
+            -- { s =  path .. "fiveseven_mag_rattle3.ogg", t = 42/24 },
+            { s = randspin, t = 57/24 },
+            { s =  path .. "fiveseven_mag_rattle.ogg", t = 60/24 },
+            { s =  path .. "fiveseven_mag_in.ogg", t = 73/24 },
+            { s = randspin, t = 85/24 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
     
 }
 
@@ -806,6 +935,8 @@ SWEP.AttachmentElements = {
     ["eft_57_barrel_threaded"] = { Bodygroups = { {5, 2} } },
     ["eft_57_silencer"] = { Bodygroups = { {6, 1} } },
     ["eft_57_fde"] = { Skin = 1 },
+
+    ["eft_57_mag_ext"]    = { Bodygroups = { {2, 2} } },
 }
 
 SWEP.Attachments = {
@@ -862,7 +993,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_magazine"),
-        Category = "eft_57_mag",
+        Category = "eft_57_magg",
         Bone = "mod_magazine",
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
