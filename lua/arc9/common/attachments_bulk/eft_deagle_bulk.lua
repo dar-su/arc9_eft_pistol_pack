@@ -375,6 +375,8 @@ ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 ATT.ActivateElements = {"hasmag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.Category = {"eft_deagle_mag"}
 ATT.ExcludeElements = {"eft_slide_deagle_l5_357"}
 
@@ -408,6 +410,8 @@ ATT.ClipSize = 9
 ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 ATT.ActivateElements = {"hasmag"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.Category = {"eft_deagle_mag"}
 ATT.RequireElements = {"eft_slide_deagle_l5_357"}

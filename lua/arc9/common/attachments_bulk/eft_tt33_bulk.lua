@@ -367,6 +367,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 8
 ATT.ChamberSize = 1
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
     weight = 0.08,

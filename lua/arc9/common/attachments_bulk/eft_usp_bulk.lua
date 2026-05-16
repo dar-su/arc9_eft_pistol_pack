@@ -621,6 +621,8 @@ ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 ATT.ActivateElements = {"hasmag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.Category = {"eft_usp_mag"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({

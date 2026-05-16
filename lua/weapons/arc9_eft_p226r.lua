@@ -448,6 +448,9 @@ SWEP.Animations = {
     ["idle_sights"] = {
         Source = "idle",
     },
+    ["idle_sights_empty"] = {
+        Source = "idle_empty",
+    },
 
     ["ready"] = {
         Source = {"ready0", "ready1", "ready2"},

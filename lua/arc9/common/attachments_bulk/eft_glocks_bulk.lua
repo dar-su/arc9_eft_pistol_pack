@@ -1858,6 +1858,8 @@ ATT.ActivateElements = {"hasmag"}
 
 ATT.Category = {"eft_g17_mag"}
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -10,

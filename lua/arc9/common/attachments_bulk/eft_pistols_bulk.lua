@@ -250,6 +250,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 18
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 
 ATT.Category = {"eft_sr1mp_mag"}
 ATT.ActivateElements = {"magdef"}
@@ -672,6 +674,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ClipSize = 20
 ATT.ChamberSize = 1
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.044,
     malfunctionChance = 0.088,
@@ -766,6 +770,8 @@ ATT.ClipSize = 18
 ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 ATT.ActivateElements = {"magdef"}
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.Category = {"eft_mp443_mag"}
 
