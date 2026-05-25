@@ -22,7 +22,7 @@ SWEP.Trivia = {
 
 SWEP.StandardPresets = false 
 
-SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_p226.mdl"
+SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_p226_2.mdl"
 SWEP.WorldModel = "models/weapons/w_pist_glock18.mdl"
 
 ------------------------- |||           Offsets            ||| -------------------------
@@ -226,7 +226,7 @@ SWEP.ExitSightsSound = ARC9EFT.ADSPistol
 
 SWEP.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_p226_15.mdl" -- Set to a string or table to drop this magazine when reloading.
 SWEP.DropMagazineAmount = 0 -- Amount of mags to drop.
-SWEP.DropMagazineTime = 0.66*0.85
+SWEP.DropMagazineTime = 0.4
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 180, 90)
@@ -303,8 +303,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
 
     if anim == "fix" then
-        rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
-        -- rand = 4
+        rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
 
         if SERVER then
             net.Start("arc9eftjam")
@@ -315,7 +314,38 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "jam" .. rand
     end
 
+    if anim == "ready" then
+        if !elements["eft_rs_p226_rmr"] and !elements["eft_rs_p226_mount"] then
+            return "ready2"
+        end
+    end
+
     -- print("nomag:", nomag, "rand:", rand, "anim:", anim, "ending:", ending)
+end
+
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "checkchamber0" then
+        local elements = swep:GetElements()
+
+        local source = {
+            "checkchamber0",
+            "checkchamber1",
+            "checkchamber2",
+            "checkchamber3",
+        }
+
+        if elements["eft_mount_um3"] or elements["eft_mount_p226_bridge"] then
+            table.RemoveByValue(source, "checkchamber1")
+            table.RemoveByValue(source, "checkchamber2")
+        end
+
+        if elements["eft_rs_p226_rmr"] or elements["eft_rs_p226_mount"] then
+            table.RemoveByValue(source, "checkchamber3")
+        end
+
+        return source[math.Round(util.SharedRandom("ARC9_animsource", 1, #source, CurTime()))]
+    end
 end
 
 SWEP.ReloadHideBoneTables = {
@@ -341,109 +371,110 @@ local pouchout = {"arc9_eft_shared/generic_mag_pouch_out1.ogg","arc9_eft_shared/
 local rst_single = {
     { s = randspin, t = 0.05 },
     { s = randspin, t = 0.4 },
-    { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.9 },
-    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 1.1},
+    { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.3 },
+    { s = "arc9_eft_shared/weap_round_pullout.ogg", t = 0.3},
     { s = randspin, t = 1.53 },
-    { s =  pathgenericpistol .. "generic_jam_shell_ remove_medium3.ogg", t = 2.4  },
+    { s =  pathgenericpistol .. "generic_jam_shell_ remove_medium3.ogg", t = 1.5  },
     { s = randspin, t = 2.4 },
-    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 2.9 },
-    { s = randspin, t = 3.08 },
+    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 2.25 },
+    { s = randspin, t = 2.5 },
 }
 
 local rst_def = {
     { s = randspin, t = 0.1 },
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.55 },
-    { s = pouchin, t = 1.2 },
-    { s = pouchout, t = 1.6 },
-    { s = randspin, t = 1.7 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.45 },
-    { s = randspin, t = 3.12 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.2 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.3 },
+    { s = pouchin, t = 0.7 },
+    { s = pouchout, t = 1.0 },
+    -- { s = randspin, t = 1.1 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.5 },
+    { s = randspin, t = 1.8 },
 }
 local rst_def2 = {
     { s = randspin, t = 0.1 },
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.46 }, -- eft devs redarded
-    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.55 },
-    { s = pouchin, t = 1.2 },
-    { s = pouchout, t = 1.6 },
-    { s = randspin, t = 1.95 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.72 },
-    { s = randspin, t = 3.4 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.2 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.3 },
+    { s = pouchin, t = 0.7 },
+    { s = pouchout, t = 1.0+0.2 },
+    -- { s = randspin, t = 1.1 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.5+0.3 },
+    { s = randspin, t = 1.8+0.3 },
 }
 
 local rst_tac = {
-    { s = randspin, t = 0.1 - 4/24 },    
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.4 - 4/24 },
-    { s =  randspin, t = 0.53 - 4/24 },
-    { s =  randspin, t = 1.04 - 4/24 },
-    { s = pouchout, t = 1.15 - 4/24 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.8 + 0.15 - 4/24 },
-    { s = randspin, t = 2.24 - 4/24 },
+    { s = randspin, t = 0.1 - 4/27 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.1 - 4/27 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.2 - 4/27 },
+    { s =  randspin, t = 0.53 - 4/27 },
+    { s = pouchout, t = 0.7 - 4/27 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.3 - 4/27 },
+    { s = randspin, t = 1.7 - 4/27 }, 
     {hide = 0, t = 0},
-    {hide = 1, t = 0.5},
-    {hide = 0, t = 1.15}
+    {hide = 1, t = 0.3},
+    {hide = 0, t = 0.8}
 }
 local rst_tac2 = {
-    { s = randspin, t = 0.1 - 4/24 },    
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 - 4/24 }, -- eft devs redarded
-    { s =  path .. "mpx_weap_magout_plastic.ogg", t = 0.4 - 4/24 },
-    { s =  randspin, t = 0.53 - 4/24 },
-    { s =  randspin, t = 1.04  - 4/24},
-    { s = pouchout, t = 1.2  - 4/24},
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.2 + 0.15 - 4/24 },
-    { s = randspin, t = 2.4 - 4/24 },  
+    { s = randspin, t = 0.1 - 4/27 },    
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.1 - 4/27 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.2 - 4/27 },
+    { s =  randspin, t = 0.53 - 4/27 },
+    { s = pouchout, t = 0.7 - 4/27+0.2 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.3 - 4/27+0.25 },
+    { s = randspin, t = 1.7 - 4/27+0.25 }, 
     {hide = 0, t = 0},
-    {hide = 1, t = 0.5},
-    {hide = 0, t = 1.15}
+    {hide = 1, t = 0.3},
+    {hide = 0, t = 0.8}
 }
 
 local rst_empty = {
     { s = randspin, t = 0.1 },    
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 }, -- eft devs redarded
-    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.4 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.1 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.2 },
     { s =  randspin, t = 0.53 },
-    { s =  randspin, t = 1.04 },
-    { s = pouchout, t = 1.15 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.8 },
-    { s = randspin, t = 2.24 },  
-    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 2.75 },
+    { s = pouchout, t = 0.7 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.3 },
+    { s = randspin, t = 1.7 },  
+    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 2.1 },
     { s = randspin, t = 2.95 },
     {hide = 0, t = 0},
-    {hide = 1, t = 0.66},
-    {hide = 0, t = 1.15}
+    {hide = 1, t = 0.4},
+    {hide = 0, t = 1.0}
 }
 local rst_empty2 = {
     { s = randspin, t = 0.1 },    
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.35 }, -- eft devs redarded
-    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.4 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.1 }, -- eft devs redarded
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.2 },
     { s =  randspin, t = 0.53 },
-    { s =  randspin, t = 1.04 },
-    { s = pouchout, t = 1.2 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.2 },
-    { s = randspin, t = 2.4 },  
-    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 3.1 },
-    { s = randspin, t = 3.15 },
+    { s = pouchout, t = 0.7+0.2 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.3+0.25 },
+    { s = randspin, t = 1.7+0.25 },  
+    { s =  pathgenericpistol .. "pm_catch_slider.ogg", t = 2.1+0.25 },
+    { s = randspin, t = 2.95+0.25 },
     {hide = 0, t = 0},
-    {hide = 1, t = 0.66},
-    {hide = 0, t = 1.15}
+    {hide = 1, t = 0.4},
+    {hide = 0, t = 1.0}
 }
 
 local rst_magcheck = {
     { s = randspin, t = 0.1 },
-    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.23},
-    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.33 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.15},
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.3 },
     { s = randspin, t = 0.48 },
     { s = randspin, t = 0.98 },
-    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.8 },
-    { s = randspin, t = 3.3 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 2.4 },
+    { s = randspin, t = 2.6 },
+}
+local rst_magcheck_empty = {
+    { s = randspin, t = 0.1 },
+    { s =  pathgenericpistol .. "kedr_fireselector_up.ogg", t = 0.1},
+    { s =  pathgenericpistol .. "mpx_weap_magout_plastic.ogg", t = 0.2 },
+    { s =  pathgenericpistol .. "mpx_weap_magin_plastic.ogg", t = 1.35 },
+    { s = randspin, t = 1.4 },
 }
 
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        RareSource = {"too_idle1","too_idle2","too_idle3"},
-        RareSourceChance = 0.0015,
     },
     ["idle_sights"] = {
         Source = "idle",
@@ -453,24 +484,32 @@ SWEP.Animations = {
     },
 
     ["ready"] = {
-        Source = {"ready0", "ready1", "ready2"},
+        Source = {"ready0", "ready1"},
         EventTable = {
-            { s = "arc9_eft_shared/pm_draw.ogg", t = 0.05 },
-            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.58 },
-            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.75 },
+            { s = "arc9_eft_shared/pm_draw.ogg", t = 0 },
+            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.32 },
+            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.53 },
+        },
+    },
+    ["ready2"] = {
+        Source = {"ready2"},
+        EventTable = {
+            { s = "arc9_eft_shared/pm_draw.ogg", t = 0 },
+            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.32 },
+            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.53 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = "arc9_eft_shared/pm_draw.ogg", t = 0.05 },
+            { s = "arc9_eft_shared/pm_draw.ogg", t = 0 },
         }
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = "arc9_eft_shared/pm_draw.ogg", t = 0.05 },
+            { s = "arc9_eft_shared/pm_draw.ogg", t = 0 },
         }
     },
     ["holster"] = {
@@ -495,7 +534,7 @@ SWEP.Animations = {
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = pathgenericpistol .. "pm_catch_slider.ogg", t = 0.05 },
+            { s = pathgenericpistol .. "pm_catch_slider.ogg", t = 0, v = 0.5 },
         }
     },
     ["dryfire"] = {
@@ -515,47 +554,47 @@ SWEP.Animations = {
     ["reload0"] = {
         Source = "reload0",
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def
     },
     ["reload1"] = {
         Source = "reload1",
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_def2
     },
     ["reload_tactical0"] = {
-        Source = "reload0t",
+        Source = {"reload0t_0", "reload0t_1", "reload0t_2"},
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_tac,
 
-        DropMagAt = 0.5,
+        DropMagAt = 0.3,
     },
     ["reload_tactical1"] = {
-        Source = "reload1t",
+        Source = {"reload1t_0", "reload1t_1", "reload1t_2"},
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_tac2,
 
-        DropMagAt = 0.5,
+        DropMagAt = 0.3,
     },
 
     ["reload_empty0"] = {
-        Source = {"reload_empty0_0", "reload_empty0_1"}, 
+        Source = {"reload_empty0_0", "reload_empty0_1", "reload_empty0_2"}, 
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_empty
     },
     ["reload_empty1"] = {
-        Source = {"reload_empty1_0", "reload_empty1_1"}, 
+        Source = {"reload_empty1_0", "reload_empty1_1", "reload_empty1_2"}, 
         MinProgress = 0.9,
-        Mult = 0.85,
+        -- Mult = 0.85,
         FireASAP = true,
         EventTable = rst_empty2
     },
@@ -580,18 +619,32 @@ SWEP.Animations = {
 
 
     
+    ["jam0"] = {
+        Source = "jam_misfire",
+        EventTable = {
+            { s = randspin, t = 0.05 },
+            { s = randspin, t = 0.91 },
+            { s = randspin, t = 1.24 },
+
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 1.7 },
+            { s = "arc9_eft_shared/weap_round_out.ogg", t = 1.77 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 1.84 },
+            { s = randspin, t = 2 },
+        },
+        EjectAt = 1.79
+    },        
+    
     ["jam1"] = {
         Source = "jam_shell",
         EventTable = {
-            { s = randspin, t = 0.15 },
-            { s = randspin, t = 0.79 },
-            { s = randspin, t = 1.36 },
+            { s = randspin, t = 0.05 },
+            { s = randspin, t = 0.91 },
+            { s = randspin, t = 1.24 },
 
-            { s = slidelockgrab, t = 2 },
-            { s = randspin, t = 2.3 },
-            { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.39 },
-            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.65 },
-            { s = randspin, t = 3 },
+            { s = slidelockgrab, t = 1.65 },
+            { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.01 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.48 },
+            { s = randspin, t = 2.61 },
             { s = ARC9EFT.Shells9mm, t = 3.1 },
         },
         -- EjectAt = 1.97
@@ -600,18 +653,18 @@ SWEP.Animations = {
     ["jam3"] = {
         Source = "jam_hardjam",
         EventTable = {
-            { s = randspin, t = 0.15 },
-            { s = randspin, t = 0.79 },
-            { s = randspin, t = 1.36 },
+            { s = randspin, t = 0.05 },
+            { s = randspin, t = 0.91 },
+            { s = randspin, t = 1.24 },
 
-            { s = slidelockgrab, t = 1.92 },
-            { s = slidelockgrab, t = 2.28 },
-            { s = slidelockgrab, t = 2.7 },
-            { s = randspin, t = 2.94 },
-            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 3.87 },
+            { s = slidelockgrab, t = 1.67 },
+            { s = slidelockgrab, t = 2.01 },
+            { s = slidelockgrab, t = 2.55 },
+            { s = randspin, t = 2.9 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 3.86 },
             { s = "arc9_eft_shared/weap_round_out.ogg", t = 3.95 },
-            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 4.14 },
-            { s = randspin, t = 4.51 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 4.06 },
+            { s = randspin, t = 4.13 },
         },
         EjectAt = 3.95
     },      
@@ -619,18 +672,19 @@ SWEP.Animations = {
     ["jam2"] = {
         Source = "jam_feed",
         EventTable = {
-            { s = randspin, t = 0.15 },
-            { s = randspin, t = 0.79 },
-            { s = randspin, t = 1.36 },
+            { s = randspin, t = 0.05 },
+            { s = randspin, t = 0.91 },
+            { s = randspin, t = 1.24 },
 
-            { s = slidelockgrab, t = 1.95 },
-            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.33 },
-            { s = randspin, t = 2.75 },
-            { s = randspin, t = 2.95 },
-            { s = "arc9_eft_shared/weap_round_out.ogg", t = 3.16 },
-            { s = randspin, t = 3.58 },
-            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 3.76 },
-            { s = randspin, t = 4.13 },
+            { s = slidelockgrab, t = 1.65 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.11 },
+            { s =  pathgenericpistol .. "generic_jam_shell_ remove_medium3.ogg", t = 2.15  },
+            { s = randspin, t = 2.3 },
+            { s = randspin, t = 2.56 },
+            { s = randspin, t = 2.8 },
+            { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.9 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 3.72 },
+            { s = randspin, t = 3.9 },
             { s = ARC9EFT.Shells9mm, t = 4.3 },
         },
         -- EjectAt = 2.52
@@ -639,17 +693,18 @@ SWEP.Animations = {
     ["jam4"] = {
         Source = "jam_softjam",
         EventTable = {
-            { s = randspin, t = 0.15 },
-            { s = randspin, t = 0.79 },
-            { s = randspin, t = 1.36 },
-            
-            { s = slidelockgrab, t = 1.97 },
-            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.38 },
-            { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.44 },
-            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 2.62 },
-            { s = randspin, t = 2.97 },
+            { s = randspin, t = 0.05 },
+            { s = randspin, t = 0.91 },
+            { s = randspin, t = 1.24 },
+
+            { s = slidelockgrab, t = 1.7 },
+            { s = slidelockgrab, t = 2.0 },
+            { s =  pathgenericpistol .. "pm_slider_out.ogg", t = 2.63 },
+            { s = "arc9_eft_shared/weap_round_out.ogg", t = 2.71 },
+            { s =  pathgenericpistol .. "grach_slider_in.ogg", t = 2.8 },
+            { s = randspin, t = 2.9 },
         },
-        EjectAt = 2.44
+        EjectAt = 2.71
     },
 
     ["inspect"] = { -- TO STUPID ARK NINE SEE WE HAVE INSPECT
@@ -678,32 +733,33 @@ SWEP.Animations = {
         EventTable = rst_magcheck,
     },
     ["inspect_empty_mag_0"] = {
-        Source = "magcheck0_empty",
-        EventTable = rst_magcheck,
+        Source = "magcheck_empty",
+        EventTable = rst_magcheck_empty,
     },
     ["inspect_mag_1"] = {
         Source = "magcheck1",
         EventTable = rst_magcheck,
     },
     ["inspect_empty_mag_1"] = {
-        Source = "magcheck1_empty",
-        EventTable = rst_magcheck,
+        Source = "magcheck_empty",
+        EventTable = rst_magcheck_empty,
     },
 
     ["inspect0"] = {
-        Source = "checkchamber",
+        -- Source = {"checkchamber0", "checkchamber1", "checkchamber2", "checkchamber3" },
+        Source = {"checkchamber0" },
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.56 },
-            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 1.16 },
-            { s = randspin, t = 1.38 },
+            { s = pathgenericpistol .. "grach_slider_in.ogg", t = 0.27 },
+            { s = pathgenericpistol .. "pm_slider_out.ogg", t = 0.9 },
+            { s = randspin, t = 1.0 },
         }
     },
     ["inspect_empty0"] = {
         Source = "checkchamber_empty",
         EventTable = {
             { s = randspin, t = 0.1 },
-            { s = randspin, t = 1.0 },
+            { s = randspin, t = 0.7 },
         }
     },
 }
